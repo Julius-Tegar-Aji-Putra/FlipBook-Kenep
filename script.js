@@ -164,6 +164,55 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
 <p style="margin-bottom: 10px;">Pemugaran Masjid pada hari Minggu Pon tanggal 18 Jumadil Awal 1765 H berisengkalan (pepeling): "MARGANING RASA PANDITA NABI" bila dengan kata-kata LIMA NENEM PITU TUNGGAL (1765H). Prasasti ini dimunculkan untuk mengenang waktu pemugaran masjid TIBAN di Kedunggudel.</p>
 <p style="margin-bottom: 10px;">Paska perang Diponegoro, pengikut-pengikut setia dari Pangeran Diponegoro melepaskan atribut keprajuritan selanjutnya memilih pakai atribut seorang Dai (Mubaligh).</p>
 <p style="margin-bottom: 10px;">Mulai saat inilah Islam di Kedunggudel tumbuh kembali dan aktivitas pun maju, sehingga beliau Pangeran Pakubuwono IX (Bangun Topo) bekenan todhak (berkunjung) ke Kedunggudel untuk bertemu dengan tokoh-tokoh Islam para Kyai di Kedunggudel.</p>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">2. MASA PERANG KEMERDEKAAN</h4>
+<p style="margin-bottom: 10px;">Pada tahun 1949 (Agresi Belanda ke II) Kedunggudel dianggap tempat yang tepat bagi para pejuang sebagai pusat (markas) Pemerintahan Karesidenan Surakarta Selatan. Hal ini disamping tempat yang strategis juga masyarakatnya yang kooperatif bagi gerilyawan.</p>
+<p style="margin-bottom: 5px;">Tokoh-tokoh pejuang yang bermarkas di Desa Kedunggudel antara lain:</p>
+<ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
+    <li>Jendral Gatot Subroto</li>
+    <li>Resident Sudiro</li>
+    <li>Komandan PMB Mayor N. Sunaryo</li>
+    <li>Komandan STE Letkol Mursito</li>
+</ol>
+<p style="margin-bottom: 10px;">Kehadiran para tokoh-tokoh itu menggugah jiwa nasionalisme dan semangat juang lewat sarana (media) kesenian keroncong yang syair-syairnya bernuansa perjuangan.</p>
+<p style="margin-bottom: 10px;">Aktivitas tokoh-tokoh itu tercium oleh Belanda lewat mata-matanya, akhirnya bertepatan pada hari Rabu tanggal 1 svawal 1949 masyarakat sedang melaksanakan sholat Idul Fitri melihat glagat keamanan terancam maka para pejuang meninggalkan Kedunggudel untuk pengamanan.</p>
+<p style="margin-bottom: 10px;">Pada hari Kamis, 2 syawal 1949 itu juga Belanda menyerang Kedunggudel di Bombardir sebanyak 21 kali, namun karena perlindungan Allah SWT, dari 21 itu yang meletus hanya 1 (satu) dan menghancurkan serambi masjid bagian utara, dan mengakibatkan 6 warga sipil meninggal dunia.</p>
+<p style="margin-bottom: 5px;">Tidak luput juga tempat (markas) yang diduga menjadi para pejuang itu antara lain:</p>
+<ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
+    <li>Rumah Bapak Parto Siswoyo</li>
+    <li>Rumah Bapak Cipto Diharjo</li>
+    <li>Rumah Bapak Sosroharjo</li>
+    <li>Rumah Ibu Kartono</li>
+    <li>Rumah Bapak Jo Sumarto</li>
+</ol>
+<p style="margin-bottom: 10px;">Serangan artileri ini oleh Belanda tidak berhasil secara optimal, karena para tokoh-tokoh pejuang RI sudah keluar dari Kedunggudel. Tepatnya setelah pasukan Belanda sampai di Desa Krecekan (utara Kedunggudel), tidak dapat masuk Desa Kedunggudel dikarenakan terhalang tembok yang besar dan tinggi, akhirnya belok ke arah kiri sampai di Desa Banmati. Tujuannya agar serangan dapat dilakukan dari arah timur, tetapi Belanda juga tidak dapat masuk ke Desa Kedunggudel karena terhalang sebuah tembok yang tinggi dan besar.</p>
+<p style="margin-bottom: 10px;">Warga Kedunggudel masih punya keyakinan (kepercayaan) selama ini masih dijangkung (dijaga) oleh roh/ Kyai Lombok, Nyai Lombok, dan Kyai Gampang sebagai cikal bakal berdirinya Masjid.</p>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h4 style="text-align: center; margin-bottom: 5px; font-family: inherit; font-size: 13.5px;">C. DEKADE PASKA PEPERANGAN</h4>
+<p style="text-align: center; margin-bottom: 15px; font-weight: bold; font-size: 11.5px;">(Struktur Pemerintahan Kademangan)</p>
+<p style="margin-bottom: 12px;">Sebelum perang kemerdekaan atau negara Kesatuan Republik Indonesia belum berdiri, Kedunggudel adalah daerah kademangan yang termasuk dalam wilayah Nagari Dalem Surakarta Hadiningrat. Dengan demikian daerah Kedunggudel pemerintahannya dipimpin oleh seorang demang yang turun temurun dan bertanggungjawab pada pemerintah keraton.</p>
+<p style="margin-bottom: 8px;">Sedangkan Demang terakhir di Kedunggudel bernama Kyai Demang Rengga Suwarno. Dalam menjalankan tugas-tugasnya, Kyai Demang dibantu dengan beberapa stafnya, antara lain:</p>
+<ol style="margin-top: 0; margin-bottom: 12px; padding-left: 20px;">
+    <li style="margin-bottom: 5px;"><strong>Bekel:</strong> Ki Karya Niman, yang bertugas sebagai kepala lingkungan;</li>
+    <li style="margin-bottom: 5px;"><strong>Modin:</strong> Ki Soma Sajad, bertugas melayani warga dalam bidang sosial keagamaan misalnya pernikahan, kematian, dan lain-lain;</li>
+    <li style="margin-bottom: 5px;"><strong>Ulu-ulu:</strong> Ki Suro, bertugas mengatur irigasi dan pertanian;</li>
+    <li style="margin-bottom: 5px;"><strong>Jogo boyo:</strong> Ki Kerta Mrajak, bertugas pada keamanan di lingkungan kademangan.</li>
+</ol>
+<p style="margin-bottom: 10px;">Sedangkan tempat atau kantor pemerintahan secara otomatis menempati rumah Kyai Demang (atau disebut Ndemangan).</p>`
+  },
+  {
+    layout: 'layout-k',
+    image: 'assets/Sungai Begawan Solo 3.webp',
+    imageAlt: 'Meluapnya Bengawan Solo',
+    caption: 'Sungai Begawan Solo',
+    content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">KETEGANGAN POLITIK & "BEDAH SOLO"</h4>
+<p style="margin-bottom: 10px;">Karena Kyai Demang sudah sepuh pada tahun 1960, beliau mengangkat asisten. Di sekitar tahun ini perpustakaan desa didirikan oleh Bapak Sujita. Disekitar tahun (1965) karena pemerintah mengeluarkan UU Pertanahan (Land Reform) banyak kaum priyayi Kedunggudel yang memiliki tanah dan sawah di daerah luar daerah kehilangan hak kepemilikannya.</p>
+<p style="margin-bottom: 10px;">Ketegangan masyarakat terjadi pada 1965 tatkala Kedunggudel dipengaruhi keadaan politik negara, masyarakat Kedunggudel terbagi pada tiga partai besar yaitu PKI, PNI, dan Masyumi.</p>
+<p style="margin-bottom: 10px;">Setelah ketegangan mereda tahun 1966 Kedunggudel menjadi lautan karena meluapnya Bengawan Solo yang lebih dikenal istilah "Bedah Solo". Pada tahun 1967, Kyai Demang resmi Purna tugas dan pada tanggal 1 Juli 1969 beliau meninggal.</p>`
   }
 ];
 
@@ -373,6 +422,34 @@ function createFlipbook(startPage) {
                 <img src="assets/Mimbar Masjid Darussalam.webp" alt="Mimbar Masjid Darussalam" style="width: 100%; height: 100px; object-fit: cover; display: block;" draggable="false">
                 <figcaption style="text-align: center; font-size: 10px; color: #444; font-style: italic; margin-top: 5px; font-family: inherit;">Mimbar Masjid</figcaption>
             </figure>
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-J (GAMBAR POLAROID ATAS + TEKS SCROLL BAWAH) ---
+    else if (data.layout === 'layout-j') {
+      pageDiv.innerHTML = `
+        <div class="layout-j">
+          <figure class="polaroid-top" style="width: 60%; max-width: 220px; margin: 0 auto; background: white; padding: 6px 6px 15px 6px; box-shadow: 2px 4px 10px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(-1deg); flex-shrink: 0; box-sizing: border-box;">
+              <img src="${data.image}" alt="${data.imageAlt}" style="width: 100%; height: 120px; object-fit: cover; display: block;" draggable="false">
+              <figcaption style="text-align: center; font-size: 10.5px; color: #444; font-style: italic; margin-top: 6px; font-family: inherit;">${data.caption}</figcaption>
+          </figure>
+          <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 12px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
+            ${data.content}
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-K (GAMBAR FILTER ATAS + TEKS BAWAH CUSTOM SCROLL) ---
+    else if (data.layout === 'layout-k') {
+      pageDiv.innerHTML = `
+        <div class="layout-k" style="display: flex; flex-direction: column; height: 100%; padding: 5% 6%; justify-content: space-between; gap: 10px;">
+          <figure class="landscape-historic-img" style="width: 100%; height: 48%; margin: 0 auto 12px auto; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #fff; padding: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); border: 1px solid #d0d0d0; box-sizing: border-box;">
+              <img src="${data.image}" alt="${data.imageAlt}" style="width: 100%; flex: 1; min-height: 0; object-fit: cover; display: block; filter: sepia(0.25) contrast(1.1) brightness(0.95);" draggable="false">
+              <figcaption style="text-align: center; font-size: 10.5px; color: #555; font-style: italic; margin-top: 6px; font-family: inherit;">${data.caption}</figcaption>
+          </figure>
+          <div class="content-wrapper custom-scroll" style="height: 48%; overflow-y: auto; padding-right: 8px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
+            ${data.content}
           </div>
         </div>
       `;

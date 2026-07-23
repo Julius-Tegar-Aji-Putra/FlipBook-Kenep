@@ -390,6 +390,49 @@ body {
 }
 
 /* ==============================================
+   LAYOUT J (GAMBAR POLAROID ATAS + TEKS SCROLL BAWAH)
+   ============================================== */
+.layout-j {
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  padding: 5% 6%; 
+  justify-content: flex-start; 
+  gap: 15px;
+}
+
+.layout-j p, .layout-j ol, .layout-j ul, .layout-j li {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+.layout-j h4 {
+  font-family: var(--font-serif);
+  font-style: normal;
+}
+
+/* ==============================================
+   LAYOUT K (GAMBAR MENDOMINASI ATAS + TEKS SCROLL BAWAH)
+   ============================================== */
+.layout-k p, .layout-k ol, .layout-k ul, .layout-k li {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+.layout-k h4 {
+  font-family: var(--font-serif);
+  font-style: normal;
+}
+
+/* ==============================================
    LAYOUT E (TEKS ATAS + GAMBAR POLAROID BAWAH)
    ============================================== */
 .layout-e-content {
@@ -533,14 +576,17 @@ body {
   font-family: var(--font-serif);
 }
 
-.layout-d p {
+.layout-d p, .layout-d ol, .layout-d ul, .layout-d li {
   font-family: var(--font-serif);
   font-size: 13px;
   line-height: 1.7;
   text-align: left;
-  margin-bottom: 12px;
   color: #2c2c2c;
   font-style: italic;
+}
+
+.layout-d p {
+  margin-bottom: 12px;
 }
 
 /* ==============================================
