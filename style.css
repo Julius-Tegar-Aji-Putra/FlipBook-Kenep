@@ -433,6 +433,30 @@ body {
 }
 
 /* ==============================================
+   LAYOUT M (2 POLAROID ATAS + TEKS CUSTOM SCROLL BAWAH)
+   ============================================== */
+.layout-m p, .layout-m ol, .layout-m ul, .layout-m li {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+.layout-m h4 {
+  font-family: var(--font-serif);
+  font-style: normal;
+}
+
+/* ==============================================
+   LAYOUT N (KOLASE ATAS-BAWAH DENGAN TEKS TENGAH)
+   ============================================== */
+.layout-n p, .layout-n div {
+  font-family: var(--font-serif);
+}
+
+/* ==============================================
    LAYOUT E (TEKS ATAS + GAMBAR POLAROID BAWAH)
    ============================================== */
 .layout-e-content {

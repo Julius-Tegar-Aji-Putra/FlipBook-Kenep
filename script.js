@@ -150,7 +150,7 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
 <p style="margin-bottom: 10px;">Pangeran Diponegoro sering mengadakan pertemuan di Masjid Kedunggudel dengan Pakubuwono IV, konspirasi ini dicium oleh Belanda akhirnya Kedunggudel dihancurkan yang kedua kalinya.</p>`
   },
   {
-    layout: 'layout-i',
+    layout: 'layout-d',
     content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">PEMUGARAN & SENGKALAN</h4>
 <p style="margin-bottom: 5px;">Paska perang Diponegoro para Kyai dan tokoh-tokoh agama mulai menata kehidupan bersama di Kedunggudel. Tokoh-tokoh itu antara lain:</p>
 <ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
@@ -235,6 +235,47 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     <li style="margin-bottom: 6px;"><strong>Bidang Teknologi:</strong> Warga Kedunggudel mulai menggunakan barang-barang Teknologi modern. Seperti: Mobil, sepeda motor, televisi, radio, dll.</li>
 </ol>
 <p style="margin-bottom: 10px; font-style: italic; text-align: center;">"Di tahun-tahun ini Kedunggudel suasananya bagaikan kampung Laweyan di Kota Surakarta."</p>`
+  },
+  {
+    layout: 'layout-j',
+    image: 'assets/Sungai Begawan Solo 6.webp',
+    imageAlt: 'Sungai Bengawan Solo',
+    caption: 'Pelurusan Alur Sungai Bengawan Solo (1992)',
+    content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">PERUBAHAN GEOGRAFIS & MEREDUPNYA PERDAGANGAN</h4>
+<p style="margin-bottom: 10px;">Namun tatkala awal tahun 1990 karena industri kecil sudah tidak dapat bersaing dengan industri besar, banyak para pengusaha kecil di Kedunggudel gulung tikar. Kemunduran ini juga mempengaruhi mundurnya bidang-bidang lain di masyarakat Kedunggudel.</p>
+<p style="margin-bottom: 10px;">Tahun 1991 Organisasi Kepemudaan di Kedunggudel pecah menjadi tiga, sesuai dengan wilayah masing-masing RW. Keadaan ini membuat lebih sulit bagi pemuda untuk merebut prestasi seperti masa sebelumnya.</p>
+<p style="margin-bottom: 10px;">Pada tahun 1992 sungai yang melintasi barat kampung Kedunggudel dimatikan dan alur sungai diluruskan pemerintah. Jalur penyebrangan tradisional di selatan kampung, yang menghubungkan dengan kecamatan Tawangsari sudah tidak beroperasi membuat para pedagang dari daerah selatan enggan ke pasar Kedunggudel.</p>`
+  },
+  {
+    layout: 'layout-m',
+    content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">RENOVASI & PENETAPAN "MASJID DARUSSALAM"</h4>
+<p style="margin-bottom: 8px;">Sejalan pertumbuhan ekonomi masyarakat serta tingkat kesadaran beragama semakin mantap muncullah gagasan pemugaran fisik masjid. Sebagai dasar pemugaran masjid di tahun 1979 ini adalah kerapnya terjadi banjir sehingga berakibat tambahnya lumpur di sekeliling masjid, dan keadaan lantai harus ditinggikan.</p>
+<p style="margin-bottom: 8px;">Pada tahun 1985 terbentuklah Panitia Pembangunan Masjid dengan sasaran yang dibagian serambi dan pawastren. Tahun 1986 pemugaran selesai, akhirnya kedudukan Panitia Pembangunan dibubarkan. Atas kesepakatan Panitia dan warga maka masjid itu diberi nama <strong>"MASJID DARUSSALAM"</strong>.</p>
+<p style="margin-bottom: 5px;">Sebagai penanggungjawab pengelolaan Masjid yang disebut "TAKMIR MASJID" sebagai Komposisi Takmir Masjid:</p>
+<ul style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
+    <li style="margin-bottom: 4px;"><strong>Ketua:</strong> Bapak Warsono</li>
+    <li style="margin-bottom: 4px;"><strong>Keuangan:</strong> Bapak H. Sumartono Hadi</li>
+    <li style="margin-bottom: 4px;"><strong>Sekretaris:</strong> Bapak Muhammad Hani</li>
+</ul>`
+  },
+  {
+    layout: 'layout-n',
+    content: `<!-- Foto Atas -->
+<figure class="polaroid-top" style="margin: 0 auto; width: 85%; height: 32%; padding: 6px 6px 15px 6px; background: #fff; box-shadow: 2px 3px 10px rgba(0,0,0,0.15); border: 1px solid #ddd; display: flex; flex-direction: column; box-sizing: border-box; transform: rotate(-2deg);">
+    <img src="assets/Sungai Begawan Solo 1.webp" alt="Bengawan Solo Masa Lampau" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(0.2) contrast(1.05);" draggable="false">
+</figure>
+
+<!-- Teks Transisi (Di Tengah) -->
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 0 10px;">
+    <p style="text-align: center; font-size: 13px; line-height: 1.6; color: #2c2c2c; font-family: inherit; font-style: italic; margin: 0; font-weight: 600;">
+        "Bengawan Solo, urat nadi yang menghubungkan pesisir hingga pedalaman, menjadi saksi bisu pasang surutnya perjalanan Desa Kedunggudel dari masa ke masa."
+    </p>
+</div>
+
+<!-- Foto Bawah -->
+<figure class="polaroid-bottom" style="margin: 0 auto; width: 85%; height: 32%; padding: 6px 6px 15px 6px; background: #fff; box-shadow: 2px 3px 10px rgba(0,0,0,0.15); border: 1px solid #ddd; display: flex; flex-direction: column; box-sizing: border-box; transform: rotate(1.5deg);">
+    <img src="assets/Sungai Begawan Solo 4.webp" alt="Alur Bengawan Solo" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(0.25) contrast(1.05);" draggable="false">
+</figure>`
   }
 ];
 
@@ -451,10 +492,9 @@ function createFlipbook(startPage) {
     // --- STRUKTUR LAYOUT-J (GAMBAR POLAROID ATAS + TEKS SCROLL BAWAH) ---
     else if (data.layout === 'layout-j') {
       pageDiv.innerHTML = `
-        <div class="layout-j">
-          <figure class="polaroid-top" style="width: 60%; max-width: 220px; margin: 0 auto; background: white; padding: 6px 6px 15px 6px; box-shadow: 2px 4px 10px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(-1deg); flex-shrink: 0; box-sizing: border-box;">
-              <img src="${data.image}" alt="${data.imageAlt}" style="width: 100%; height: 120px; object-fit: cover; display: block;" draggable="false">
-              <figcaption style="text-align: center; font-size: 10.5px; color: #444; font-style: italic; margin-top: 6px; font-family: inherit;">${data.caption}</figcaption>
+        <div class="layout-j" style="display: flex; flex-direction: column; height: 100%; padding: 5% 6%; justify-content: flex-start; gap: 15px;">
+          <figure class="polaroid-top" style="width: 85%; max-width: 320px; margin: 0 auto; background: white; padding: 6px; box-shadow: 2px 4px 10px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(1.5deg); flex-shrink: 0; box-sizing: border-box;">
+              <img src="${data.image}" alt="${data.imageAlt}" style="width: 100%; height: 140px; object-fit: cover; display: block; filter: sepia(0.15) contrast(1.05);" draggable="false">
           </figure>
           <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 12px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
             ${data.content}
@@ -473,6 +513,37 @@ function createFlipbook(startPage) {
           <div class="content-wrapper custom-scroll" style="height: 48%; overflow-y: auto; padding-right: 8px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
             ${data.content}
           </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-M (2 POLAROID ATAS + TEKS BAWAH CUSTOM SCROLL) ---
+    else if (data.layout === 'layout-m') {
+      pageDiv.innerHTML = `
+        <div class="layout-m" style="display: flex; flex-direction: column; height: 100%; padding: 5% 6%; justify-content: flex-start; gap: 12px;">
+          <div style="display: flex; gap: 4%; justify-content: center; height: 38%; flex-shrink: 0;">
+              <!-- Gambar 1: Masjid -->
+              <figure class="polaroid" style="width: 48%; background: white; padding: 5px 5px 12px 5px; box-shadow: 2px 3px 8px rgba(0,0,0,0.15); border: 1px solid #ddd; transform: rotate(-2deg); margin: 0; display: flex; flex-direction: column; box-sizing: border-box;">
+                  <img src="assets/Fasad Masjid Darussalam.webp" alt="Tampak Depan Masjid" style="width: 100%; height: 80%; object-fit: cover; display: block; filter: sepia(0.15) contrast(1.1);" draggable="false">
+                  <figcaption style="text-align: center; font-size: 9.5px; color: #444; font-style: italic; margin-top: auto; font-family: inherit;">Tampak Depan</figcaption>
+              </figure>
+          
+              <!-- Gambar 2: Mimbar -->
+              <figure class="polaroid" style="width: 48%; background: white; padding: 5px 5px 12px 5px; box-shadow: 2px 3px 8px rgba(0,0,0,0.15); border: 1px solid #ddd; transform: rotate(1.5deg); margin: 0; display: flex; flex-direction: column; box-sizing: border-box;">
+                  <img src="assets/Mimbar Masjid Darussalam.webp" alt="Mimbar Masjid" style="width: 100%; height: 80%; object-fit: cover; display: block; filter: sepia(0.15) contrast(1.1);" draggable="false">
+                  <figcaption style="text-align: center; font-size: 9.5px; color: #444; font-style: italic; margin-top: auto; font-family: inherit;">Mimbar Masjid</figcaption>
+              </figure>
+          </div>
+          <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 12px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
+            ${data.content}
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-N (KOLASE ATAS-BAWAH DENGAN TEKS TENGAH) ---
+    else if (data.layout === 'layout-n') {
+      pageDiv.innerHTML = `
+        <div class="layout-n" style="display: flex; flex-direction: column; height: 100%; padding: 6%; justify-content: space-between; box-sizing: border-box; gap: 10px;">
+          ${data.content}
         </div>
       `;
     }
