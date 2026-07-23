@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Interactive Flipbook — Cerita Rakyat Digital yang bisa dibaca dengan efek membalik halaman secara interaktif.">
+  <title>Cerita Rakyat Digital — Interactive Flipbook</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER — Judul & Branding
+  ============================================= -->
+  <header class="app-header" id="app-header">
+    <h1 class="app-title">📖 Cerita Rakyat Digital</h1>
+    <p class="app-subtitle">Geser atau klik untuk membalik halaman</p>
+  </header>
+
+  <!-- ============================================
+       FLIPBOOK CONTAINER
+       StPageFlip akan me-render canvas/div di sini
+  ============================================= -->
+  <main class="flipbook-wrapper" id="flipbook-wrapper">
+    <div id="flipbook" class="flipbook"></div>
+  </main>
+
+  <!-- ============================================
+       NAVIGATION CONTROLS
+  ============================================= -->
+  <nav class="book-controls" id="book-controls">
+    <button class="btn-nav" id="btn-prev" aria-label="Halaman Sebelumnya">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      <span>Sebelumnya</span>
+    </button>
+
+    <div class="page-indicator" id="page-indicator">
+      <span id="current-page">1</span> / <span id="total-pages">6</span>
+    </div>
+
+    <button class="btn-nav" id="btn-next" aria-label="Halaman Berikutnya">
+      <span>Berikutnya</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    </button>
+  </nav>
+
+  <!-- ============================================
+       FOOTER
+  ============================================= -->
+  <footer class="app-footer" id="app-footer">
+    <p>Dibuat dengan ❤️ untuk pelestarian budaya lokal</p>
+  </footer>
+
+  <!-- ============================================
+       StPageFlip Library via CDN
+  ============================================= -->
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+
+  <!-- Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
