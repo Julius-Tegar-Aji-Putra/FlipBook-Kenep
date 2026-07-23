@@ -457,6 +457,19 @@ body {
 }
 
 /* ==============================================
+   LAYOUT B (TEKS ATAS + 1 GAMBAR POLAROID BAWAH)
+   ============================================== */
+.layout-b p, .layout-b ol, .layout-b ul, .layout-b li {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.layout-b h4 {
+  font-family: var(--font-serif);
+  font-style: normal;
+}
+
+/* ==============================================
    LAYOUT E (TEKS ATAS + GAMBAR POLAROID BAWAH)
    ============================================== */
 .layout-e-content {

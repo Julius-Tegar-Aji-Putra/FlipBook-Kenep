@@ -276,6 +276,21 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
 <figure class="polaroid-bottom" style="margin: 0 auto; width: 85%; height: 32%; padding: 6px 6px 15px 6px; background: #fff; box-shadow: 2px 3px 10px rgba(0,0,0,0.15); border: 1px solid #ddd; display: flex; flex-direction: column; box-sizing: border-box; transform: rotate(1.5deg);">
     <img src="assets/Sungai Begawan Solo 4.webp" alt="Alur Bengawan Solo" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(0.25) contrast(1.05);" draggable="false">
 </figure>`
+  },
+  {
+    layout: 'layout-b',
+    image: 'assets/Desa Wisata Kreatif.webp',
+    imageAlt: 'Desa Wisata Kreatif',
+    content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">II. PENUTUP</h4>
+<p style="margin-bottom: 8px;">Ibarat menebar sebutir pasir di samudera luas yang tidak ada artinya, namun harapan penulis yang ungkapkan ini mampu menambah keasanah ilmu pengetahuan demi kelestarian budaya daerah yang semakin terkikis oleh kemajuan teknologi.</p>
+<p style="margin-bottom: 8px;">Lewat media ini pantaslah kiranya penulis menyampaikan beberapa hal:</p>
+<ol style="margin-top: 0; margin-bottom: 12px; padding-left: 20px;">
+    <li style="margin-bottom: 6px;">Penulis sangat berterima kasih atas dorongan dari narasumber, sehingga dapat kami gunakan sebagai referensi buku ini.</li>
+    <li style="margin-bottom: 6px;">Penulis penuh berharap, sekecil apapun makna yang terkandung di dalam buku ini dapat menambah pemahaman tentang potensi daerah.</li>
+    <li style="margin-bottom: 6px;">Penulis menyadari banyaknya kesalahan yang muncul pada buku ini karena refernsi yang sangat terbatas.</li>
+    <li style="margin-bottom: 6px;">Tidak ada untaian kata yang pantas penulis sampaikan hanya mohon maaf bila ada kesalahan dan kekurangan.</li>
+</ol>
+<p style="text-align: center; font-weight: bold; margin-top: 15px; font-size: 13px; letter-spacing: 1px;">TERIMA KASIH --</p>`
   }
 ];
 
@@ -405,6 +420,19 @@ function createFlipbook(startPage) {
         </div>
       `;
     } 
+    // --- STRUKTUR LAYOUT-B (TEKS ATAS + 1 GAMBAR POLAROID BAWAH) ---
+    else if (data.layout === 'layout-b') {
+      pageDiv.innerHTML = `
+        <div class="layout-b" style="display: flex; flex-direction: column; height: 100%; padding: 5% 6%; justify-content: flex-start; gap: 15px;">
+            <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 12px; text-align: left; font-size: 12px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
+                ${data.content}
+            </div>
+            <figure class="polaroid-bottom" style="margin: 0 auto; width: 85%; height: 32%; padding: 6px 6px 15px 6px; background: #fff; box-shadow: 2px 3px 10px rgba(0,0,0,0.15); border: 1px solid #ddd; display: flex; flex-direction: column; box-sizing: border-box; transform: rotate(-1deg); flex-shrink: 0;">
+                <img src="${data.image}" alt="${data.imageAlt}" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(0.15) contrast(1.05);" draggable="false">
+            </figure>
+        </div>
+      `;
+    }
     // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
     else if (data.layout === 'layout-d') {
       pageDiv.innerHTML = `
