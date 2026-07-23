@@ -42,7 +42,7 @@ const BOOK_PAGES = [
 <p>Akhirnya penulis menyadari bahwa dalam menggali potensi yang unik ini dapat menjadi acuan dalam pemahaman makna Desa Kedunggudel, bila masih ada kesalahan penulis mohon maaf.</p>
 <p>Wassalamu'alaikum Wr. Wb.</p>
 <br>
-<p>Penulis<br><strong>Drs. H. Mulyono</strong></p>`
+<p>Penulis<br><strong>Drs. H. Mulyono, Sehono</strong></p>`
   },
   {
     layout: 'layout-e',
@@ -85,6 +85,18 @@ const BOOK_PAGES = [
 </ol>
 <p>Warga bergotong royong membangun <strong>Masjid TIBAN</strong>, di sebelah barat pohon Dayak Dampit. Masjid ini menjadi pusat kegiatan keagamaan Islam yang sangat pesat.</p>
 <p>Akhir hayatnya, Kyai Lombok, Nyai Lombok, dan Kyai Gampang dimakamkan di sebelah barat Masjid Tiban — dan Nyai Lombok dimakamkan di sebelah timur masjid (makam terpisah).</p>`
+  },
+  {
+    layout: 'layout-c',
+    content: `<p>Sirkulasi perdagangan mampu mengangkat perekonomian di wilayah Solo umumnya. Maka para pedagang dari segala penjuru melihat adanya potensi Desa Gisikan ini yang sudah menjamurnya perusahaan kecil diantaranya</p>
+<ol style="margin-left:16px; margin-bottom:12px;">
+  <li>Perusahaan batik</li>
+  <li>Perusahaan tenun sarung (ATBM)</li>
+  <li>Perusahaan makanan tradisional khas Desa Gisikan</li>
+  <li>Perusahaan karak, jenang, rasikan, dll</li>
+  <li>Emping mlinjo</li>
+</ol>
+<p>Bersamaan dengan terkenalnya perusahaan ini, maka mampu mengundang para saudagar untuk ke Desa Gisikan. Dari sekian banyak pedagang terselip juga para pedagang Gujarat yang datang dengan tujuan berdagang dan menyiarkan Ajaran Agama Islam.</p>`
   }
 ];
 
@@ -216,17 +228,36 @@ function createFlipbook(startPage) {
     } 
     // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
     else if (data.layout === 'layout-d') {
-      pageDiv.innerHTML = data.content;
+      pageDiv.innerHTML = `
+        <div class="custom-scroll" style="padding-bottom: 20px;">
+          ${data.content}
+        </div>
+      `;
     }
     // --- STRUKTUR LAYOUT-E (TEKS ATAS + GAMBAR POLAROID BAWAH) ---
     else if (data.layout === 'layout-e') {
       pageDiv.innerHTML = `
         <div class="layout-e-content">
-          <div class="layout-e-text">
+          <div class="layout-e-text custom-scroll">
             ${data.content}
           </div>
           <div class="layout-e-photo">
             <img src="${data.image}" alt="${data.imageAlt || ''}" draggable="false">
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-C (TEKS ATAS + KOLASE GAMBAR BAWAH) ---
+    else if (data.layout === 'layout-c') {
+      pageDiv.innerHTML = `
+        <div class="page-7-wrapper">
+          <div class="text-scroll-area custom-scroll">
+            ${data.content}
+          </div>
+          <div class="polaroid-row">
+            <img src="assets/Batik Kenep.jfif.webp" class="polaroid-img photo-1" alt="Batik Kenep" draggable="false">
+            <img src="assets/Kerak Kenep.webp" class="polaroid-img photo-2" alt="Kerak Kenep" draggable="false">
+            <img src="assets/Jenang Kenep.webp" class="polaroid-img photo-3" alt="Jenang Kenep" draggable="false">
           </div>
         </div>
       `;

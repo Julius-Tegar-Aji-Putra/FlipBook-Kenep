@@ -257,18 +257,14 @@ body {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  padding: 6% 7% 0 7%;
 }
 
 .layout-e-text {
   flex: 1;
-  overflow-y: auto;
-  padding: 6% 7% 3% 7%;
+  padding-bottom: 10px;
   font-family: var(--font-serif);
 }
-
-.layout-e-text::-webkit-scrollbar { width: 3px; }
-.layout-e-text::-webkit-scrollbar-track { background: transparent; }
-.layout-e-text::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
 
 .layout-e-text p {
   font-size: 12px;
@@ -294,7 +290,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10% 4% 10%;
+  padding: 0 0 4% 0;
 }
 
 .layout-e-photo img {
@@ -313,27 +309,82 @@ body {
 }
 
 /* ==============================================
-   LAYOUT D (HALAMAN FULL TEKS TANPA SCROLL)
+   LAYOUT C (TEKS ATAS + KOLASE GAMBAR BAWAH)
+   ============================================== */
+.page-7-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 6% 7%;
+  justify-content: space-between;
+}
+
+.text-scroll-area {
+  flex: 1;
+  margin-bottom: 15px;
+  border-bottom: 2px dashed rgba(0,0,0,0.15);
+  font-family: var(--font-serif);
+}
+
+.text-scroll-area p, .text-scroll-area ol, .text-scroll-area ul, .text-scroll-area li {
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: left;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+.text-scroll-area p {
+  margin-bottom: 12px;
+}
+
+.polaroid-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 150px;
+  padding-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.polaroid-img {
+  width: 30%;
+  max-width: 100px;
+  background: white;
+  padding: 4px 4px 15px 4px;
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.polaroid-img.photo-1 {
+  transform: rotate(-4deg) translateY(-5px);
+}
+
+.polaroid-img.photo-2 {
+  transform: rotate(3deg) translateY(5px);
+}
+
+.polaroid-img.photo-3 {
+  transform: rotate(-2deg);
+}
+
+/* ==============================================
+   LAYOUT D (HALAMAN FULL TEKS)
    ============================================== */
 .layout-d {
-  overflow-y: auto;
-  padding: 6% 7%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  padding: 6% 7%;
   color: #333;
-}
-
-.layout-d::-webkit-scrollbar {
-  width: 4px;
-}
-
-.layout-d::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.layout-d::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.2);
-  border-radius: 4px;
 }
 
 .layout-d h2 {
@@ -438,6 +489,12 @@ body {
   .flipbook-wrapper {
     padding: var(--space-xs) var(--space-sm);
   }
+  .polaroid-img {
+    max-width: 80px;
+  }
+  .polaroid-row {
+    height: 120px;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
@@ -456,4 +513,31 @@ body {
   .app-footer {
     display: none;
   }
+}
+
+/* ==============================================
+   CUSTOM SCROLLBAR
+   ============================================== */
+.custom-scroll {
+  overflow-y: auto;
+  padding-right: 12px;
+  height: 100%;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.5);
 }
