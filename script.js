@@ -106,6 +106,23 @@ const BOOK_PAGES = [
 <p style="margin-bottom: 12px;">Pada suatu waktu Sunan Kalijogo memanggil Kyai Lombok untuk menyebarluaskan Ilmu Agama Islam, dan memberi petunjuk atau arahan tempat tujuan ke sebelah barat laut gunung Gajah Mungkur.</p>
 <p style="margin-bottom: 12px;">Dengan dorongan batin yang kuat dan didorong doa restu sang guru (Sunan Kalijogo) berangkatlah Kyai Lombok ketujuan itu. Hanya berbekal niat yang kuat maka, Kyai Lombok menelusuri desa ke desa, atau hutan ke hutan serta melewati sungai yang sungguh melelahkan. Sepanjang jalan sambil istirahat untuk melepaskan lelah, setiap bertemu orang awam memberi pengertian tentang islam.</p>
 <p style="margin-bottom: 12px;">Perjalanan dari hari ke hari, dari bulan ke bulan akhirnya tercium oleh sebuah tempat yang arahnya seperti petunjuk gurunya, sangat ramai saudagar beraktivitas. Sampailah di suatu tempat yang dikelilingi aliran sungai Bengawan Solo yang menyerupai delta, itulah Desa "Gisikan". Di desa ini Kyai Lombok menemui tokoh masyarakat Gisikan yang bernama Kyai Sodiq, tujuannya agar boleh diterima menumpang di daerah ini, dengan senang hati Kyai Sodiq mau menerimanya. Dialog antara Kyai Lombok dengan Kyai Sodiq bahwa tujuannya ingin mengajak warga Gisikan ini untuk mengenal dan mendalami Agama Islam.</p>`
+  },
+  {
+    layout: 'layout-f',
+    image: 'assets/Gudel.webp',
+    content: `<h3 style="text-align: center; margin-bottom: 15px;">SEJARAH NAMA DESA KEDUNGGUDEL</h3>
+<p style="margin-bottom: 10px;">Dalam menggali sejarah Desa Kedunggudel banyak versi yang sama-sama punya argument yang kuat.</p>
+<ol style="padding-left: 20px; margin-bottom: 10px;">
+<li style="margin-bottom: 10px;">Pohon yang ditemukan Kyai Lombok itu sebenarnya Pohon Tanjung yang tumbuh berimpitan/ kembar sehingga oleh Kyai Lombok diberi nama Dayak Dampit, yang akhirnya dengan suatu peristiwa kelangenan Kyai Lombok yaitu berupa anak kerbau (gudel) itu tenggelam di kedung Sungai Bengawan Solo, sehingga nama desa Dayak Dampit diubah menjadi Desa "Kedunggudel"</li>
+<li style="margin-bottom: 10px;">Pada pemerintahan saat itu dipimpin oleh seorang demang, ketika Demang itu akan punya hajat/ punya kerja, minta pertolongan pada penguasa di kedung itu untuk minta ikan, dan diberinya ikan itu sejumlah 4 pikul &plusmn; 2 kwintal dengan perjanjian akan dikembalikan selesai hajatan dengan bentuk yang berbeda. Sudah lama Ki Demang tidak dapat mengembalikannya, maka sebagai gantinya kelangenan (kesayangan) Ki Demang berupa anak kerbaunya sebagai gantinya, untuk mengenang peristiwa itu maka nama Desa Dayak Dampit diubah menjadi "Kedunggudel",</li>
+<li style="margin-bottom: 10px;">
+Penulis menganalisa ditinjau dari sudut filsafat bahwa nama "Kedunggudel" terdiri dari dua (2) suku kata yang bermakna sangat dalam.<br><br>
+Kedunggudel =&gt; "Kedung" dan "Gudel"<br><br>
+<strong>Kedung</strong>: Berarti tempat yang dalam<br>
+<strong>Gudel</strong>: Anak kerbau sebagai gambaran, Generasi penerus (generasi muda)<br><br>
+Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk, dan membina genersi muda agar kelak dapat menjadi anggota masyarkat yang berguna bagi nusa dan bangsa.
+</li>
+</ol>`
   }
 ];
 
@@ -240,6 +257,20 @@ function createFlipbook(startPage) {
       pageDiv.innerHTML = `
         <div class="content-wrapper custom-scroll" style="padding-bottom: 20px; padding-right: 15px;">
           ${data.content}
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-F (FOTO ATAS + TEKS SCROLL BAWAH) ---
+    else if (data.layout === 'layout-f') {
+      pageDiv.innerHTML = `
+        <div class="page-9-wrapper">
+          <figure class="polaroid-gudel">
+            <img src="${data.image}" alt="Gudel (Anak Kerbau)" class="polaroid-img-gudel" draggable="false">
+            <figcaption class="polaroid-caption">Gudel (Anak Kerbau)</figcaption>
+          </figure>
+          <div class="content-wrapper custom-scroll" style="flex: 1; padding-right: 12px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c;">
+            ${data.content}
+          </div>
         </div>
       `;
     }

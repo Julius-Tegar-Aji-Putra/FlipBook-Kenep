@@ -250,6 +250,52 @@ body {
 }
 
 /* ==============================================
+   LAYOUT F (GAMBAR ATAS + TEKS SCROLL BAWAH)
+   ============================================== */
+.page-9-wrapper {
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  padding: 6% 7%; 
+  justify-content: flex-start; 
+  gap: 15px;
+  overflow: hidden;
+}
+
+.polaroid-gudel {
+  display: inline-block;
+  width: 50%;
+  max-width: 200px;
+  margin: 0 auto 25px auto;
+  background: white;
+  padding: 8px 8px 12px 8px;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+  border: 1px solid #ddd;
+  transform: rotate(2deg);
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.polaroid-img-gudel {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.polaroid-caption {
+  text-align: center;
+  font-size: 11px;
+  color: #444;
+  font-style: italic;
+  margin-top: 8px;
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* ==============================================
    LAYOUT E (TEKS ATAS + GAMBAR POLAROID BAWAH)
    ============================================== */
 .layout-e-content {
