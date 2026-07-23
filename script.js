@@ -17,6 +17,84 @@ const BOOK_PAGES = [
   },
   {
     layout: 'layout-d',
+    content: `<h4 style="text-align: center; margin-bottom: 20px; font-family: inherit; font-size: 14px; letter-spacing: 2px; border-bottom: 1px solid #444; padding-bottom: 5px;">DAFTAR ISI</h4>
+
+<!-- Pengaturan Gaya CSS Inline untuk baris Daftar Isi (TOC Item) -->
+<div style="display: flex; flex-direction: column; gap: 8px;">
+
+    <!-- Item: SAMBUTAN LURAH -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(2);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span style="font-weight: 600;">SAMBUTAN LURAH KENEP</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span style="font-weight: 600;">2</span>
+    </div>
+
+    <!-- Item: KATA PENGANTAR -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(3);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span style="font-weight: 600;">KATA PENGANTAR</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span style="font-weight: 600;">3</span>
+    </div>
+
+    <!-- Item: BAB I -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(4);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; margin-top: 8px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span style="font-weight: bold;">I. RIWAYAT DESA & MASJID DARUSSALAM</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span style="font-weight: bold;">4</span>
+    </div>
+
+    <!-- Sub-item: A -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(4);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 15px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span>A. Dekade Sebelum Islam</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span>4</span>
+    </div>
+
+    <!-- Sub-item: B -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(11);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 15px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span>B. Dekade Perjuangan</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span>11</span>
+    </div>
+    
+    <!-- Sub-sub-item: B.1 -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(12);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 30px; font-size: 11.5px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span>1. Masa Perang Diponegoro</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span>12</span>
+    </div>
+
+    <!-- Sub-sub-item: B.2 -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(14);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 30px; font-size: 11.5px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span>2. Masa Perang Kemerdekaan</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span>14</span>
+    </div>
+
+    <!-- Sub-item: C -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(15);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 15px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span>C. Dekade Paska Peperangan</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span>15</span>
+    </div>
+
+    <!-- Item: BAB II -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(21);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; margin-top: 8px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span style="font-weight: bold;">II. PENUTUP</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span style="font-weight: bold;">21</span>
+    </div>
+
+    <!-- Item: DAFTAR PUSTAKA -->
+    <div onclick="if(window.pageFlip) window.pageFlip.flip(22);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <span style="font-weight: bold;">DAFTAR PUSTAKA</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span style="font-weight: bold;">22</span>
+    </div>
+</div>`
+  },
+  {
+    layout: 'layout-d',
     content: `<h2 style="text-align: center; margin-bottom: 5%;">SAMBUTAN LURAH KENEP</h2>
 <p>Assalamu 'alaikum Wr.Wb.</p>
 <p>Kami selaku pemerintah Kelurahan Kenep memberikan penghargaan yang sebesar-besarnya kepada penulis yang telah meluangkan waktu, mengorbankan gagasan untuk menggali nilai-nilai sejarah Kelurahan Kenep yang sudah terpendam.</p>
