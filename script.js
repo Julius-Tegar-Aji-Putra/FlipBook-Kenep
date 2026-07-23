@@ -209,10 +209,32 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     image: 'assets/Sungai Begawan Solo 3.webp',
     imageAlt: 'Meluapnya Bengawan Solo',
     caption: 'Sungai Begawan Solo',
-    content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">KETEGANGAN POLITIK & "BEDAH SOLO"</h4>
+    content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">KETEGANGAN POLITIK &<br>"BEDAH SOLO"</h4>
 <p style="margin-bottom: 10px;">Karena Kyai Demang sudah sepuh pada tahun 1960, beliau mengangkat asisten. Di sekitar tahun ini perpustakaan desa didirikan oleh Bapak Sujita. Disekitar tahun (1965) karena pemerintah mengeluarkan UU Pertanahan (Land Reform) banyak kaum priyayi Kedunggudel yang memiliki tanah dan sawah di daerah luar daerah kehilangan hak kepemilikannya.</p>
 <p style="margin-bottom: 10px;">Ketegangan masyarakat terjadi pada 1965 tatkala Kedunggudel dipengaruhi keadaan politik negara, masyarakat Kedunggudel terbagi pada tiga partai besar yaitu PKI, PNI, dan Masyumi.</p>
 <p style="margin-bottom: 10px;">Setelah ketegangan mereda tahun 1966 Kedunggudel menjadi lautan karena meluapnya Bengawan Solo yang lebih dikenal istilah "Bedah Solo". Pada tahun 1967, Kyai Demang resmi Purna tugas dan pada tanggal 1 Juli 1969 beliau meninggal.</p>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">ERA KEEMASAN<br>(TAHUN 70-AN)</h4>
+<p style="margin-bottom: 5px;">Pada tahun 1968 diadakan Pilkades I di Kedunggudel yang diikuti 5 calon yaitu:</p>
+<ol style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
+    <li>Bapak Pono Suharjo</li>
+    <li>Bapak Cipto Isman</li>
+    <li>Bapak Tiknyo</li>
+    <li>Bapak Dalhari</li>
+    <li>Bapak Wanto Diharjo</li>
+</ol>
+<p style="margin-bottom: 10px;">Pilkades pertama ini juga adalah Pilkades terakhir bagi masyarakat Kedunggudel dan dari 5 calon tersebut dimenangkan asisten demang Bapak Pono Suharjo.</p>
+<p style="margin-bottom: 8px;">Karena keadaan negara tahun 70an ini stabil berimbas pada majunya masyarakat pedesaan. Di Kedunggudel industri kecil tumbuh subur, sehingga menjadi tujuan bagi orang-orang luar daerah untuk mencari pekerjaan. Pertumbuhan ekonomi yang cepat bagi para pengusaha di Kedunggudel membawa dampak pada berbagai bidang, seperti:</p>
+<ol style="margin-top: 0; margin-bottom: 12px; padding-left: 20px;">
+    <li style="margin-bottom: 6px;"><strong>Bidang Pendidikan:</strong> Kedunggudel mempunyai sekolah dasar dimana daerah lain sekolah dasar belum ada.</li>
+    <li style="margin-bottom: 6px;"><strong>Bidang Olahraga:</strong> Beberapa kali pemuda-pemuda Kedunggudel mendapat juara tingkat Kabupaten dan Provinsi. Diantaranya: Sepak bola, dayung, Volly, Badminton.</li>
+    <li style="margin-bottom: 6px;"><strong>Bidang Seni:</strong> Di Kedunggudel waktu itu ada banyak kelompok karawitan, seni tari, dipimpin oleh Alm. Bapak Tejo, Kismo, Yadi. Seni rebana jedoran santri swara, orkes keroncong, dll.</li>
+    <li style="margin-bottom: 6px;"><strong>Bidang Agama:</strong> Di Masjid diadakan peringatan-peringatan hari besar Islam diperingati warga Kedunggudel dengan meriah. Pada tahun 1979 secara swadaya memugar (meninggikan) lantai masjid.</li>
+    <li style="margin-bottom: 6px;"><strong>Bidang Teknologi:</strong> Warga Kedunggudel mulai menggunakan barang-barang Teknologi modern. Seperti: Mobil, sepeda motor, televisi, radio, dll.</li>
+</ol>
+<p style="margin-bottom: 10px; font-style: italic; text-align: center;">"Di tahun-tahun ini Kedunggudel suasananya bagaikan kampung Laweyan di Kota Surakarta."</p>`
   }
 ];
 
