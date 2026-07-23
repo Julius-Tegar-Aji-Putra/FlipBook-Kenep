@@ -142,6 +142,12 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     content: `<h4 style="text-align: center; margin-bottom: 8px; font-family: inherit; font-size: 13.5px;">B. DEKADE PERJUANGAN<br>(KONFLIK MATARAM)</h4>
 <p style="margin-bottom: 8px;">Tahun 1675 terjadilah konflik dengan penguasa Giri Kedaton yang dibawahi pimpinan Amangkurat I (1675-1677). Penyebab konflik karena perkembangan pesantren memiliki kedekatan dengan daerah Jawa Timur yang akan mengganggu stabilitas politik Kerajaan Mataram.</p>
 <p style="margin-bottom: 8px;">Akibat dari kecurigaan Mataram, maka dihancurkan pesantren-pesantren itu beserta tempat-tempat ibadah yang lain. Dampak hancurnya kondisi ini di Desa Kedunggudel, perkembangan agama Islam sempat terhambat.</p>`
+  },
+  {
+    layout: 'layout-h',
+    content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">1. MASA PERANG DIPONEGORO</h4>
+<p style="margin-bottom: 10px;">Pada tahun 1825-1830 bangsa indonesia yang dipelopori Pangeran Diponegoro mengadakan perlawanan dengan Belanda.</p>
+<p style="margin-bottom: 10px;">Pangeran Diponegoro sering mengadakan pertemuan di Masjid Kedunggudel dengan Pakubuwono IV, konspirasi ini dicium oleh Belanda akhirnya Kedunggudel dihancurkan yang kedua kalinya.</p>`
   }
 ];
 
@@ -306,6 +312,28 @@ function createFlipbook(startPage) {
             <figcaption style="text-align: center; font-size: 11px; color: #555; font-style: italic; margin-top: 8px; font-family: inherit;">${data.caption}</figcaption>
           </figure>
           <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 8px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
+            ${data.content}
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-H (2 GAMBAR HORIZONTAL ATAS + TEKS SCROLL BAWAH) ---
+    else if (data.layout === 'layout-h') {
+      pageDiv.innerHTML = `
+        <div class="layout-h">
+          <div class="polaroid-row" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 12px; width: 100%; margin-bottom: 12px;">
+            <!-- Foto 1: Pangeran Diponegoro -->
+            <figure style="width: 42%; max-width: 140px; background: white; padding: 5px 5px 12px 5px; box-shadow: 2px 3px 8px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(-3deg); margin: 0; box-sizing: border-box;">
+                <img src="assets/Pangeran Diponegoro.webp" alt="Pangeran Diponegoro" style="width: 100%; height: 110px; object-fit: cover; display: block;" draggable="false">
+                <figcaption style="text-align: center; font-size: 10px; color: #444; font-style: italic; margin-top: 5px; font-family: inherit;">Pangeran Diponegoro</figcaption>
+            </figure>
+            <!-- Foto 2: Pakubuwono IV -->
+            <figure style="width: 42%; max-width: 140px; background: white; padding: 5px 5px 12px 5px; box-shadow: 2px 3px 8px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(3deg); margin: 0; box-sizing: border-box;">
+                <img src="assets/Pakubuwono IV.webp" alt="Pakubuwono IV" style="width: 100%; height: 110px; object-fit: cover; display: block;" draggable="false">
+                <figcaption style="text-align: center; font-size: 10px; color: #444; font-style: italic; margin-top: 5px; font-family: inherit;">Pakubuwono IV</figcaption>
+            </figure>
+          </div>
+          <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 10px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
             ${data.content}
           </div>
         </div>
