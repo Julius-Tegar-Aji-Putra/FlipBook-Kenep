@@ -109,7 +109,10 @@ const BOOK_PAGES = [
   },
   {
     layout: 'layout-f',
+    imageClass: 'polaroid-gudel',
+    imageImgClass: 'polaroid-img-gudel',
     image: 'assets/Gudel.webp',
+    caption: 'Gudel (Anak Kerbau)',
     content: `<h3 style="text-align: center; margin-bottom: 15px;">SEJARAH NAMA DESA KEDUNGGUDEL</h3>
 <p style="margin-bottom: 10px;">Dalam menggali sejarah Desa Kedunggudel banyak versi yang sama-sama punya argument yang kuat.</p>
 <ol style="padding-left: 20px; margin-bottom: 10px;">
@@ -123,6 +126,13 @@ Kedunggudel =&gt; "Kedung" dan "Gudel"<br><br>
 Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk, dan membina genersi muda agar kelak dapat menjadi anggota masyarkat yang berguna bagi nusa dan bangsa.
 </li>
 </ol>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h3 style="text-align: center; margin-bottom: 20px;">BERDIRINYA MASJID TIBAN</h3>
+<p style="margin-bottom: 12px;">Sejalan dengan perjalanan waktu perkembangan Islam yang sangat pesat, sehingga Kyai Sodiq dan teman-temannya bermusyawarah untuk mewadahi kegiatan keagamaan dengan membangun masjid. Dengan gotong royong penduduk Dayak Dampit berdirilah sebuah Masjid yang oleh kesepakatan warga diberi nama "Masjid TIBAN&rdquo;.</p>
+<p style="margin-bottom: 12px;">Tempat pembuatan masjid diletakkan pada posisi sebelah barat pohon Dayak Dampit yang nama aslinya pohon itu pohon gendayaan (pohon tanjung). Dengan berdirinya masjid ini kegiatan keagamanan khususnya agama Islam sangat pesat sehingga menjadi pusat perhatian para penguasa keraton.</p>
+<p style="margin-bottom: 12px;">Akhir hayatnya Kyai Lombok, Ny Lombok dan Kyai Gampang dimakamkan di sebelah barat masjid Tiban itu, dan Nyai Lombok dimakamkan disebelah timur masjid (makam terpisah).</p>`
   }
 ];
 
@@ -255,20 +265,24 @@ function createFlipbook(startPage) {
     // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
     else if (data.layout === 'layout-d') {
       pageDiv.innerHTML = `
-        <div class="content-wrapper custom-scroll" style="padding-bottom: 20px; padding-right: 15px;">
+        <div class="content-wrapper custom-scroll" style="padding-bottom: 20px; padding-right: 15px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c; font-family: var(--font-serif);">
           ${data.content}
         </div>
       `;
     }
     // --- STRUKTUR LAYOUT-F (FOTO ATAS + TEKS SCROLL BAWAH) ---
     else if (data.layout === 'layout-f') {
+      const imgClass = data.imageClass || 'polaroid-gudel';
+      const imgImgClass = data.imageImgClass || 'polaroid-img-gudel';
+      const cap = data.caption || 'Gambar';
+      
       pageDiv.innerHTML = `
-        <div class="page-9-wrapper">
-          <figure class="polaroid-gudel">
-            <img src="${data.image}" alt="Gudel (Anak Kerbau)" class="polaroid-img-gudel" draggable="false">
-            <figcaption class="polaroid-caption">Gudel (Anak Kerbau)</figcaption>
+        <div class="layout-f-wrapper">
+          <figure class="${imgClass}">
+            <img src="${data.image}" alt="${cap}" class="${imgImgClass}" draggable="false">
+            <figcaption class="polaroid-caption">${cap}</figcaption>
           </figure>
-          <div class="content-wrapper custom-scroll" style="flex: 1; padding-right: 12px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c;">
+          <div class="content-wrapper custom-scroll" style="flex: 1; padding-right: 12px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c; font-family: var(--font-serif);">
             ${data.content}
           </div>
         </div>

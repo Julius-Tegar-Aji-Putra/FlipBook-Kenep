@@ -252,7 +252,7 @@ body {
 /* ==============================================
    LAYOUT F (GAMBAR ATAS + TEKS SCROLL BAWAH)
    ============================================== */
-.page-9-wrapper {
+.layout-f-wrapper {
   display: flex; 
   flex-direction: column; 
   height: 100%; 
@@ -262,21 +262,44 @@ body {
   overflow: hidden;
 }
 
-.polaroid-gudel {
+.layout-f-wrapper p, .layout-f-wrapper ol, .layout-f-wrapper ul, .layout-f-wrapper li {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: left;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+.layout-f-wrapper h3 {
+  font-family: var(--font-serif);
+  font-style: normal;
+}
+
+.polaroid-gudel, .polaroid-masjid {
   display: inline-block;
-  width: 50%;
-  max-width: 200px;
   margin: 0 auto 25px auto;
   background: white;
   padding: 8px 8px 12px 8px;
   box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
   border: 1px solid #ddd;
-  transform: rotate(2deg);
   align-self: center;
   flex-shrink: 0;
 }
 
-.polaroid-img-gudel {
+.polaroid-gudel {
+  width: 50%;
+  max-width: 200px;
+  transform: rotate(2deg);
+}
+
+.polaroid-masjid {
+  width: 60%;
+  max-width: 250px;
+  transform: rotate(-2deg);
+}
+
+.polaroid-img-gudel, .polaroid-img-masjid {
   width: 100%;
   height: auto;
   object-fit: cover;
