@@ -133,6 +133,15 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
 <p style="margin-bottom: 12px;">Sejalan dengan perjalanan waktu perkembangan Islam yang sangat pesat, sehingga Kyai Sodiq dan teman-temannya bermusyawarah untuk mewadahi kegiatan keagamaan dengan membangun masjid. Dengan gotong royong penduduk Dayak Dampit berdirilah sebuah Masjid yang oleh kesepakatan warga diberi nama "Masjid TIBAN&rdquo;.</p>
 <p style="margin-bottom: 12px;">Tempat pembuatan masjid diletakkan pada posisi sebelah barat pohon Dayak Dampit yang nama aslinya pohon itu pohon gendayaan (pohon tanjung). Dengan berdirinya masjid ini kegiatan keagamanan khususnya agama Islam sangat pesat sehingga menjadi pusat perhatian para penguasa keraton.</p>
 <p style="margin-bottom: 12px;">Akhir hayatnya Kyai Lombok, Ny Lombok dan Kyai Gampang dimakamkan di sebelah barat masjid Tiban itu, dan Nyai Lombok dimakamkan disebelah timur masjid (makam terpisah).</p>`
+  },
+  {
+    layout: 'layout-g',
+    image: 'assets/Sungai Begawan Solo 2.webp',
+    imageAlt: 'Sungai Bengawan Solo',
+    caption: 'Kawasan Aliran Sungai Bengawan Solo & Tapak Sejarah Mataram',
+    content: `<h4 style="text-align: center; margin-bottom: 8px; font-family: inherit; font-size: 13.5px;">B. DEKADE PERJUANGAN<br>(KONFLIK MATARAM)</h4>
+<p style="margin-bottom: 8px;">Tahun 1675 terjadilah konflik dengan penguasa Giri Kedaton yang dibawahi pimpinan Amangkurat I (1675-1677). Penyebab konflik karena perkembangan pesantren memiliki kedekatan dengan daerah Jawa Timur yang akan mengganggu stabilitas politik Kerajaan Mataram.</p>
+<p style="margin-bottom: 8px;">Akibat dari kecurigaan Mataram, maka dihancurkan pesantren-pesantren itu beserta tempat-tempat ibadah yang lain. Dampak hancurnya kondisi ini di Desa Kedunggudel, perkembangan agama Islam sempat terhambat.</p>`
   }
 ];
 
@@ -283,6 +292,20 @@ function createFlipbook(startPage) {
             <figcaption class="polaroid-caption">${cap}</figcaption>
           </figure>
           <div class="content-wrapper custom-scroll" style="flex: 1; padding-right: 12px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c; font-family: var(--font-serif);">
+            ${data.content}
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-G (GAMBAR MENDOMINASI ATAS + TEKS RINGKAS BAWAH) ---
+    else if (data.layout === 'layout-g') {
+      pageDiv.innerHTML = `
+        <div class="layout-g-wrapper">
+          <figure class="landscape-historic-img" style="width: 85%; height: 48%; margin: 0 auto 12px auto; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #fff; padding: 5px 5px 12px 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); border: 1px solid #d0d0d0; box-sizing: border-box;">
+            <img src="${data.image}" alt="${data.imageAlt}" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(0.25) contrast(1.1) brightness(0.95);" draggable="false">
+            <figcaption style="text-align: center; font-size: 11px; color: #555; font-style: italic; margin-top: 8px; font-family: inherit;">${data.caption}</figcaption>
+          </figure>
+          <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 8px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
             ${data.content}
           </div>
         </div>

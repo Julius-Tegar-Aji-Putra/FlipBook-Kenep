@@ -319,6 +319,25 @@ body {
 }
 
 /* ==============================================
+   LAYOUT G (GAMBAR MENDOMINASI 70% ATAS + TEKS BAWAH)
+   ============================================== */
+.layout-g-wrapper {
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  padding: 5% 6%; 
+  justify-content: space-between; 
+  gap: 10px;
+  overflow: hidden;
+  font-family: var(--font-serif);
+}
+
+.layout-g-wrapper p {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* ==============================================
    LAYOUT E (TEKS ATAS + GAMBAR POLAROID BAWAH)
    ============================================== */
 .layout-e-content {
