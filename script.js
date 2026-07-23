@@ -148,6 +148,22 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">1. MASA PERANG DIPONEGORO</h4>
 <p style="margin-bottom: 10px;">Pada tahun 1825-1830 bangsa indonesia yang dipelopori Pangeran Diponegoro mengadakan perlawanan dengan Belanda.</p>
 <p style="margin-bottom: 10px;">Pangeran Diponegoro sering mengadakan pertemuan di Masjid Kedunggudel dengan Pakubuwono IV, konspirasi ini dicium oleh Belanda akhirnya Kedunggudel dihancurkan yang kedua kalinya.</p>`
+  },
+  {
+    layout: 'layout-i',
+    content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">PEMUGARAN & SENGKALAN</h4>
+<p style="margin-bottom: 5px;">Paska perang Diponegoro para Kyai dan tokoh-tokoh agama mulai menata kehidupan bersama di Kedunggudel. Tokoh-tokoh itu antara lain:</p>
+<ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
+    <li>KRMT Taruna Negara</li>
+    <li>P. Selarong</li>
+    <li>Kyai Jamsari</li>
+    <li>Kyai Gampang</li>
+    <li>Kyai Slamet</li>
+</ol>
+<p style="margin-bottom: 10px;">Tokoh-tokoh itu bermusyawarah untuk memperbaiki kondisi fisik Masjid Kedunggudel yang juga mendapat restu dari SISKS PB VIII (Pangeran Purboyo).</p>
+<p style="margin-bottom: 10px;">Pemugaran Masjid pada hari Minggu Pon tanggal 18 Jumadil Awal 1765 H berisengkalan (pepeling): "MARGANING RASA PANDITA NABI" bila dengan kata-kata LIMA NENEM PITU TUNGGAL (1765H). Prasasti ini dimunculkan untuk mengenang waktu pemugaran masjid TIBAN di Kedunggudel.</p>
+<p style="margin-bottom: 10px;">Paska perang Diponegoro, pengikut-pengikut setia dari Pangeran Diponegoro melepaskan atribut keprajuritan selanjutnya memilih pakai atribut seorang Dai (Mubaligh).</p>
+<p style="margin-bottom: 10px;">Mulai saat inilah Islam di Kedunggudel tumbuh kembali dan aktivitas pun maju, sehingga beliau Pangeran Pakubuwono IX (Bangun Topo) bekenan todhak (berkunjung) ke Kedunggudel untuk bertemu dengan tokoh-tokoh Islam para Kyai di Kedunggudel.</p>`
   }
 ];
 
@@ -335,6 +351,28 @@ function createFlipbook(startPage) {
           </div>
           <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 10px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
             ${data.content}
+          </div>
+        </div>
+      `;
+    }
+    // --- STRUKTUR LAYOUT-I (TEKS SCROLL ATAS + GAMBAR BAWAH) ---
+    else if (data.layout === 'layout-i') {
+      pageDiv.innerHTML = `
+        <div class="layout-i">
+          <div class="content-wrapper custom-scroll" style="flex: 1; overflow-y: auto; padding-right: 10px; text-align: left; font-size: 12.5px; line-height: 1.6; color: #2c2c2c; font-family: inherit;">
+            ${data.content}
+          </div>
+          <div class="polaroid-row-bottom" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 15px; width: 100%; flex-shrink: 0; box-sizing: border-box; margin-top: auto;">
+            <!-- Foto 1: Masjid Kedunggudel -->
+            <figure class="polaroid" style="width: 45%; max-width: 140px; background: white; padding: 5px 5px 12px 5px; box-shadow: 2px 3px 8px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(-2deg); margin: 0; box-sizing: border-box;">
+                <img src="assets/Fasad Masjid Darussalam.webp" alt="Masjid Kedunggudel" style="width: 100%; height: 100px; object-fit: cover; display: block;" draggable="false">
+                <figcaption style="text-align: center; font-size: 10px; color: #444; font-style: italic; margin-top: 5px; font-family: inherit;">Masjid Kedunggudel</figcaption>
+            </figure>
+            <!-- Foto 2: Mimbar Masjid -->
+            <figure class="polaroid" style="width: 45%; max-width: 140px; background: white; padding: 5px 5px 12px 5px; box-shadow: 2px 3px 8px rgba(0,0,0,0.2); border: 1px solid #ddd; transform: rotate(2deg); margin: 0; box-sizing: border-box;">
+                <img src="assets/Mimbar Masjid Darussalam.webp" alt="Mimbar Masjid Darussalam" style="width: 100%; height: 100px; object-fit: cover; display: block;" draggable="false">
+                <figcaption style="text-align: center; font-size: 10px; color: #444; font-style: italic; margin-top: 5px; font-family: inherit;">Mimbar Masjid</figcaption>
+            </figure>
           </div>
         </div>
       `;
