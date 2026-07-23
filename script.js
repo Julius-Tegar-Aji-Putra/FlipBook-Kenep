@@ -8,12 +8,57 @@
  */
 
 const BOOK_PAGES = [
-  'https://placehold.co/400x600/2d1b69/e8a838?text=Halaman+1%0ACover',
-  'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+2%0APembuka',
-  'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+3%0ACerita',
-  'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+4%0ACerita',
-  'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+5%0ACerita',
-  'https://placehold.co/400x600/2d1b69/e8a838?text=Halaman+6%0APenutup',
+  {
+    layout: 'layout-a',
+    image: 'assets/Gapura Desa Kreatif Kenep.webp',
+    title: 'NGUNGAK SEJARAH: Desa Kedunggudel & Masjid Darussalam',
+    subtitle: 'Disunting oleh: Drs. H. Mulyono & Sehono',
+    motto: 'Motto: Tak Kenal Maka Tak Sayang — JASMERAH (Jangan Sekali-kali Meninggalkan Sejarah)'
+  },
+  {
+    layout: 'layout-d',
+    content: `<h2 style="text-align: center; margin-bottom: 5%;">SAMBUTAN LURAH KENEP</h2>
+<p>Assalamu 'alaikum Wr.Wb.</p>
+<p>Kami selaku pemerintah Kelurahan Kenep memberikan penghargaan yang sebesar-besarnya kepada penulis yang telah meluangkan waktu, mengorbankan gagasan untuk menggali nilai-nilai sejarah Kelurahan Kenep yang sudah terpendam.</p>
+<p>Curahan pikiran penulis patutlah kita hargai yang akhirnya diharapkan sejarah ini dapat membangkitkan minat kepada generasi penerus agar mampu mengenang potensi sejarah yang ada di daerahnya.</p>
+<p>Pengungkapan kembali sejarah ini merupakan upaya dalam mengenalkan kepada masyarakat madani sekaligus sebagai pelengkap adanya program "Desa Wisata di Kelurahan Kenep". Sehingga dapat diketahui dan difahami oleh seluruh masyarakat yang berkunjung.</p>
+<p>Kami berharap agar buku ini dapat menambah khasanah ilmu pengetahuan bagi warga Kelurahan Kenep dan warga Kedunggudel pada khususnya. Semoga Allah memberikan jalan keluar yang terbaik sesuai dengan kehendakNya. Amin.</p>
+<p>Terimakasih</p>
+<p>Wassalamu 'alaikum Wr. Wb.</p>
+<br>
+<p>Lurah Kenep</p>
+<p><strong>SOGIYATNO S.SOS</strong><br>Nip. 19590513 198503 1 012</p>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h2 style="text-align: center; margin-bottom: 5%;">KATA PENGANTAR</h2>
+<p>Assalamu'alaikum Wr. Wb.</p>
+<p>Berkat hidayah Allah SWT, penulis mencoba untuk mengungkap kembali Sejarah Desa Kedunggudel dan Masjid Darussalam.</p>
+<p>Jasmerah inilah kata sakti yang simpel tapi bermakna luas. JASMERAH memang suatu slogan dari tokoh sejarah tersohor di lingkungan Regional, Nasional atau Internasional yang patut kita renungkan dan kita kenang. JASMERAH adalah kependekan dari kata-kata "Jangan Suka Meninggalkan Sejarah".</p>
+<p>Terkait dengan suatu peristiwa yang sangat pelik untuk diketahui, direnungkan dan perlu dimengerti bagi masyarakat di desa Kedunggudel. Nama desa yang penuh misterius dan bersejarah ini, sudah terkubur dalam bayangan generasi penerus masa sekarang. Terpengaruh kemajuan Teknologi Informasi yang canggih saat ini baru menjamur, mempunyai dampak hilangnya pengertian dan pemahaman suatu sejarah yang sebenarnya perlu sekali dapat disikapi oleh generasi bangsa.</p>
+<p>Sejarah ini tidak lapuk karena panas dan tidak luntur karena hujan. Luntur dan lapuknya suatu sejarah apabila generasi penerus tidak punya referensi yang ada di daerah ini, karena belum ada gagasan untuk itu, seharusnya wadah perpustakaan tersedia penampungan sejarah itu. Oleh sebab itu, penulis mencoba untuk menguak kembali sejarah yang ada di Desa Kedunggudel yang penuh sejarah dan kenangan.</p>
+<p>Ungkapan ini dikandung maksud agar sejarah ini menjadi aset budaya dan penggugah tidurnya pemahaman bagi masyarakat Kedunggudel. Lebih jauh harapan penulis, pemahaman sejarah suatu tempat dapat digali dan difahami bagi warga umumnya dan bagi generasi muda khususnya, agar dapat mengenang jerih payah para pembina generasi yang patut kita sikapi secara positif.</p>
+<p>Konsep DESA WISATA di Kedunggudel sudah dicanangkan tokoh-tokoh generasi penerus untuk ditampilkan pada khalayak umum agar gagasan dapat dilengkapi dengan adanya artikel tentang Desa Kedunggudel.</p>
+<p>Akhirnya penulis menyadari bahwa dalam menggali potensi yang unik ini dapat menjadi acuan dalam pemahaman makna Desa Kedunggudel, bila masih ada kesalahan penulis mohon maaf.</p>
+<p>Wassalamu'alaikum Wr. Wb.</p>
+<br>
+<p>Penulis<br><strong>Drs. H. Mulyono</strong></p>`
+  },
+  {
+    layout: 'layout-b',
+    image: 'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+4',
+    text: 'Lanjutan cerita...'
+  },
+  {
+    layout: 'layout-b',
+    image: 'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+5',
+    text: 'Cerita rakyat tentang tokoh-tokoh penting di masa lalu.'
+  },
+  {
+    layout: 'layout-b',
+    image: 'https://placehold.co/400x600/2d1b69/e8a838?text=Halaman+6',
+    text: 'Penutup dari buku sejarah desa.'
+  }
 ];
 
 const flipbookEl = document.getElementById('flipbook');
@@ -95,7 +140,7 @@ function createFlipbook(startPage) {
   pageFlip = new St.PageFlip(flipbookEl, {
     width: size.width,
     height: size.height,
-    size: 'fixed', // Gunakan fixed agar perhitungan aspect ratio presisi tanpa distorsi
+    size: 'fixed',
     showCover: true,
     usePortrait: true, // Fitur sakti untuk mode 1 halaman di HP
     
@@ -113,9 +158,9 @@ function createFlipbook(startPage) {
     startPage: startPage
   });
 
-  const pages = BOOK_PAGES.map((src, index) => {
+  const pages = BOOK_PAGES.map((data, index) => {
     const pageDiv = document.createElement('div');
-    pageDiv.className = 'page';
+    pageDiv.className = `page ${data.layout}`;
     
     if (index % 2 === 0) {
       pageDiv.classList.add('--right');
@@ -125,12 +170,41 @@ function createFlipbook(startPage) {
     
     pageDiv.dataset.pageIndex = index;
 
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = `Halaman ${index + 1}`;
-    img.draggable = false;
+    // --- STRUKTUR LAYOUT-A (COVER) ---
+    if (data.layout === 'layout-a') {
+      pageDiv.innerHTML = `
+        <div class="page-content cover-content">
+          <div class="cover-header">
+            <h1 class="cover-title">${data.title}</h1>
+            <p class="cover-subtitle">${data.subtitle}</p>
+          </div>
+          <div class="photo-container">
+            <img src="${data.image}" alt="Cover Image" draggable="false">
+          </div>
+          <div class="cover-footer">
+            <p class="cover-motto"><i>${data.motto}</i></p>
+          </div>
+        </div>
+      `;
+    } 
+    // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
+    else if (data.layout === 'layout-d') {
+      pageDiv.innerHTML = data.content;
+    }
+    // --- STRUKTUR LAYOUT-B (KONTEN BIASA) ---
+    else {
+      pageDiv.innerHTML = `
+        <div class="page-content">
+          <div class="photo-container">
+            <img src="${data.image}" alt="Halaman ${index + 1}" draggable="false">
+          </div>
+          <div class="text-container">
+            <p><strong>Halaman ${index + 1}</strong><br><br>${data.text}</p>
+          </div>
+        </div>
+      `;
+    }
 
-    pageDiv.appendChild(img);
     return pageDiv;
   });
 

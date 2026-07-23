@@ -29,32 +29,18 @@
        StPageFlip akan me-render canvas/div di sini
   ============================================= -->
   <main class="flipbook-wrapper" id="flipbook-wrapper">
+    <button class="btn-side prev" id="btn-prev" aria-label="Halaman Sebelumnya">❮</button>
     <div id="flipbook" class="flipbook"></div>
+    <button class="btn-side next" id="btn-next" aria-label="Halaman Berikutnya">❯</button>
   </main>
-
-  <!-- ============================================
-       NAVIGATION CONTROLS
-  ============================================= -->
-  <nav class="book-controls" id="book-controls">
-    <button class="btn-nav" id="btn-prev" aria-label="Halaman Sebelumnya">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      <span>Sebelumnya</span>
-    </button>
-
-    <div class="page-indicator" id="page-indicator">
-      <span id="current-page">1</span> / <span id="total-pages">6</span>
-    </div>
-
-    <button class="btn-nav" id="btn-next" aria-label="Halaman Berikutnya">
-      <span>Berikutnya</span>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
-    </button>
-  </nav>
 
   <!-- ============================================
        FOOTER
   ============================================= -->
   <footer class="app-footer" id="app-footer">
+    <div class="page-indicator" id="page-indicator">
+      <span id="current-page">1</span> / <span id="total-pages">6</span>
+    </div>
     <p>Dibuat dengan ❤️ untuk pelestarian budaya lokal</p>
   </footer>
 

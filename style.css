@@ -65,10 +65,13 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: var(--color-text);
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding-bottom: 25px;
   overflow: hidden;
 }
 
@@ -79,8 +82,8 @@ body {
   width: 100%;
   text-align: center;
   padding: var(--space-lg) var(--space-md) var(--space-sm);
+  margin-bottom: 25px;
   font-family: var(--font-serif);
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
   color: #fff; /* Biar kontras dengan background gelap */
 }
 
@@ -88,6 +91,7 @@ body {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 700;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9), 0px 0px 12px rgba(0,0,0,0.8);
 }
 
 .app-subtitle {
@@ -102,21 +106,21 @@ body {
    FLIPBOOK WRAPPER
    ============================================== */
 .flipbook-wrapper {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: var(--space-sm) var(--space-md);
   position: relative;
-  min-height: 0; /* Penting agar flex item bisa mengecil */
+  min-height: 0;
   min-width: 0;
 }
 
 .flipbook {
   position: relative;
   z-index: 1;
-  box-shadow: var(--shadow-book);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
 /* ==============================================
@@ -126,10 +130,6 @@ body {
   background-color: var(--color-paper);
   background-image: linear-gradient(120deg, var(--color-paper) 0%, var(--color-paper-alt) 100%);
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.05); /* Vignette effect */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   border: 1px solid rgba(0,0,0,0.1);
 }
@@ -144,127 +144,225 @@ body {
   box-shadow: inset 10px 0 20px rgba(0, 0, 0, 0.08), inset 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Scrapbook Photo Style */
-.page img {
-  padding: 8px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  box-shadow: var(--shadow-photo);
-  object-fit: contain;
-  max-width: 90%;
-  max-height: 80%;
-  pointer-events: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  
-  /* Sedikit efek rotasi random untuk kesan scrapbook */
-  transform: rotate(-1deg);
+.page-content {
+  padding: 20px 5%; /* atau 5% jika butuh responsif dinamis */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
 }
 
-/* Memberikan variasi rotasi agar tidak kaku */
-.page:nth-child(even) img {
+.photo-container {
+  max-height: 45%;
+  background: #fff;
+  padding: 10px 10px 30px 10px; /* Padding polaroid */
+  border: 1px solid #ddd;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page:nth-child(even) .photo-container {
   transform: rotate(1.5deg);
 }
-.page:nth-child(3n) img {
+
+.page:nth-child(3n) .photo-container {
   transform: rotate(-0.5deg);
 }
 
-/* ==============================================
-   NAVIGATION CONTROLS
-   ============================================== */
-.book-controls {
+.photo-container img {
   width: 100%;
-  max-width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-md) var(--space-md) var(--space-sm);
-  gap: var(--space-sm);
-}
-
-.btn-nav {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  background: var(--color-surface-glass);
-  color: #111;
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: all var(--transition-fast);
-  box-shadow: var(--shadow-btn);
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
 }
 
-.btn-nav:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-1px);
+.text-container {
+  width: 100%;
+  font-family: var(--font-serif);
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  font-size: clamp(0.85rem, 2.5vw, 1rem); /* Dinamis sesuai layar */
+  padding-right: 5px;
 }
 
-.btn-nav:active {
-  transform: translateY(0) scale(0.97);
+/* ==============================================
+   LAYOUT A (COVER UTAMA)
+   ============================================== */
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 6% 5%;
 }
 
-.btn-nav svg {
+.layout-a .photo-container {
+  max-height: 45%;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.cover-header {
+  text-align: center;
+  margin-bottom: var(--space-sm);
   flex-shrink: 0;
 }
 
-/* Hide button text on very small screens */
-@media (max-width: 380px) {
-  .btn-nav span {
-    display: none;
-  }
-  .btn-nav {
-    padding: var(--space-sm);
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-  }
+.cover-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+  font-weight: bold;
+  color: #2c2c2c;
+  line-height: 1.3;
+  margin-bottom: var(--space-xs);
+}
+
+.cover-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
+  color: #444;
+  font-weight: 600;
+}
+
+.cover-footer {
+  text-align: center;
+  margin-top: auto; /* Dorong ke paling bawah jika ada sisa ruang */
+  padding-top: var(--space-md);
+  flex-shrink: 0;
+}
+
+.cover-motto {
+  font-family: var(--font-serif);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  color: #2c2c2c;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ==============================================
+   LAYOUT D (HALAMAN FULL TEKS TANPA SCROLL)
+   ============================================== */
+.layout-d {
+  overflow-y: auto;
+  padding: 6% 7%;
+  display: block;
+  height: 100%;
+  color: #333;
+}
+
+.layout-d::-webkit-scrollbar {
+  width: 4px;
+}
+
+.layout-d::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.layout-d::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.layout-d h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: var(--font-serif);
+}
+
+.layout-d p {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+/* ==============================================
+   NAVIGATION CONTROLS (SIDE ARROWS)
+   ============================================== */
+.btn-side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  transition: all var(--transition-fast);
+}
+
+.btn-side:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.btn-side:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.btn-side.prev {
+  left: 5px;
+}
+
+.btn-side.next {
+  right: 5px;
 }
 
 .page-indicator {
   font-family: var(--font-sans);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #333;
-  background: var(--color-surface-glass);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  padding: var(--space-xs) var(--space-md);
-  min-width: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 14px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   text-align: center;
-  box-shadow: var(--shadow-btn);
-}
-
-#current-page {
-  color: var(--color-primary);
-  font-weight: 700;
+  margin-bottom: 0;
 }
 
 /* ==============================================
    FOOTER
    ============================================== */
 .app-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   width: 100%;
-  text-align: center;
+  z-index: 10;
   padding: var(--space-sm) var(--space-md) var(--space-lg);
-  font-family: var(--font-sans);
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 .app-footer p {
-  font-size: 0.8rem;
-  color: #ddd;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9), 0px 0px 8px rgba(0,0,0,0.8);
+  text-align: center;
+  font-size: 14px;
 }
 
 /* ==============================================
