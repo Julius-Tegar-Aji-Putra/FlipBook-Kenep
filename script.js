@@ -45,19 +45,46 @@ const BOOK_PAGES = [
 <p>Penulis<br><strong>Drs. H. Mulyono</strong></p>`
   },
   {
-    layout: 'layout-b',
-    image: 'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+4',
-    text: 'Lanjutan cerita...'
+    layout: 'layout-e',
+    image: 'assets/Sungai Begawan Solo 1.webp',
+    imageAlt: 'Sungai Bengawan Solo',
+    content: `
+<h2 class="page-chapter-title">I. RIWAYAT DESA KEDUNGGUDEL DAN MASJID DARUSSALAM</h2>
+<p>Sejarah ini merupakan saksi bisu lewat pemahaman 3 Dekade: Dekade sebelum Islam, Dekade Perjuangan, dan Dekade Paska Penjajahan.</p>
+<p><strong>A. DEKADE SEBELUM ISLAM</strong></p>
+<p>Keyakinan masa itu sangat dipengaruhi faham Hinduisme. Desa Gisikan yang dilingkari Sungai Bengawan Solo telah menjadi pusat perdagangan Jawa Selatan. Perusahaan kecil yang menjamur: Batik, Tenun Sarung (ATBM), makanan tradisional, karak, jenang, rasikan, dan emping mlinjo.</p>
+<p>Para pedagang Gujarat datang berdagang sekaligus menyiarkan Islam. Pada tahun 1478 berdirilah Kerajaan Islam Demak Bintoro, dibantu Wali Songo — satu diantaranya yang sangat terkenal yaitu <strong>SUNAN KALIJOGO</strong>.</p>
+`
   },
   {
-    layout: 'layout-b',
-    image: 'https://placehold.co/400x600/1a1929/fffffe?text=Halaman+5',
-    text: 'Cerita rakyat tentang tokoh-tokoh penting di masa lalu.'
+    layout: 'layout-d',
+    content: `<h2 style="text-align:center; margin-bottom:5%;">Lanjutan: Perjalanan Kyai Lombok</h2>
+<p>Ketenaran Sunan Kalijogo tercium hingga Pulau Lombok. Seorang pemuda Lombok pergi ke Demak berguru kepada Sunan Kalijogo tentang Ajaran Islam dan diberi sebutan <strong>"Kyai Lombok"</strong>.</p>
+<p>Sunan Kalijogo memberi arahan ke sebelah barat laut Gunung Gajah Mungkur. Dengan niat yang kuat, Kyai Lombok menelusuri desa demi desa hingga tiba di Desa "Gisikan" — tempat yang dikelilingi aliran Sungai Bengawan Solo menyerupai delta.</p>
+<p>Di Gisikan, Kyai Lombok menemui tokoh masyarakat bernama <strong>Kyai Sodiq</strong>. Tujuannya: mengajak warga Gisikan mengenal dan mendalami Agama Islam. Dalam waktu singkat, warga mengikuti jejak mereka. Siang berwirausaha, malam silaturahmi memperdalam Islam.</p>
+<p>Pengaruh Islam melunturkan faham Hinduisme. Kyai Lombok merekrut warga lewat kesenian, sarasehan, dan pengajian dengan sarana sederhana. Muncullah gagasan membuat surau (langgar) sebagai tempat ibadah dan mengaji.</p>
+<p>Suatu saat Kyai Lombok menemukan dua (2) pohon yang sama — ia beri nama pohon Gendayaan. Ia memohon izin pada Kyai Sodiq agar nama desa GISIKAN diganti menjadi <strong>"DAYAK DAMPIT"</strong>. Permohonan dikabulkan dan masyarakat mulai menggunakan identitas desa ini adalah "Dayak Dampit".</p>`
   },
   {
-    layout: 'layout-b',
-    image: 'https://placehold.co/400x600/2d1b69/e8a838?text=Halaman+6',
-    text: 'Penutup dari buku sejarah desa.'
+    layout: 'layout-d',
+    content: `<h2 style="text-align:center; margin-bottom:4%;">SEJARAH NAMA DESA KEDUNGGUDEL</h2>
+<p>Kyai Sodiq menjodohkan putrinya dengan Kyai Lombok. Putranya bernama "GAMPANG" menjadi <strong>"Kyai Gampang"</strong>. Dalam menggali sejarah, banyak versi yang punya argumen kuat:</p>
+<ol style="font-size:13px; line-height:1.7; margin-left:16px; margin-bottom:10px; font-style:italic;">
+  <li style="margin-bottom:6px;">Pohon Tanjung kembar diberi nama Dayak Dampit. Anak kerbau (gudel) kesayangan tenggelam di kedung Sungai Bengawan Solo — nama desa berubah menjadi <strong>"Kedunggudel"</strong>.</li>
+  <li style="margin-bottom:6px;">Seorang Demang minta ikan dari penguasa kedung. Anak kerbau kesayangannya dijadikan gantinya. Untuk mengenang peristiwa itu, nama desa menjadi <strong>"Kedunggudel"</strong>.</li>
+  <li style="margin-bottom:6px;">Dari sudut filsafat: <em>Kedung</em> = tempat yang dalam; <em>Gudel</em> = anak kerbau, gambaran generasi penerus. Kedunggudel adalah wadah mencetak generasi muda berguna bagi nusa dan bangsa. Buktinya: Muhammadiyah, pesantren, ahli ekonomi, kesenian Hadrah, dan tradisi pernikahan di Masjid.
+    <ul style="margin-top:4px; margin-left:14px;">
+      <li>Munculnya perserikatan Muhammadiyah</li>
+      <li>Pesantren-pesantren</li>
+      <li>Ahli ekonomi dan perdagangan</li>
+      <li>Makanan ciri khas daerah</li>
+      <li>Kesenian Islami Hadrah</li>
+      <li>Pernikahan dilaksanakan di Masjid, diiringi jedor berkeliling desa</li>
+    </ul>
+  </li>
+</ol>
+<p>Warga bergotong royong membangun <strong>Masjid TIBAN</strong>, di sebelah barat pohon Dayak Dampit. Masjid ini menjadi pusat kegiatan keagamaan Islam yang sangat pesat.</p>
+<p>Akhir hayatnya, Kyai Lombok, Nyai Lombok, dan Kyai Gampang dimakamkan di sebelah barat Masjid Tiban — dan Nyai Lombok dimakamkan di sebelah timur masjid (makam terpisah).</p>`
   }
 ];
 
@@ -190,6 +217,19 @@ function createFlipbook(startPage) {
     // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
     else if (data.layout === 'layout-d') {
       pageDiv.innerHTML = data.content;
+    }
+    // --- STRUKTUR LAYOUT-E (TEKS ATAS + GAMBAR POLAROID BAWAH) ---
+    else if (data.layout === 'layout-e') {
+      pageDiv.innerHTML = `
+        <div class="layout-e-content">
+          <div class="layout-e-text">
+            ${data.content}
+          </div>
+          <div class="layout-e-photo">
+            <img src="${data.image}" alt="${data.imageAlt || ''}" draggable="false">
+          </div>
+        </div>
+      `;
     }
     // --- STRUKTUR LAYOUT-B (KONTEN BIASA) ---
     else {

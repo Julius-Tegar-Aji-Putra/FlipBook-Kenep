@@ -250,6 +250,69 @@ body {
 }
 
 /* ==============================================
+   LAYOUT E (TEKS ATAS + GAMBAR POLAROID BAWAH)
+   ============================================== */
+.layout-e-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layout-e-text {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6% 7% 3% 7%;
+  font-family: var(--font-serif);
+}
+
+.layout-e-text::-webkit-scrollbar { width: 3px; }
+.layout-e-text::-webkit-scrollbar-track { background: transparent; }
+.layout-e-text::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
+
+.layout-e-text p {
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #2c2c2c;
+  font-style: italic;
+}
+
+.page-chapter-title {
+  font-family: var(--font-serif);
+  font-size: clamp(0.75rem, 2.2vw, 1rem);
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.layout-e-photo {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10% 4% 10%;
+}
+
+.layout-e-photo img {
+  max-height: 140px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px 8px 25px 8px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+  transform: rotate(-3deg);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ==============================================
    LAYOUT D (HALAMAN FULL TEKS TANPA SCROLL)
    ============================================== */
 .layout-d {
