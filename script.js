@@ -97,6 +97,15 @@ const BOOK_PAGES = [
   <li>Emping mlinjo</li>
 </ol>
 <p>Bersamaan dengan terkenalnya perusahaan ini, maka mampu mengundang para saudagar untuk ke Desa Gisikan. Dari sekian banyak pedagang terselip juga para pedagang Gujarat yang datang dengan tujuan berdagang dan menyiarkan Ajaran Agama Islam.</p>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h3 style="text-align: center; margin-bottom: 20px;">Perjalanan Kyai Lombok</h3>
+<p style="margin-bottom: 12px;">Ketenaran Sunan Kalijogo sampai tercium di seluruh pelosok Nusantara, diantaranya sampai Pulau Lombok. Pendek cerita ada seorang Pemuda Lombok untuk memperdalam ajaran Islam lewat para wali, niat yang kuat ini diridhoi oleh Allah SWT, sehingga dengan susah payah pergi ke Demak untuk menemui Sunan Kalijogo.</p>
+<p style="margin-bottom: 12px;">Bersamaan saat itu Demak sedang giat membuat Masjid sampailah pemuda itu di Demak, kemudian bertemu dengan Sunan Kalijogo untuk berguru tentang Ajaran Islam. Sunan Kalijogo dengan senang hati menerima pemuda itu menjadi muridnya, kalau siang bekerja membangun masjid, waktu malam belajra agama Islam. Setelah lama belajar Ilmu Agama Islam Sunan Kalijaga memandang bahwa pemuda itu telah mampu menguasai Ilmu Agama Islam dan patut mendapat sebutan "Mubaligh", sehubungan pemuda itu berasal dari Pulau Lombok, maka ia diberi sebutan "Kyai Lombok".</p>
+<p style="margin-bottom: 12px;">Pada suatu waktu Sunan Kalijogo memanggil Kyai Lombok untuk menyebarluaskan Ilmu Agama Islam, dan memberi petunjuk atau arahan tempat tujuan ke sebelah barat laut gunung Gajah Mungkur.</p>
+<p style="margin-bottom: 12px;">Dengan dorongan batin yang kuat dan didorong doa restu sang guru (Sunan Kalijogo) berangkatlah Kyai Lombok ketujuan itu. Hanya berbekal niat yang kuat maka, Kyai Lombok menelusuri desa ke desa, atau hutan ke hutan serta melewati sungai yang sungguh melelahkan. Sepanjang jalan sambil istirahat untuk melepaskan lelah, setiap bertemu orang awam memberi pengertian tentang islam.</p>
+<p style="margin-bottom: 12px;">Perjalanan dari hari ke hari, dari bulan ke bulan akhirnya tercium oleh sebuah tempat yang arahnya seperti petunjuk gurunya, sangat ramai saudagar beraktivitas. Sampailah di suatu tempat yang dikelilingi aliran sungai Bengawan Solo yang menyerupai delta, itulah Desa "Gisikan". Di desa ini Kyai Lombok menemui tokoh masyarakat Gisikan yang bernama Kyai Sodiq, tujuannya agar boleh diterima menumpang di daerah ini, dengan senang hati Kyai Sodiq mau menerimanya. Dialog antara Kyai Lombok dengan Kyai Sodiq bahwa tujuannya ingin mengajak warga Gisikan ini untuk mengenal dan mendalami Agama Islam.</p>`
   }
 ];
 
@@ -229,7 +238,7 @@ function createFlipbook(startPage) {
     // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
     else if (data.layout === 'layout-d') {
       pageDiv.innerHTML = `
-        <div class="custom-scroll" style="padding-bottom: 20px;">
+        <div class="content-wrapper custom-scroll" style="padding-bottom: 20px; padding-right: 15px;">
           ${data.content}
         </div>
       `;
