@@ -291,6 +291,21 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     <li style="margin-bottom: 6px;">Tidak ada untaian kata yang pantas penulis sampaikan hanya mohon maaf bila ada kesalahan dan kekurangan.</li>
 </ol>
 <p style="text-align: center; font-weight: bold; margin-top: 15px; font-size: 13px; letter-spacing: 1px;">TERIMA KASIH --</p>`
+  },
+  {
+    layout: 'layout-d',
+    content: `<h4 style="text-align: center; margin-bottom: 20px; font-family: inherit; font-size: 13.5px; letter-spacing: 1px;">DAFTAR PUSTAKA</h4>
+
+<ol style="margin-top: 0; margin-bottom: 15px; padding-left: 20px;">
+    <li style="margin-bottom: 8px;"><strong>Muh. Hani</strong> - Riwayat berdirinya Masjid Kedunggudel 1990.</li>
+    <li style="margin-bottom: 8px;"><strong>Bupati Sukoharjo: Bp. Tejo Suminto</strong> dalam sambutannya pada kunjungannya, di masjid Darussalam Tahun 1990.</li>
+    <li style="margin-bottom: 8px;"><strong>Prof. Dr. Kuncaraningrat</strong> - Kabudayaan Jawa Tengah.</li>
+    <li style="margin-bottom: 8px;"><strong>Prof. Dr. Much Ardam</strong> - Al Quran dan Sulisme Mangkunegoro IV.</li>
+    <li style="margin-bottom: 8px;"><strong>Dr. Suharto</strong> - Saksi Sejarah.</li>
+    <li style="margin-bottom: 8px;"><strong>Abdul Samad Muhtadi Raharjo</strong> - Saksi Sejarah.</li>
+    <li style="margin-bottom: 8px;"><strong>Jarwo Sujito</strong> - Saksi Sejarah.</li>
+    <li style="margin-bottom: 8px;"><strong>Parto Siswoyo</strong> - Saksi Sejarah.</li>
+</ol>`
   }
 ];
 
