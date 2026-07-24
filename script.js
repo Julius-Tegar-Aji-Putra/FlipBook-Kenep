@@ -772,28 +772,27 @@ window.goToPage = function(event, targetDisplayNum) {
     }
   }
 
-  // LOGIKA AUTO-STEPPER AMAN
-  // Melakukan klik Next/Prev secara instan di balik layar.
-  // Tidak menghancurkan DOM agar tidak terjadi crash render di HP.
-  let failsafe = 0;
+  // LOGIKA ANIMASI FLIP (Cepat & Halus)
+  // Karena bug bentrok klik St.PageFlip sudah diblokir oleh Capture Phase,
+  // kita sekarang bisa menggunakan animasi bawaan yang sangat indah ini dengan aman.
   
-  if (targetIndex > currentIndex) {
-    while (window.pageFlip.getCurrentPageIndex() < targetIndex && failsafe < 50) {
-      window.pageFlip.turnToNextPage();
-      failsafe++;
-      if (isLandscape && window.pageFlip.getCurrentPageIndex() + 1 === targetIndex) break;
-    }
-  } else {
-    while (window.pageFlip.getCurrentPageIndex() > targetIndex && failsafe < 50) {
-      window.pageFlip.turnToPrevPage();
-      failsafe++;
-      if (isLandscape && window.pageFlip.getCurrentPageIndex() + 1 === targetIndex) break;
-    }
+  // Kita percepat sedikit animasinya khusus untuk lompatan dari Daftar Isi (500ms)
+  const originalTime = window.pageFlip.getSettings().flippingTime;
+  if (window.pageFlip.setting) {
+    window.pageFlip.setting.flippingTime = 500;
   }
+
+  // Lakukan animasi lompat halaman!
+  window.pageFlip.flip(targetIndex);
   
+  // Tunggu animasi hampir selesai, lalu kedipkan halaman target
   setTimeout(() => {
     flashPage(targetIndex);
-  }, 100);
+    // Kembalikan kecepatan normal (800ms) untuk membalik halaman biasa
+    if (window.pageFlip.setting) {
+      window.pageFlip.setting.flippingTime = originalTime;
+    }
+  }, 600);
 };
 
 // --- PERLINDUNGAN EKSTRA (CAPTURE PHASE) ---
