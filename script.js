@@ -23,7 +23,7 @@ const BOOK_PAGES = [
 <div style="display: flex; flex-direction: column; gap: 8px;">
 
     <!-- Item: SAMBUTAN LURAH -->
-    <div style="display: flex; align-items: baseline;">
+    <div onclick="goToPage(event, 3);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span style="font-weight: 600;">SAMBUTAN LURAH KENEP</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span style="font-weight: 600;">3</span>
@@ -448,15 +448,15 @@ function calculateBookSize() {
   };
 }
 
-function initFlipbook() {
+function initFlipbook(startIndex) {
   if (pageFlip) {
-    // Simpan halaman saat ini sebelum destroy agar tidak kembali ke halaman 1 saat di-resize
-    const currentIdx = pageFlip.getCurrentPageIndex();
+    // Simpan halaman saat ini jika tidak ada startIndex yang diberikan (untuk resize)
+    const currentIdx = startIndex !== undefined ? startIndex : pageFlip.getCurrentPageIndex();
     pageFlip.destroy();
     flipbookEl.innerHTML = '';
     createFlipbook(currentIdx);
   } else {
-    createFlipbook(0);
+    createFlipbook(startIndex !== undefined ? startIndex : 0);
   }
 }
 
@@ -741,12 +741,74 @@ function goToNextPage() {
 /**
  * goToPage(n) — navigasi ke halaman ke-n (sesuai nomor di dalam kertas)
  */
-window.goToPage = function(targetDisplayNum) {
+window.goToPage = function(event, targetDisplayNum) {
+  if (event) event.stopPropagation(); 
+  
   if (!window.pageFlip) return;
   const targetIndex = targetDisplayNum - 1;
-  // Gunakan turnToPage agar langsung menuju halaman yang dituju tanpa bug animasi
-  window.pageFlip.turnToPage(targetIndex);
+  const currentIndex = window.pageFlip.getCurrentPageIndex();
+  const isLandscape = window.pageFlip.getOrientation() === 'landscape';
+
+  function flashPage(indexToFlash) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(p => {
+      if (parseInt(p.dataset.pageIndex) === indexToFlash) {
+         p.style.transition = 'background-color 0.4s ease';
+         p.style.backgroundColor = 'rgba(255, 235, 150, 0.7)';
+         setTimeout(() => { p.style.backgroundColor = ''; }, 600);
+      }
+    });
+  }
+
+  if (isLandscape) {
+    if (targetIndex === currentIndex || targetIndex === currentIndex + 1) {
+      flashPage(targetIndex);
+      return; 
+    }
+  } else {
+    if (targetIndex === currentIndex) {
+      flashPage(targetIndex);
+      return; 
+    }
+  }
+
+  // LOGIKA AUTO-STEPPER AMAN
+  // Melakukan klik Next/Prev secara instan di balik layar.
+  // Tidak menghancurkan DOM agar tidak terjadi crash render di HP.
+  let failsafe = 0;
+  
+  if (targetIndex > currentIndex) {
+    while (window.pageFlip.getCurrentPageIndex() < targetIndex && failsafe < 50) {
+      window.pageFlip.turnToNextPage();
+      failsafe++;
+      if (isLandscape && window.pageFlip.getCurrentPageIndex() + 1 === targetIndex) break;
+    }
+  } else {
+    while (window.pageFlip.getCurrentPageIndex() > targetIndex && failsafe < 50) {
+      window.pageFlip.turnToPrevPage();
+      failsafe++;
+      if (isLandscape && window.pageFlip.getCurrentPageIndex() + 1 === targetIndex) break;
+    }
+  }
+  
+  setTimeout(() => {
+    flashPage(targetIndex);
+  }, 100);
 };
+
+// --- PERLINDUNGAN EKSTRA (CAPTURE PHASE) ---
+// Memblokir St.PageFlip agar tidak membaca klik pada Daftar Isi sebagai perintah balik halaman
+document.addEventListener('mousedown', (e) => {
+  if (e.target.closest('div[onclick*="goToPage"]')) {
+    e.stopPropagation();
+  }
+}, true);
+
+document.addEventListener('touchstart', (e) => {
+  if (e.target.closest('div[onclick*="goToPage"]')) {
+    e.stopPropagation();
+  }
+}, {capture: true, passive: false});
 
 function updatePageIndicator(pageIndex) {
   if (pageIndex === undefined) {
