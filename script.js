@@ -96,31 +96,28 @@ const BOOK_PAGES = [
   {
     layout: 'layout-d',
     content: `<h2 style="text-align: center; margin-bottom: 5%;">SAMBUTAN LURAH KENEP</h2>
-<p>Assalamu 'alaikum Wr.Wb.</p>
-<p>Kami selaku pemerintah Kelurahan Kenep memberikan penghargaan yang sebesar-besarnya kepada penulis yang telah meluangkan waktu, mengorbankan gagasan untuk menggali nilai-nilai sejarah Kelurahan Kenep yang sudah terpendam.</p>
-<p>Curahan pikiran penulis patutlah kita hargai yang akhirnya diharapkan sejarah ini dapat membangkitkan minat kepada generasi penerus agar mampu mengenang potensi sejarah yang ada di daerahnya.</p>
-<p>Pengungkapan kembali sejarah ini merupakan upaya dalam mengenalkan kepada masyarakat madani sekaligus sebagai pelengkap adanya program "Desa Wisata di Kelurahan Kenep". Sehingga dapat diketahui dan difahami oleh seluruh masyarakat yang berkunjung.</p>
-<p>Kami berharap agar buku ini dapat menambah khasanah ilmu pengetahuan bagi warga Kelurahan Kenep dan warga Kedunggudel pada khususnya. Semoga Allah memberikan jalan keluar yang terbaik sesuai dengan kehendakNya. Amin.</p>
-<p>Terimakasih</p>
-<p>Wassalamu 'alaikum Wr. Wb.</p>
+<p>Assalamu'alaikum wr. wb.</p>
+<p>Pemerintah Kelurahan Kenep memberikan apresiasi yang setinggi-tingginya kepada para penulis atas dedikasi mereka. Para penulis telah meluangkan waktu dan pikiran untuk menggali kembali nilai-nilai sejarah Kelurahan Kenep yang selama ini terpendam. Curahan gagasan mereka merupakan karya berharga yang patut kita hargai bersama. Melalui catatan sejarah ini, kami berharap generasi penerus dapat terpanggil untuk mengenali dan melestarikan potensi luhur di daerahnya.</p>
+<p>Pengungkapan sejarah ini juga menjadi langkah strategis dalam mengedukasi masyarakat luas. Upaya ini sekaligus menyempurnakan program "Desa Wisata di Kelurahan Kenep" yang tengah kita bangun. Dengan demikian, setiap wisatawan yang berkunjung dapat memahami akar identitas dan kekayaan budaya desa ini secara menyeluruh.</p>
+<p>Kami berharap buku digital ini mampu memperkaya khazanah keilmuan bagi seluruh warga Kelurahan Kenep, terkhusus masyarakat Kedunggudel. Semoga Allah Swt. senantiasa memberikan petunjuk dan jalan terbaik bagi setiap niat baik kita. Amin.</p>
+<p>Terima kasih.</p>
+<p>Wassalamu'alaikum wr. wb.</p>
 <br>
-<p>Lurah Kenep</p>
-<p><strong>SOGIYATNO S.SOS</strong><br>Nip. 19590513 198503 1 012</p>`
+<p>Lurah Kenep,</p>
+<p><strong>SOGIYATNO, S.Sos.</strong><br>NIP 19590513 198503 1 012</p>`
   },
   {
     layout: 'layout-d',
     content: `<h2 style="text-align: center; margin-bottom: 5%;">KATA PENGANTAR</h2>
-<p>Assalamu'alaikum Wr. Wb.</p>
-<p>Berkat hidayah Allah SWT, penulis mencoba untuk mengungkap kembali Sejarah Desa Kedunggudel dan Masjid Darussalam.</p>
-<p>Jasmerah inilah kata sakti yang simpel tapi bermakna luas. JASMERAH memang suatu slogan dari tokoh sejarah tersohor di lingkungan Regional, Nasional atau Internasional yang patut kita renungkan dan kita kenang. JASMERAH adalah kependekan dari kata-kata "Jangan Suka Meninggalkan Sejarah".</p>
-<p>Terkait dengan suatu peristiwa yang sangat pelik untuk diketahui, direnungkan dan perlu dimengerti bagi masyarakat di desa Kedunggudel. Nama desa yang penuh misterius dan bersejarah ini, sudah terkubur dalam bayangan generasi penerus masa sekarang. Terpengaruh kemajuan Teknologi Informasi yang canggih saat ini baru menjamur, mempunyai dampak hilangnya pengertian dan pemahaman suatu sejarah yang sebenarnya perlu sekali dapat disikapi oleh generasi bangsa.</p>
-<p>Sejarah ini tidak lapuk karena panas dan tidak luntur karena hujan. Luntur dan lapuknya suatu sejarah apabila generasi penerus tidak punya referensi yang ada di daerah ini, karena belum ada gagasan untuk itu, seharusnya wadah perpustakaan tersedia penampungan sejarah itu. Oleh sebab itu, penulis mencoba untuk menguak kembali sejarah yang ada di Desa Kedunggudel yang penuh sejarah dan kenangan.</p>
-<p>Ungkapan ini dikandung maksud agar sejarah ini menjadi aset budaya dan penggugah tidurnya pemahaman bagi masyarakat Kedunggudel. Lebih jauh harapan penulis, pemahaman sejarah suatu tempat dapat digali dan difahami bagi warga umumnya dan bagi generasi muda khususnya, agar dapat mengenang jerih payah para pembina generasi yang patut kita sikapi secara positif.</p>
-<p>Konsep DESA WISATA di Kedunggudel sudah dicanangkan tokoh-tokoh generasi penerus untuk ditampilkan pada khalayak umum agar gagasan dapat dilengkapi dengan adanya artikel tentang Desa Kedunggudel.</p>
-<p>Akhirnya penulis menyadari bahwa dalam menggali potensi yang unik ini dapat menjadi acuan dalam pemahaman makna Desa Kedunggudel, bila masih ada kesalahan penulis mohon maaf.</p>
-<p>Wassalamu'alaikum Wr. Wb.</p>
+<p>Assalamu'alaikum wr. wb.</p>
+<p>Atas berkat dan hidayah Allah Swt., penulis memberanikan diri untuk mengungkap kembali rekam jejak historis Desa Kedunggudel dan Masjid Darussalam. Inisiatif ini didasari oleh semangat "JASMERAH" (Jangan Sekali-kali Meninggalkan Sejarah), sebuah semboyan legendaris yang patut senantiasa kita renungkan. Sejarah adalah fondasi bangsa yang tidak boleh dilupakan, terutama di tengah arus modernisasi saat ini.</p>
+<p>Eksistensi Desa Kedunggudel menyimpan rentetan peristiwa pelik dan misteri masa lalu yang sangat berharga. Sayangnya, memori kolektif tersebut perlahan terkubur dari ingatan generasi muda. Pesatnya kemajuan teknologi informasi membawa dampak ganda, salah satunya adalah mengikis pemahaman masyarakat terhadap akar sejarah tanah kelahiran mereka sendiri.</p>
+<p>Sejatinya, sejarah tidak akan lapuk oleh panas maupun luntur oleh hujan. Kelunturan sebuah sejarah hanya terjadi apabila generasi penerus kehilangan literatur dan referensi lokal. Menyadari ketiadaan wadah dokumentasi yang memadai, penulis berusaha keras merajut kembali serpihan kenangan yang terserak di Desa Kedunggudel.</p>
+<p>Penulisan ini bertujuan agar sejarah lokal dapat bertransformasi menjadi aset budaya dan pengingat jati diri masyarakat Kedunggudel. Penulis berharap tulisan ini mampu menggugah kesadaran generasi muda untuk mempelajari masa lampau. Dengan demikian, pengorbanan para pendahulu dalam membangun desa ini dapat dihargai dan disikapi secara positif.</p>
+<p>Saat ini, konsep "Desa Wisata" di Kedunggudel tengah dicanangkan oleh para tokoh masyarakat. Kehadiran buku ini diharapkan mampu melengkapi gagasan tersebut dengan menyediakan narasi sejarah yang komprehensif bagi khalayak umum. Penulis menyadari bahwa tulisan ini masih jauh dari sempurna, sehingga segala kritik dan saran senantiasa kami terima dengan tangan terbuka.</p>
+<p>Wassalamu'alaikum wr. wb.</p>
 <br>
-<p>Penulis<br><strong>Drs. H. Mulyono, Sehono</strong></p>`
+<p>Penulis,<br><strong>Drs. H. Mulyono & Sehono</strong></p>`
   },
   {
     layout: 'layout-e',
@@ -128,41 +125,41 @@ const BOOK_PAGES = [
     imageAlt: 'Sungai Bengawan Solo',
     content: `
 <h2 class="page-chapter-title">I. RIWAYAT DESA KEDUNGGUDEL DAN MASJID DARUSSALAM</h2>
-<p>Sejarah ini merupakan saksi bisu lewat pemahaman 3 Dekade: Dekade sebelum Islam, Dekade Perjuangan, dan Dekade Paska Penjajahan.</p>
+<p>Catatan sejarah desa ini menjadi saksi bisu yang terbagi ke dalam tiga pembabakan waktu penting. Ketiga babak tersebut meliputi Dekade Sebelum Islam, Dekade Perjuangan, dan Dekade Paska Peperangan.</p>
 <p><strong>A. DEKADE SEBELUM ISLAM</strong></p>
-<p>Keyakinan masa itu sangat dipengaruhi faham Hinduisme. Desa Gisikan yang dilingkari Sungai Bengawan Solo telah menjadi pusat perdagangan Jawa Selatan. Perusahaan kecil yang menjamur: Batik, Tenun Sarung (ATBM), makanan tradisional, karak, jenang, rasikan, dan emping mlinjo.</p>
-<p>Para pedagang Gujarat datang berdagang sekaligus menyiarkan Islam. Pada tahun 1478 berdirilah Kerajaan Islam Demak Bintoro, dibantu Wali Songo — satu diantaranya yang sangat terkenal yaitu <strong>SUNAN KALIJOGO</strong>.</p>
+<p>Sebelum kehadiran Islam, sistem kepercayaan masyarakat lokal masih sangat dipengaruhi oleh ajaran Hinduisme. Pada masa itu, wilayah ini dikenal dengan nama Desa Gisikan. Berkat letak geografisnya yang dilingkari oleh aliran Sungai Bengawan Solo, Desa Gisikan berhasil berkembang pesat menjadi pusat perdagangan utama di kawasan Jawa bagian selatan.</p>
+<p>Roda perekonomian Desa Gisikan digerakkan oleh menjamurnya berbagai industri kerajinan dan kuliner lokal. Beberapa komoditas unggulan masyarakat meliputi kain batik, tenun sarung menggunakan Alat Tenun Bukan Mesin (ATBM), serta aneka makanan tradisional seperti karak, jenang, rasikan, dan emping melinjo. Kemakmuran ini perlahan mengundang kedatangan para pedagang Gujarat yang berlabuh untuk berniaga sekaligus menyiarkan agama Islam.</p>
+<p>Di tempat lain pada tahun 1478, berdirilah Kerajaan Demak Bintoro sebagai pusat kekuasaan Islam pertama di tanah Jawa. Perkembangan pesat kerajaan ini tidak lepas dari peran aktif majelis Wali Songo. Salah satu anggota majelis yang paling mahsyur dalam metode dakwah kulturalnya adalah <strong>Sunan Kalijogo</strong>.</p>
 `
   },
   {
     layout: 'layout-d',
     content: `<h2 style="text-align:center; margin-bottom:5%;">Lanjutan: Perjalanan Kyai Lombok</h2>
-<p>Ketenaran Sunan Kalijogo tercium hingga Pulau Lombok. Seorang pemuda Lombok pergi ke Demak berguru kepada Sunan Kalijogo tentang Ajaran Islam dan diberi sebutan <strong>"Kyai Lombok"</strong>.</p>
-<p>Sunan Kalijogo memberi arahan ke sebelah barat laut Gunung Gajah Mungkur. Dengan niat yang kuat, Kyai Lombok menelusuri desa demi desa hingga tiba di Desa "Gisikan" — tempat yang dikelilingi aliran Sungai Bengawan Solo menyerupai delta.</p>
-<p>Di Gisikan, Kyai Lombok menemui tokoh masyarakat bernama <strong>Kyai Sodiq</strong>. Tujuannya: mengajak warga Gisikan mengenal dan mendalami Agama Islam. Dalam waktu singkat, warga mengikuti jejak mereka. Siang berwirausaha, malam silaturahmi memperdalam Islam.</p>
-<p>Pengaruh Islam melunturkan faham Hinduisme. Kyai Lombok merekrut warga lewat kesenian, sarasehan, dan pengajian dengan sarana sederhana. Muncullah gagasan membuat surau (langgar) sebagai tempat ibadah dan mengaji.</p>
-<p>Suatu saat Kyai Lombok menemukan dua (2) pohon yang sama — ia beri nama pohon Gendayaan. Ia memohon izin pada Kyai Sodiq agar nama desa GISIKAN diganti menjadi <strong>"DAYAK DAMPIT"</strong>. Permohonan dikabulkan dan masyarakat mulai menggunakan identitas desa ini adalah "Dayak Dampit".</p>`
+<p>Ketenaran nama Sunan Kalijogo sebagai ulama besar rupanya terdengar hingga ke pesisir Pulau Lombok. Terdorong oleh dahaga spiritual, seorang pemuda asal Lombok rela menempuh perjalanan jauh menuju Demak demi berguru kepada beliau. Kegigihan pemuda tersebut membuahkan hasil, sehingga ia diangkat menjadi murid dan diberi gelar <strong>"Kyai Lombok"</strong>.</p>
+<p>Setelah sekian lama menimba ilmu, Sunan Kalijogo memerintahkan Kyai Lombok untuk berdakwah ke arah barat laut Gunung Gajah Mungkur. Berbekal tekad yang bulat, Kyai Lombok berjalan menelusuri hutan dan perkampungan. Perjalanan panjang tersebut akhirnya membawa beliau tiba di Desa Gisikan, sebuah wilayah subur yang dikelilingi kelokan Sungai Bengawan Solo menyerupai delta.</p>
+<p>Setibanya di Desa Gisikan, Kyai Lombok disambut oleh <strong>Kyai Sodiq</strong> yang merupakan tokoh masyarakat setempat. Kyai Lombok menyampaikan niat tulusnya untuk membimbing warga Gisikan mendalami agama Islam. Ajakan tersebut disambut dengan tangan terbuka, sehingga terbentuklah rutinitas baru warga: berniaga di siang hari dan memperdalam Islam di malam hari.</p>
+<p>Pendekatan dakwah kultural melalui kesenian dan sarasehan terbukti sangat efektif di mata warga. Perlahan namun pasti, dominasi paham Hinduisme di desa tersebut mulai meluntur dan tergantikan oleh syariat Islam. Seiring bertambahnya jumlah jemaah, muncullah gagasan mulia untuk mendirikan sebuah surau sebagai pusat ibadah dan pendidikan.</p>
+<p>Pada suatu hari, Kyai Lombok menemukan dua batang pohon tanjung yang tumbuh kembar berdampingan, lalu ia menamainya pohon Gendayaan. Beliau kemudian memohon izin kepada Kyai Sodiq untuk mengubah nama Desa Gisikan menjadi <strong>"Dayak Dampit"</strong> (bermakna kembar). Permohonan tersebut dikabulkan, dan warga pun mulai menggunakan nama baru tersebut sebagai identitas desa mereka.</p>`
   },
   {
     layout: 'layout-d',
     content: `<h2 style="text-align:center; margin-bottom:4%;">SEJARAH NAMA DESA KEDUNGGUDEL</h2>
-<p>Kyai Sodiq menjodohkan putrinya dengan Kyai Lombok. Putranya bernama "GAMPANG" menjadi <strong>"Kyai Gampang"</strong>. Dalam menggali sejarah, banyak versi yang punya argumen kuat:</p>
+<p>Hubungan erat antara Kyai Sodiq dan Kyai Lombok berujung pada perjodohan Kyai Lombok dengan putri Kyai Sodiq. Dari pernikahan agung tersebut, lahirlah seorang putra bernama Gampang yang kelak dikenal sebagai <strong>Kyai Gampang</strong>. Terkait perubahan nama desa menjadi Kedunggudel, terdapat tiga versi sejarah yang berkembang di masyarakat:</p>
 <ol style="font-size:13px; line-height:1.7; margin-left:16px; margin-bottom:10px; font-style:italic;">
-  <li style="margin-bottom:6px;">Pohon Tanjung kembar diberi nama Dayak Dampit. Anak kerbau (gudel) kesayangan tenggelam di kedung Sungai Bengawan Solo — nama desa berubah menjadi <strong>"Kedunggudel"</strong>.</li>
-  <li style="margin-bottom:6px;">Seorang Demang minta ikan dari penguasa kedung. Anak kerbau kesayangannya dijadikan gantinya. Untuk mengenang peristiwa itu, nama desa menjadi <strong>"Kedunggudel"</strong>.</li>
-  <li style="margin-bottom:6px;">Dari sudut filsafat: <em>Kedung</em> = tempat yang dalam; <em>Gudel</em> = anak kerbau, gambaran generasi penerus. Kedunggudel adalah wadah mencetak generasi muda berguna bagi nusa dan bangsa. Buktinya: Muhammadiyah, pesantren, ahli ekonomi, kesenian Hadrah, dan tradisi pernikahan di Masjid.
+  <li style="margin-bottom:6px;">Versi pertama menyebutkan bahwa nama desa diubah setelah seekor anak kerbau (gudel) kesayangan Kyai Lombok secara tragis tenggelam di kedung (palung sungai) Bengawan Solo. Peristiwa nahas tersebut memicu pergantian nama Dayak Dampit menjadi <strong>Kedunggudel</strong>.</li>
+  <li style="margin-bottom:6px;">Versi kedua berkisah tentang seorang Demang yang meminta pasokan ikan melimpah dari makhluk gaib penguasa kedung. Sebagai imbalan atas ikan tersebut, sang Demang harus merelakan anak kerbaunya dijadikan tumbal gaib. Untuk mengenang perjanjian tersebut, desa ini dinamakan <strong>Kedunggudel</strong>.</li>
+  <li style="margin-bottom:6px;">Versi ketiga meninjau dari kacamata filsafat. <em>Kedung</em> melambangkan tempat yang sangat dalam, sedangkan <em>gudel</em> merepresentasikan generasi muda. Kedunggudel bermakna sebagai kawah candradimuka untuk mencetak tunas bangsa. Hal ini dibuktikan dengan pesatnya kemajuan desa dalam berbagai bidang, di antaranya:
     <ul style="margin-top:4px; margin-left:14px;">
-      <li>Munculnya perserikatan Muhammadiyah</li>
-      <li>Pesantren-pesantren</li>
-      <li>Ahli ekonomi dan perdagangan</li>
-      <li>Makanan ciri khas daerah</li>
-      <li>Kesenian Islami Hadrah</li>
-      <li>Pernikahan dilaksanakan di Masjid, diiringi jedor berkeliling desa</li>
+      <li>Pertumbuhan masif Perserikatan Muhammadiyah dan lembaga pesantren;</li>
+      <li>Lahirnya para ahli ekonomi dan saudagar perdagangan;</li>
+      <li>Ciptaan produk makanan yang menjadi ciri khas daerah;</li>
+      <li>Pelestarian kesenian Islami bernuansa Hadrah;</li>
+      <li>Tradisi unik pernikahan di masjid yang diiringi tabuhan jedor berkeliling desa.</li>
     </ul>
   </li>
 </ol>
-<p>Warga bergotong royong membangun <strong>Masjid TIBAN</strong>, di sebelah barat pohon Dayak Dampit. Masjid ini menjadi pusat kegiatan keagamaan Islam yang sangat pesat.</p>
-<p>Akhir hayatnya, Kyai Lombok, Nyai Lombok, dan Kyai Gampang dimakamkan di sebelah barat Masjid Tiban — dan Nyai Lombok dimakamkan di sebelah timur masjid (makam terpisah).</p>`
+<p>Seiring pesatnya syiar Islam, masyarakat Dayak Dampit bergotong royong mendirikan sebuah tempat ibadah di sebelah barat pohon kembar. Bangunan suci ini kelak disepakati dengan nama <strong>Masjid Tiban</strong>, yang sukses menjadi episentrum kegiatan keagamaan terpadu.</p>
+<p>Hingga akhir hayatnya, para perintis desa dimakamkan di kompleks masjid. Kyai Lombok dan Kyai Gampang dimakamkan di sisi barat Masjid Tiban, sedangkan pusara sang istri (Nyai Lombok) berada terpisah di sebelah timur masjid.</p>`
   },
   {
     layout: 'layout-c',
@@ -218,69 +215,69 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     imageAlt: 'Sungai Bengawan Solo',
     caption: 'Kawasan Aliran Sungai Bengawan Solo & Tapak Sejarah Mataram',
     content: `<h4 style="text-align: center; margin-bottom: 8px; font-family: inherit; font-size: 13.5px;">B. DEKADE PERJUANGAN<br>(KONFLIK MATARAM)</h4>
-<p style="margin-bottom: 8px;">Tahun 1675 terjadilah konflik dengan penguasa Giri Kedaton yang dibawahi pimpinan Amangkurat I (1675-1677). Penyebab konflik karena perkembangan pesantren memiliki kedekatan dengan daerah Jawa Timur yang akan mengganggu stabilitas politik Kerajaan Mataram.</p>
-<p style="margin-bottom: 8px;">Akibat dari kecurigaan Mataram, maka dihancurkan pesantren-pesantren itu beserta tempat-tempat ibadah yang lain. Dampak hancurnya kondisi ini di Desa Kedunggudel, perkembangan agama Islam sempat terhambat.</p>`
+<p style="margin-bottom: 8px;">Memasuki tahun 1675, pecahlah sebuah konflik politik antara penguasa Kerajaan Mataram, Amangkurat I (1675-1677), dengan otoritas spiritual Giri Kedaton. Ketegangan ini dipicu oleh kecurigaan keraton terhadap pesatnya perkembangan jaringan pesantren. Amangkurat I menganggap kedekatan jaringan pesantren dengan wilayah Jawa Timur berpotensi mengancam stabilitas politik Mataram.</p>
+<p style="margin-bottom: 8px;">Buntut dari sentimen kecurigaan tersebut, pasukan Mataram melancarkan agresi fisik yang berujung pada penghancuran pesantren dan berbagai tempat ibadah. Tragedi kelam ini turut meluluhlantakkan infrastruktur keagamaan di Desa Kedunggudel. Akibatnya, laju perkembangan syiar Islam di desa ini terpaksa mengalami masa suram dan kelumpuhan sementara.</p>`
   },
   {
     layout: 'layout-h',
     content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">1. MASA PERANG DIPONEGORO</h4>
-<p style="margin-bottom: 10px;">Pada tahun 1825-1830 bangsa indonesia yang dipelopori Pangeran Diponegoro mengadakan perlawanan dengan Belanda.</p>
-<p style="margin-bottom: 10px;">Pangeran Diponegoro sering mengadakan pertemuan di Masjid Kedunggudel dengan Pakubuwono IV, konspirasi ini dicium oleh Belanda akhirnya Kedunggudel dihancurkan yang kedua kalinya.</p>`
+<p style="margin-bottom: 10px;">Rentang tahun 1825 hingga 1830 menjadi saksi bisu kobaran api perlawanan bangsa Indonesia terhadap kolonialisme Belanda. Perjuangan suci ini dipelopori oleh Pangeran Diponegoro yang gagah berani mengangkat senjata. Desa Kedunggudel turut memainkan peran krusial sebagai titik kumpul rahasia dalam menyusun strategi perlawanan.</p>
+<p style="margin-bottom: 10px;">Dalam catatan sejarah, Pangeran Diponegoro tercatat sering menggelar pertemuan tertutup dengan Pakubuwono IV di Masjid Kedunggudel. Sayangnya, pergerakan bawah tanah ini akhirnya terendus oleh intelijen militer Belanda. Sebagai tindakan balasan, pasukan Belanda melancarkan invasi yang berujung pada kehancuran Desa Kedunggudel untuk kali kedua.</p>`
   },
   {
     layout: 'layout-d',
     content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">PEMUGARAN & SENGKALAN</h4>
-<p style="margin-bottom: 5px;">Paska perang Diponegoro para Kyai dan tokoh-tokoh agama mulai menata kehidupan bersama di Kedunggudel. Tokoh-tokoh itu antara lain:</p>
+<p style="margin-bottom: 5px;">Seusai Perang Diponegoro mereda, para kiai dan tokoh agama setempat bahu-membahu menata ulang serpihan kehidupan di Desa Kedunggudel. Pelopor kebangkitan kembali desa ini dipimpin oleh sejumlah tokoh terkemuka, di antaranya:</p>
 <ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
-    <li>KRMT Taruna Negara</li>
-    <li>P. Selarong</li>
-    <li>Kyai Jamsari</li>
-    <li>Kyai Gampang</li>
-    <li>Kyai Slamet</li>
+    <li>K.R.M.T. Taruna Negara;</li>
+    <li>Pangeran Selarong;</li>
+    <li>Kyai Jamsari;</li>
+    <li>Kyai Gampang;</li>
+    <li>Kyai Slamet.</li>
 </ol>
-<p style="margin-bottom: 10px;">Tokoh-tokoh itu bermusyawarah untuk memperbaiki kondisi fisik Masjid Kedunggudel yang juga mendapat restu dari SISKS PB VIII (Pangeran Purboyo).</p>
-<p style="margin-bottom: 10px;">Pemugaran Masjid pada hari Minggu Pon tanggal 18 Jumadil Awal 1765 H berisengkalan (pepeling): "MARGANING RASA PANDITA NABI" bila dengan kata-kata LIMA NENEM PITU TUNGGAL (1765H). Prasasti ini dimunculkan untuk mengenang waktu pemugaran masjid TIBAN di Kedunggudel.</p>
-<p style="margin-bottom: 10px;">Paska perang Diponegoro, pengikut-pengikut setia dari Pangeran Diponegoro melepaskan atribut keprajuritan selanjutnya memilih pakai atribut seorang Dai (Mubaligh).</p>
-<p style="margin-bottom: 10px;">Mulai saat inilah Islam di Kedunggudel tumbuh kembali dan aktivitas pun maju, sehingga beliau Pangeran Pakubuwono IX (Bangun Topo) bekenan todhak (berkunjung) ke Kedunggudel untuk bertemu dengan tokoh-tokoh Islam para Kyai di Kedunggudel.</p>`
+<p style="margin-bottom: 10px;">Para sesepuh tersebut menggelar musyawarah mufakat untuk merestorasi fisik bangunan Masjid Kedunggudel. Niat mulia ini bahkan mendapatkan dukungan dan restu penuh dari Sri Susuhunan Pakubuwono VIII (Pangeran Purboyo).</p>
+<p style="margin-bottom: 10px;">Prosesi pemugaran masjid secara resmi dilaksanakan pada hari Minggu Pon, tanggal 18 Jumadil Awal tahun 1765 H. Momen bersejarah ini diabadikan melalui sebuah sengkalan (candra sengkala) berbunyi "MARGANING RASA PANDITA NABI" yang bermakna angka LIMA NENEM PITU TUNGGAL (1765 H). Prasasti sengkalan ini lantas diukir untuk mengenang titik balik kebangkitan Masjid Tiban.</p>
+<p style="margin-bottom: 10px;">Di sisi lain, pasca-perang, banyak pengikut setia Pangeran Diponegoro yang memutuskan untuk menanggalkan seragam keprajuritan mereka. Para mantan laskar perang tersebut lebih memilih beralih peran mengenakan jubah pendakwah (mubalig) untuk menyiarkan agama secara damai.</p>
+<p style="margin-bottom: 10px;">Pergeseran strategi ini membuahkan hasil manis, sehingga syiar Islam di Kedunggudel kembali bersemi dan menorehkan kemajuan pesat. Keharuman nama Kedunggudel bahkan sampai terdengar ke telinga Sri Susuhunan Pakubuwono IX (Bangun Topo), yang akhirnya berkenan <em>tedhak</em> (berkunjung) demi menjalin silaturahmi dengan para kiai setempat.</p>`
   },
   {
     layout: 'layout-d',
     content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">2. MASA PERANG KEMERDEKAAN</h4>
-<p style="margin-bottom: 10px;">Pada tahun 1949 (Agresi Belanda ke II) Kedunggudel dianggap tempat yang tepat bagi para pejuang sebagai pusat (markas) Pemerintahan Karesidenan Surakarta Selatan. Hal ini disamping tempat yang strategis juga masyarakatnya yang kooperatif bagi gerilyawan.</p>
-<p style="margin-bottom: 5px;">Tokoh-tokoh pejuang yang bermarkas di Desa Kedunggudel antara lain:</p>
+<p style="margin-bottom: 10px;">Menghadapi Agresi Militer Belanda II pada tahun 1949, posisi geografis Desa Kedunggudel kembali memegang peran vital. Desa ini ditunjuk oleh para pejuang kemerdekaan sebagai markas sentral Pemerintahan Karesidenan Surakarta Selatan. Pemilihan lokasi ini didasarkan pada tata letak daerah yang strategis serta karakter masyarakatnya yang sangat kooperatif dalam melindungi para gerilyawan.</p>
+<p style="margin-bottom: 5px;">Beberapa tokoh besar Republik Indonesia yang pernah bermarkas di Desa Kedunggudel meliputi:</p>
 <ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
-    <li>Jendral Gatot Subroto</li>
-    <li>Resident Sudiro</li>
-    <li>Komandan PMB Mayor N. Sunaryo</li>
-    <li>Komandan STE Letkol Mursito</li>
+    <li>Jenderal Gatot Subroto;</li>
+    <li>Residen Sudiro;</li>
+    <li>Komandan PMB Mayor N. Sunaryo;</li>
+    <li>Komandan STE Letkol Mursito.</li>
 </ol>
-<p style="margin-bottom: 10px;">Kehadiran para tokoh-tokoh itu menggugah jiwa nasionalisme dan semangat juang lewat sarana (media) kesenian keroncong yang syair-syairnya bernuansa perjuangan.</p>
-<p style="margin-bottom: 10px;">Aktivitas tokoh-tokoh itu tercium oleh Belanda lewat mata-matanya, akhirnya bertepatan pada hari Rabu tanggal 1 svawal 1949 masyarakat sedang melaksanakan sholat Idul Fitri melihat glagat keamanan terancam maka para pejuang meninggalkan Kedunggudel untuk pengamanan.</p>
-<p style="margin-bottom: 10px;">Pada hari Kamis, 2 syawal 1949 itu juga Belanda menyerang Kedunggudel di Bombardir sebanyak 21 kali, namun karena perlindungan Allah SWT, dari 21 itu yang meletus hanya 1 (satu) dan menghancurkan serambi masjid bagian utara, dan mengakibatkan 6 warga sipil meninggal dunia.</p>
-<p style="margin-bottom: 5px;">Tidak luput juga tempat (markas) yang diduga menjadi para pejuang itu antara lain:</p>
+<p style="margin-bottom: 10px;">Kehadiran para tokoh militer ini sukses membakar gelora nasionalisme penduduk setempat. Semangat juang tersebut terus dikobarkan melalui alunan musik keroncong, yang syair-syairnya disisipi pesan perjuangan dan cinta tanah air.</p>
+<p style="margin-bottom: 10px;">Pergerakan masif di Kedunggudel rupanya berhasil diendus oleh jaringan mata-mata Belanda. Puncaknya terjadi pada hari Rabu, 1 Syawal 1949, tepat ketika warga tengah khusyuk menunaikan salat Idulfitri. Menyadari adanya manuver ancaman keamanan yang mendekat, para pejuang segera menginisiasi evakuasi taktis meninggalkan Kedunggudel demi menghindari korban sipil yang lebih besar.</p>
+<p style="margin-bottom: 10px;">Keesokan harinya pada 2 Syawal 1949, pesawat tempur Belanda melancarkan serangan brutal dengan membombardir desa sebanyak 21 kali. Atas kuasa dan perlindungan Allah Swt., dari puluhan bom yang dijatuhkan, hanya satu peluru kendali yang berhasil meledak. Ledakan tersebut menghancurkan serambi utara masjid dan secara tragis merenggut enam nyawa warga sipil.</p>
+<p style="margin-bottom: 5px;">Belanda juga menargetkan beberapa rumah warga yang dituduh sebagai basis perlindungan gerilyawan, di antaranya:</p>
 <ol type="a" style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
-    <li>Rumah Bapak Parto Siswoyo</li>
-    <li>Rumah Bapak Cipto Diharjo</li>
-    <li>Rumah Bapak Sosroharjo</li>
-    <li>Rumah Ibu Kartono</li>
-    <li>Rumah Bapak Jo Sumarto</li>
+    <li>Kediaman Bapak Parto Siswoyo;</li>
+    <li>Kediaman Bapak Cipto Diharjo;</li>
+    <li>Kediaman Bapak Sosroharjo;</li>
+    <li>Kediaman Ibu Kartono;</li>
+    <li>Kediaman Bapak Jo Sumarto.</li>
 </ol>
-<p style="margin-bottom: 10px;">Serangan artileri ini oleh Belanda tidak berhasil secara optimal, karena para tokoh-tokoh pejuang RI sudah keluar dari Kedunggudel. Tepatnya setelah pasukan Belanda sampai di Desa Krecekan (utara Kedunggudel), tidak dapat masuk Desa Kedunggudel dikarenakan terhalang tembok yang besar dan tinggi, akhirnya belok ke arah kiri sampai di Desa Banmati. Tujuannya agar serangan dapat dilakukan dari arah timur, tetapi Belanda juga tidak dapat masuk ke Desa Kedunggudel karena terhalang sebuah tembok yang tinggi dan besar.</p>
-<p style="margin-bottom: 10px;">Warga Kedunggudel masih punya keyakinan (kepercayaan) selama ini masih dijangkung (dijaga) oleh roh/ Kyai Lombok, Nyai Lombok, dan Kyai Gampang sebagai cikal bakal berdirinya Masjid.</p>`
+<p style="margin-bottom: 10px;">Beruntungnya, operasi militer Belanda tersebut gagal membuahkan hasil karena para gerilyawan RI telah lebih dulu mengamankan diri. Terdapat fenomena gaib saat konvoi pasukan Belanda tertahan di Desa Krecekan (sebelah utara Kedunggudel). Mereka mengaku terhalang oleh penampakan tembok raksasa sehingga terpaksa memutar rute ke Desa Banmati. Setibanya di sana untuk menyerang dari sisi timur, ilusi tembok raksasa kembali menghalangi pandangan mereka.</p>
+<p style="margin-bottom: 10px;">Terlepas dari logika peperangan, warga Kedunggudel meyakini fenomena tersebut sebagai wujud perlindungan metafisik. Penduduk percaya bahwa desa mereka masih senantiasa <em>dijangkung</em> (dijaga) oleh karomah roh Kyai Lombok, Nyai Lombok, dan Kyai Gampang selaku cikal bakal pembabat alas daerah tersebut.</p>`
   },
   {
     layout: 'layout-d',
     content: `<h4 style="text-align: center; margin-bottom: 5px; font-family: inherit; font-size: 13.5px;">C. DEKADE PASKA PEPERANGAN</h4>
 <p style="text-align: center; margin-bottom: 15px; font-weight: bold; font-size: 11.5px;">(Struktur Pemerintahan Kademangan)</p>
-<p style="margin-bottom: 12px;">Sebelum perang kemerdekaan atau negara Kesatuan Republik Indonesia belum berdiri, Kedunggudel adalah daerah kademangan yang termasuk dalam wilayah Nagari Dalem Surakarta Hadiningrat. Dengan demikian daerah Kedunggudel pemerintahannya dipimpin oleh seorang demang yang turun temurun dan bertanggungjawab pada pemerintah keraton.</p>
-<p style="margin-bottom: 8px;">Sedangkan Demang terakhir di Kedunggudel bernama Kyai Demang Rengga Suwarno. Dalam menjalankan tugas-tugasnya, Kyai Demang dibantu dengan beberapa stafnya, antara lain:</p>
+<p style="margin-bottom: 12px;">Sebelum Negara Kesatuan Republik Indonesia memproklamasikan kemerdekaan, sistem birokrasi di Kedunggudel masih menerapkan struktur feodal. Wilayah ini berstatus sebagai daerah Kademangan yang secara administratif tunduk di bawah payung keraton Nagari Dalem Surakarta Hadiningrat. Oleh karena itu, roda pemerintahan sehari-hari dikendalikan penuh oleh seorang Demang secara turun-temurun yang melapor langsung kepada pihak keraton.</p>
+<p style="margin-bottom: 8px;">Dalam catatan sejarah, Kyai Demang Rengga Suwarno tercatat sebagai penguasa Kademangan Kedunggudel yang terakhir. Guna menopang jalannya pemerintahan, beliau dibantu oleh jajaran aparatur desa yang terdiri dari:</p>
 <ol style="margin-top: 0; margin-bottom: 12px; padding-left: 20px;">
-    <li style="margin-bottom: 5px;"><strong>Bekel:</strong> Ki Karya Niman, yang bertugas sebagai kepala lingkungan;</li>
-    <li style="margin-bottom: 5px;"><strong>Modin:</strong> Ki Soma Sajad, bertugas melayani warga dalam bidang sosial keagamaan misalnya pernikahan, kematian, dan lain-lain;</li>
-    <li style="margin-bottom: 5px;"><strong>Ulu-ulu:</strong> Ki Suro, bertugas mengatur irigasi dan pertanian;</li>
-    <li style="margin-bottom: 5px;"><strong>Jogo boyo:</strong> Ki Kerta Mrajak, bertugas pada keamanan di lingkungan kademangan.</li>
+    <li style="margin-bottom: 5px;"><strong>Bekel (Ki Karya Niman):</strong> Bertindak selaku kepala lingkungan yang mengayomi warga;</li>
+    <li style="margin-bottom: 5px;"><strong>Modin (Ki Soma Sajad):</strong> Mengurus pelayanan bidang sosial keagamaan, seperti prosesi pernikahan hingga pengurusan jenazah;</li>
+    <li style="margin-bottom: 5px;"><strong>Ulu-ulu (Ki Suro):</strong> Bertanggung jawab mengatur sistem irigasi demi menunjang hasil pertanian;</li>
+    <li style="margin-bottom: 5px;"><strong>Jogoboyo (Ki Kerta Mrajak):</strong> Bertugas sebagai garda terdepan dalam menjaga stabilitas keamanan wilayah kademangan.</li>
 </ol>
-<p style="margin-bottom: 10px;">Sedangkan tempat atau kantor pemerintahan secara otomatis menempati rumah Kyai Demang (atau disebut Ndemangan).</p>`
+<p style="margin-bottom: 10px;">Adapun pusat operasional pemerintahan kademangan dijalankan langsung dari kediaman pribadi Kyai Demang, yang oleh masyarakat setempat lazim disebut sebagai Ndemangan.</p>`
   },
   {
     layout: 'layout-k',
@@ -288,31 +285,31 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     imageAlt: 'Meluapnya Bengawan Solo',
     caption: 'Sungai Begawan Solo',
     content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">KETEGANGAN POLITIK &<br>"BEDAH SOLO"</h4>
-<p style="margin-bottom: 10px;">Karena Kyai Demang sudah sepuh pada tahun 1960, beliau mengangkat asisten. Di sekitar tahun ini perpustakaan desa didirikan oleh Bapak Sujita. Disekitar tahun (1965) karena pemerintah mengeluarkan UU Pertanahan (Land Reform) banyak kaum priyayi Kedunggudel yang memiliki tanah dan sawah di daerah luar daerah kehilangan hak kepemilikannya.</p>
-<p style="margin-bottom: 10px;">Ketegangan masyarakat terjadi pada 1965 tatkala Kedunggudel dipengaruhi keadaan politik negara, masyarakat Kedunggudel terbagi pada tiga partai besar yaitu PKI, PNI, dan Masyumi.</p>
-<p style="margin-bottom: 10px;">Setelah ketegangan mereda tahun 1966 Kedunggudel menjadi lautan karena meluapnya Bengawan Solo yang lebih dikenal istilah "Bedah Solo". Pada tahun 1967, Kyai Demang resmi Purna tugas dan pada tanggal 1 Juli 1969 beliau meninggal.</p>`
+<p style="margin-bottom: 10px;">Memasuki tahun 1960, Kyai Demang yang mulai uzur memutuskan untuk mengangkat seorang asisten demi menjaga kelancaran administrasi desa. Pada era yang sama, Bapak Sujita berhasil merintis pendirian perpustakaan desa sebagai mercusuar literasi. Sayangnya, ketenangan desa mulai goyah ketika regulasi Undang-Undang Pokok Agraria (Land Reform) diterbitkan, yang memaksa kaum priayi Kedunggudel kehilangan hak kepemilikan atas tanah dan sawah mereka di luar daerah.</p>
+<p style="margin-bottom: 10px;">Puncak eskalasi ketegangan memuncak pada tahun 1965 seiring dengan gejolak perpolitikan nasional. Masyarakat Kedunggudel tidak luput dari pusaran konflik ideologi, yang berimbas pada terbelahnya polarisasi warga ke dalam tiga kubu partai besar, yakni PKI, PNI, dan Masyumi.</p>
+<p style="margin-bottom: 10px;">Setahun berselang setelah friksi politik mereda, Kedunggudel justru dihadapkan pada ujian alam. Pada tahun 1966, luapan dahsyat Sungai Bengawan Solo menenggelamkan desa bak lautan, sebuah tragedi yang kelak dikenang dengan sebutan "Bedah Solo". Di tengah masa pemulihan bencana tersebut, Kyai Demang resmi purnatugas pada tahun 1967, sebelum akhirnya berpulang menghadap Sang Pencipta pada 1 Juli 1969.</p>`
   },
   {
     layout: 'layout-d',
     content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">ERA KEEMASAN<br>(TAHUN 70-AN)</h4>
-<p style="margin-bottom: 5px;">Pada tahun 1968 diadakan Pilkades I di Kedunggudel yang diikuti 5 calon yaitu:</p>
+<p style="margin-bottom: 5px;">Babak baru sistem demokrasi desa dimulai pada tahun 1968 melalui penyelenggaraan Pemilihan Kepala Desa (Pilkades) perdana. Pesta demokrasi ini diramaikan oleh lima orang kandidat, yakni:</p>
 <ol style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
-    <li>Bapak Pono Suharjo</li>
-    <li>Bapak Cipto Isman</li>
-    <li>Bapak Tiknyo</li>
-    <li>Bapak Dalhari</li>
-    <li>Bapak Wanto Diharjo</li>
+    <li>Bapak Pono Suharjo;</li>
+    <li>Bapak Cipto Isman;</li>
+    <li>Bapak Tiknyo;</li>
+    <li>Bapak Dalhari;</li>
+    <li>Bapak Wanto Diharjo.</li>
 </ol>
-<p style="margin-bottom: 10px;">Pilkades pertama ini juga adalah Pilkades terakhir bagi masyarakat Kedunggudel dan dari 5 calon tersebut dimenangkan asisten demang Bapak Pono Suharjo.</p>
-<p style="margin-bottom: 8px;">Karena keadaan negara tahun 70an ini stabil berimbas pada majunya masyarakat pedesaan. Di Kedunggudel industri kecil tumbuh subur, sehingga menjadi tujuan bagi orang-orang luar daerah untuk mencari pekerjaan. Pertumbuhan ekonomi yang cepat bagi para pengusaha di Kedunggudel membawa dampak pada berbagai bidang, seperti:</p>
+<p style="margin-bottom: 10px;">Secara tak terduga, Pilkades pertama ini sekaligus menjadi ajang Pilkades terakhir bagi sistem Kademangan Kedunggudel. Kontestasi politik tersebut akhirnya dimenangkan secara mutlak oleh mantan asisten demang, yakni Bapak Pono Suharjo.</p>
+<p style="margin-bottom: 8px;">Stabilitas politik nasional pada dekade 70-an membawa angin segar bagi kemajuan masyarakat pedesaan. Industri skala kecil di Kedunggudel tumbuh bak jamur di musim hujan, menjadikannya magnet bagi para pencari kerja dari luar daerah. Laju perekonomian yang masif ini sukses memicu lompatan prestasi warga di berbagai sektor kehidupan, meliputi:</p>
 <ol style="margin-top: 0; margin-bottom: 12px; padding-left: 20px;">
-    <li style="margin-bottom: 6px;"><strong>Bidang Pendidikan:</strong> Kedunggudel mempunyai sekolah dasar dimana daerah lain sekolah dasar belum ada.</li>
-    <li style="margin-bottom: 6px;"><strong>Bidang Olahraga:</strong> Beberapa kali pemuda-pemuda Kedunggudel mendapat juara tingkat Kabupaten dan Provinsi. Diantaranya: Sepak bola, dayung, Volly, Badminton.</li>
-    <li style="margin-bottom: 6px;"><strong>Bidang Seni:</strong> Di Kedunggudel waktu itu ada banyak kelompok karawitan, seni tari, dipimpin oleh Alm. Bapak Tejo, Kismo, Yadi. Seni rebana jedoran santri swara, orkes keroncong, dll.</li>
-    <li style="margin-bottom: 6px;"><strong>Bidang Agama:</strong> Di Masjid diadakan peringatan-peringatan hari besar Islam diperingati warga Kedunggudel dengan meriah. Pada tahun 1979 secara swadaya memugar (meninggikan) lantai masjid.</li>
-    <li style="margin-bottom: 6px;"><strong>Bidang Teknologi:</strong> Warga Kedunggudel mulai menggunakan barang-barang Teknologi modern. Seperti: Mobil, sepeda motor, televisi, radio, dll.</li>
+    <li style="margin-bottom: 6px;"><strong>Pendidikan:</strong> Berdirinya sekolah dasar unggulan di saat wilayah sekitarnya belum memiliki akses pendidikan setara;</li>
+    <li style="margin-bottom: 6px;"><strong>Olahraga:</strong> Dominasi pemuda Kedunggudel dalam menyabet gelar juara tingkat kabupaten dan provinsi, khususnya pada cabang sepak bola, dayung, voli, dan bulu tangkis;</li>
+    <li style="margin-bottom: 6px;"><strong>Kesenian:</strong> Lahirnya maestro seni dan menjamurnya kelompok karawitan, seni tari, orkes keroncong, serta grup rebana jedoran santri di bawah asuhan almarhum Bapak Tejo, Kismo, dan Yadi;</li>
+    <li style="margin-bottom: 6px;"><strong>Keagamaan:</strong> Semaraknya perayaan hari besar Islam yang berpusat di masjid, disusul dengan swadaya warga dalam memugar peninggian lantai masjid pada tahun 1979;</li>
+    <li style="margin-bottom: 6px;"><strong>Teknologi:</strong> Tingginya daya beli warga yang ditandai dengan kepemilikan masal atas barang elektronik modern dan kendaraan bermotor.</li>
 </ol>
-<p style="margin-bottom: 10px; font-style: italic; text-align: center;">"Di tahun-tahun ini Kedunggudel suasananya bagaikan kampung Laweyan di Kota Surakarta."</p>`
+<p style="margin-bottom: 10px; font-style: italic; text-align: center;">"Di masa keemasan inilah, denyut nadi Kedunggudel berdetak kencang menyerupai gemerlapnya Kampung Laweyan di jantung Kota Surakarta."</p>`
   },
   {
     layout: 'layout-j',
@@ -320,20 +317,20 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     imageAlt: 'Sungai Bengawan Solo',
     caption: 'Pelurusan Alur Sungai Bengawan Solo (1992)',
     content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">PERUBAHAN GEOGRAFIS & MEREDUPNYA PERDAGANGAN</h4>
-<p style="margin-bottom: 10px;">Namun tatkala awal tahun 1990 karena industri kecil sudah tidak dapat bersaing dengan industri besar, banyak para pengusaha kecil di Kedunggudel gulung tikar. Kemunduran ini juga mempengaruhi mundurnya bidang-bidang lain di masyarakat Kedunggudel.</p>
-<p style="margin-bottom: 10px;">Tahun 1991 Organisasi Kepemudaan di Kedunggudel pecah menjadi tiga, sesuai dengan wilayah masing-masing RW. Keadaan ini membuat lebih sulit bagi pemuda untuk merebut prestasi seperti masa sebelumnya.</p>
-<p style="margin-bottom: 10px;">Pada tahun 1992 sungai yang melintasi barat kampung Kedunggudel dimatikan dan alur sungai diluruskan pemerintah. Jalur penyebrangan tradisional di selatan kampung, yang menghubungkan dengan kecamatan Tawangsari sudah tidak beroperasi membuat para pedagang dari daerah selatan enggan ke pasar Kedunggudel.</p>`
+<p style="margin-bottom: 10px;">Roda zaman terus berputar, masa keemasan Kedunggudel pun perlahan menemui senjakala pada awal era 1990-an. Gempuran industrialisasi modern membuat sektor industri kecil kelimpungan karena gagal bersaing secara kapasitas dan harga. Efek domino dari fenomena ini menyebabkan banyak pengusaha lokal gulung tikar, yang bermuara pada kemunduran drastis di berbagai sendi kehidupan masyarakat.</p>
+<p style="margin-bottom: 10px;">Di sektor kepemudaan, dinamika internal pada tahun 1991 memicu terpecahnya organisasi pemuda desa menjadi tiga fraksi yang mewakili masing-masing Rukun Warga (RW). Hilangnya rasa persatuan ini berdampak fatal pada sulitnya merajut kembali kekompakan demi mengukir prestasi gemilang seperti dekade sebelumnya.</p>
+<p style="margin-bottom: 10px;">Pukulan terberat bagi urat nadi perekonomian desa terjadi pada tahun 1992 akibat adanya intervensi geografis. Pemerintah memutuskan untuk mematikan kelokan sungai di sebelah barat kampung demi memuluskan proyek pelurusan alur Bengawan Solo. Kebijakan ini serta-merta melumpuhkan fungsi jalur penyeberangan tradisional di selatan desa, sehingga memutus total akses para saudagar dari Kecamatan Tawangsari menuju pasar Kedunggudel.</p>`
   },
   {
     layout: 'layout-m',
     content: `<h4 style="text-align: center; margin-bottom: 10px; font-family: inherit; font-size: 13.5px;">RENOVASI & PENETAPAN "MASJID DARUSSALAM"</h4>
-<p style="margin-bottom: 8px;">Sejalan pertumbuhan ekonomi masyarakat serta tingkat kesadaran beragama semakin mantap muncullah gagasan pemugaran fisik masjid. Sebagai dasar pemugaran masjid di tahun 1979 ini adalah kerapnya terjadi banjir sehingga berakibat tambahnya lumpur di sekeliling masjid, dan keadaan lantai harus ditinggikan.</p>
-<p style="margin-bottom: 8px;">Pada tahun 1985 terbentuklah Panitia Pembangunan Masjid dengan sasaran yang dibagian serambi dan pawastren. Tahun 1986 pemugaran selesai, akhirnya kedudukan Panitia Pembangunan dibubarkan. Atas kesepakatan Panitia dan warga maka masjid itu diberi nama <strong>"MASJID DARUSSALAM"</strong>.</p>
-<p style="margin-bottom: 5px;">Sebagai penanggungjawab pengelolaan Masjid yang disebut "TAKMIR MASJID" sebagai Komposisi Takmir Masjid:</p>
+<p style="margin-bottom: 8px;">Kebangkitan taraf ekonomi masyarakat ternyata berbanding lurus dengan meningkatnya kesadaran spiritual religius. Menjelang akhir 1970-an, muncul desakan kuat dari warga untuk kembali merenovasi fisik bangunan masjid. Rencana pemugaran pada tahun 1979 ini didasari oleh intensitas banjir musiman yang kerap membawa endapan lumpur, sehingga memaksa struktur lantai masjid harus ditinggikan.</p>
+<p style="margin-bottom: 8px;">Semangat peremajaan rumah ibadah berlanjut pada tahun 1985 dengan dibentuknya panitia khusus untuk memperluas area serambi dan pawastren. Setahun kemudian, setelah seluruh proyek pemugaran dinyatakan rampung, panitia pembangunan resmi dibubarkan. Melalui proses musyawarah mufakat bersama warga, bangunan suci yang menyimpan sejuta sejarah itu lantas dianugerahi nama baru, yakni <strong>Masjid Darussalam</strong>.</p>
+<p style="margin-bottom: 5px;">Demi menjaga kelestarian dan kelancaran kegiatan peribadatan, warga mendelegasikan wewenang pengelolaan masjid kepada struktur dewan takmir perdana. Komposisi kepengurusan Takmir Masjid Darussalam diamanatkan kepada para tokoh berikut:</p>
 <ul style="margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
-    <li style="margin-bottom: 4px;"><strong>Ketua:</strong> Bapak Warsono</li>
-    <li style="margin-bottom: 4px;"><strong>Keuangan:</strong> Bapak H. Sumartono Hadi</li>
-    <li style="margin-bottom: 4px;"><strong>Sekretaris:</strong> Bapak Muhammad Hani</li>
+    <li style="margin-bottom: 4px;"><strong>Ketua:</strong> Bapak Warsono;</li>
+    <li style="margin-bottom: 4px;"><strong>Keuangan:</strong> Bapak H. Sumartono Hadi;</li>
+    <li style="margin-bottom: 4px;"><strong>Sekretaris:</strong> Bapak Muhammad Hani.</li>
 </ul>`
   },
   {
@@ -360,29 +357,29 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     image: 'assets/Desa Wisata Kreatif.webp',
     imageAlt: 'Desa Wisata Kreatif',
     content: `<h4 style="text-align: center; margin-bottom: 12px; font-family: inherit; font-size: 13.5px;">II. PENUTUP</h4>
-<p style="margin-bottom: 8px;">Ibarat menebar sebutir pasir di samudera luas yang tidak ada artinya, namun harapan penulis yang ungkapkan ini mampu menambah keasanah ilmu pengetahuan demi kelestarian budaya daerah yang semakin terkikis oleh kemajuan teknologi.</p>
-<p style="margin-bottom: 8px;">Lewat media ini pantaslah kiranya penulis menyampaikan beberapa hal:</p>
+<p style="margin-bottom: 8px;">Menuliskan rentetan panjang sejarah layaknya menebar sebutir pasir di lautan lepas; tampak sangat kecil dan tak kasatmata. Walau demikian, penulis memendam secercah harapan agar karya sederhana ini mampu memperkaya khazanah ilmu pengetahuan masyarakat. Perekaman jejak masa lampau ini merupakan ikhtiar nyata demi membentengi kelestarian budaya daerah dari gerusan arus modernisasi teknologi.</p>
+<p style="margin-bottom: 8px;">Pada pengujung lembaran narasi ini, izinkanlah penulis untuk menghaturkan beberapa patah kata penutup:</p>
 <ol style="margin-top: 0; margin-bottom: 12px; padding-left: 20px;">
-    <li style="margin-bottom: 6px;">Penulis sangat berterima kasih atas dorongan dari narasumber, sehingga dapat kami gunakan sebagai referensi buku ini.</li>
-    <li style="margin-bottom: 6px;">Penulis penuh berharap, sekecil apapun makna yang terkandung di dalam buku ini dapat menambah pemahaman tentang potensi daerah.</li>
-    <li style="margin-bottom: 6px;">Penulis menyadari banyaknya kesalahan yang muncul pada buku ini karena refernsi yang sangat terbatas.</li>
-    <li style="margin-bottom: 6px;">Tidak ada untaian kata yang pantas penulis sampaikan hanya mohon maaf bila ada kesalahan dan kekurangan.</li>
+    <li style="margin-bottom: 6px;">Terima kasih yang tak terhingga kami sampaikan kepada seluruh narasumber tepercaya atas kesediaannya berbagi ingatan yang menjadi fondasi literatur sejarah ini;</li>
+    <li style="margin-bottom: 6px;">Penulis memanjatkan doa, semoga penuangan gagasan historis ini mampu membuka mata generasi penerus akan luhurnya potensi yang tersimpan di tanah kelahiran mereka;</li>
+    <li style="margin-bottom: 6px;">Kami menyadari sepenuhnya bahwa penyusunan buku ini masih diwarnai kekurangan akibat terbatasnya bahan rujukan dan literatur pendukung;</li>
+    <li style="margin-bottom: 6px;">Tiada gading yang tak retak, tiada pula untaian kata yang luput dari salah. Penulis memohon pintu maaf yang sebesar-besarnya atas segala kekeliruan yang mungkin terselip dalam penyampaian sejarah ini.</li>
 </ol>
-<p style="text-align: center; font-weight: bold; margin-top: 15px; font-size: 13px; letter-spacing: 1px;">TERIMA KASIH --</p>`
+<p style="text-align: center; font-weight: bold; margin-top: 15px; font-size: 13px; letter-spacing: 1px;">TERIMA KASIH</p>`
   },
   {
     layout: 'layout-d',
     content: `<h4 style="text-align: center; margin-bottom: 20px; font-family: inherit; font-size: 13.5px; letter-spacing: 1px;">DAFTAR PUSTAKA</h4>
 
 <ol style="margin-top: 0; margin-bottom: 15px; padding-left: 20px;">
-    <li style="margin-bottom: 8px;"><strong>Muh. Hani</strong> - Riwayat berdirinya Masjid Kedunggudel 1990.</li>
-    <li style="margin-bottom: 8px;"><strong>Bupati Sukoharjo: Bp. Tejo Suminto</strong> dalam sambutannya pada kunjungannya, di masjid Darussalam Tahun 1990.</li>
-    <li style="margin-bottom: 8px;"><strong>Prof. Dr. Kuncaraningrat</strong> - Kabudayaan Jawa Tengah.</li>
-    <li style="margin-bottom: 8px;"><strong>Prof. Dr. Much Ardam</strong> - Al Quran dan Sulisme Mangkunegoro IV.</li>
-    <li style="margin-bottom: 8px;"><strong>Dr. Suharto</strong> - Saksi Sejarah.</li>
-    <li style="margin-bottom: 8px;"><strong>Abdul Samad Muhtadi Raharjo</strong> - Saksi Sejarah.</li>
-    <li style="margin-bottom: 8px;"><strong>Jarwo Sujito</strong> - Saksi Sejarah.</li>
-    <li style="margin-bottom: 8px;"><strong>Parto Siswoyo</strong> - Saksi Sejarah.</li>
+    <li style="margin-bottom: 8px;"><strong>Muh. Hani</strong> — Riwayat Berdirinya Masjid Kedunggudel (1990).</li>
+    <li style="margin-bottom: 8px;"><strong>Bupati Sukoharjo: Bp. Tejo Suminto</strong> — Dalam pidato kunjungannya di Masjid Darussalam (1990).</li>
+    <li style="margin-bottom: 8px;"><strong>Prof. Dr. Kuncaraningrat</strong> — Kebudayaan Jawa Tengah.</li>
+    <li style="margin-bottom: 8px;"><strong>Prof. Dr. Much Ardam</strong> — Al Quran dan Sufisme Mangkunegoro IV.</li>
+    <li style="margin-bottom: 8px;"><strong>Dr. Suharto</strong> — Narasumber (Saksi Sejarah).</li>
+    <li style="margin-bottom: 8px;"><strong>Abdul Samad Muhtadi Raharjo</strong> — Narasumber (Saksi Sejarah).</li>
+    <li style="margin-bottom: 8px;"><strong>Jarwo Sujito</strong> — Narasumber (Saksi Sejarah).</li>
+    <li style="margin-bottom: 8px;"><strong>Parto Siswoyo</strong> — Narasumber (Saksi Sejarah).</li>
 </ol>`
   }
 ];
