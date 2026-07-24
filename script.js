@@ -23,73 +23,73 @@ const BOOK_PAGES = [
 <div style="display: flex; flex-direction: column; gap: 8px;">
 
     <!-- Item: SAMBUTAN LURAH -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(2);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+    <div style="display: flex; align-items: baseline;">
         <span style="font-weight: 600;">SAMBUTAN LURAH KENEP</span>
-        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span style="font-weight: 600;">2</span>
-    </div>
-
-    <!-- Item: KATA PENGANTAR -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(3);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
-        <span style="font-weight: 600;">KATA PENGANTAR</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span style="font-weight: 600;">3</span>
     </div>
 
+    <!-- Item: KATA PENGANTAR -->
+    <div style="display: flex; align-items: baseline;">
+        <span style="font-weight: 600;">KATA PENGANTAR</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span style="font-weight: 600;">4</span>
+    </div>
+
     <!-- Item: BAB I -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(4);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; margin-top: 8px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+    <div style="display: flex; align-items: baseline; margin-top: 8px;">
         <span style="font-weight: bold;">I. RIWAYAT DESA & MASJID DARUSSALAM</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span style="font-weight: bold;">4</span>
+        <span style="font-weight: bold;">5</span>
     </div>
 
     <!-- Sub-item: A -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(4);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 15px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+    <div style="display: flex; align-items: baseline; padding-left: 15px;">
         <span>A. Dekade Sebelum Islam</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span>4</span>
+        <span>5</span>
     </div>
 
     <!-- Sub-item: B -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(11);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 15px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+    <div style="display: flex; align-items: baseline; padding-left: 15px;">
         <span>B. Dekade Perjuangan</span>
-        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span>11</span>
-    </div>
-    
-    <!-- Sub-sub-item: B.1 -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(12);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 30px; font-size: 11.5px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
-        <span>1. Masa Perang Diponegoro</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>12</span>
     </div>
-
-    <!-- Sub-sub-item: B.2 -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(14);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 30px; font-size: 11.5px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
-        <span>2. Masa Perang Kemerdekaan</span>
+    
+    <!-- Sub-sub-item: B.1 -->
+    <div style="display: flex; align-items: baseline; padding-left: 30px; font-size: 11.5px;">
+        <span>1. Masa Perang Diponegoro</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span>14</span>
+        <span>13</span>
     </div>
 
-    <!-- Sub-item: C -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(15);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; padding-left: 15px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
-        <span>C. Dekade Paska Peperangan</span>
+    <!-- Sub-sub-item: B.2 -->
+    <div style="display: flex; align-items: baseline; padding-left: 30px; font-size: 11.5px;">
+        <span>2. Masa Perang Kemerdekaan</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>15</span>
     </div>
 
+    <!-- Sub-item: C -->
+    <div style="display: flex; align-items: baseline; padding-left: 15px;">
+        <span>C. Dekade Paska Peperangan</span>
+        <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
+        <span>16</span>
+    </div>
+
     <!-- Item: BAB II -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(21);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s; margin-top: 8px;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+    <div style="display: flex; align-items: baseline; margin-top: 8px;">
         <span style="font-weight: bold;">II. PENUTUP</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span style="font-weight: bold;">21</span>
+        <span style="font-weight: bold;">22</span>
     </div>
 
     <!-- Item: DAFTAR PUSTAKA -->
-    <div onclick="if(window.pageFlip) window.pageFlip.flip(22);" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+    <div style="display: flex; align-items: baseline;">
         <span style="font-weight: bold;">DAFTAR PUSTAKA</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
-        <span style="font-weight: bold;">22</span>
+        <span style="font-weight: bold;">23</span>
     </div>
 </div>`
   },
@@ -710,10 +710,19 @@ function createFlipbook(startPage) {
       `;
     }
 
+    // --- NOMOR HALAMAN DI DALAM KERTAS (kecuali Cover) ---
+    if (index > 0) {
+      const pageNum = document.createElement('div');
+      pageNum.className = 'page-number-badge';
+      pageNum.textContent = index + 1;
+      pageDiv.appendChild(pageNum);
+    }
+
     return pageDiv;
   });
 
   pageFlip.loadFromHTML(pages);
+  window.pageFlip = pageFlip; // expose globally for TOC onclick links
   updatePageIndicator(startPage);
 
   pageFlip.on('flip', (e) => {
@@ -728,6 +737,16 @@ function goToPrevPage() {
 function goToNextPage() {
   if (pageFlip) pageFlip.flipNext();
 }
+
+/**
+ * goToPage(n) — navigasi ke halaman ke-n (sesuai nomor di dalam kertas)
+ */
+window.goToPage = function(targetDisplayNum) {
+  if (!window.pageFlip) return;
+  const targetIndex = targetDisplayNum - 1;
+  // Gunakan turnToPage agar langsung menuju halaman yang dituju tanpa bug animasi
+  window.pageFlip.turnToPage(targetIndex);
+};
 
 function updatePageIndicator(pageIndex) {
   const current = pageIndex !== undefined ? pageIndex + 1 : 1;
@@ -751,10 +770,17 @@ document.addEventListener('keydown', (e) => {
 });
 
 let resizeTimeout = null;
+let lastWindowWidth = window.innerWidth;
+
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
-    initFlipbook();
+    const currentWidth = window.innerWidth;
+    // Hanya re-init jika lebar layar benar-benar berubah (mengatasi resize palsu saat scroll)
+    if (Math.abs(currentWidth - lastWindowWidth) > 10) {
+      lastWindowWidth = currentWidth;
+      initFlipbook();
+    }
   }, 300);
 });
 
