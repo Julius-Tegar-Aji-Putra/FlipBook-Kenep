@@ -30,63 +30,63 @@ const BOOK_PAGES = [
     </div>
 
     <!-- Item: KATA PENGANTAR -->
-    <div style="display: flex; align-items: baseline;">
+    <div onclick="goToPage(event, 4);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span style="font-weight: 600;">KATA PENGANTAR</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span style="font-weight: 600;">4</span>
     </div>
 
     <!-- Item: BAB I -->
-    <div style="display: flex; align-items: baseline; margin-top: 8px;">
+    <div onclick="goToPage(event, 5);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; margin-top: 8px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span style="font-weight: bold;">I. RIWAYAT DESA & MASJID DARUSSALAM</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span style="font-weight: bold;">5</span>
     </div>
 
     <!-- Sub-item: A -->
-    <div style="display: flex; align-items: baseline; padding-left: 15px;">
+    <div onclick="goToPage(event, 5);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; padding-left: 15px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span>A. Dekade Sebelum Islam</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>5</span>
     </div>
 
     <!-- Sub-item: B -->
-    <div style="display: flex; align-items: baseline; padding-left: 15px;">
+    <div onclick="goToPage(event, 12);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; padding-left: 15px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span>B. Dekade Perjuangan</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>12</span>
     </div>
     
     <!-- Sub-sub-item: B.1 -->
-    <div style="display: flex; align-items: baseline; padding-left: 30px; font-size: 11.5px;">
+    <div onclick="goToPage(event, 13);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; padding-left: 30px; font-size: 11.5px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span>1. Masa Perang Diponegoro</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>13</span>
     </div>
 
     <!-- Sub-sub-item: B.2 -->
-    <div style="display: flex; align-items: baseline; padding-left: 30px; font-size: 11.5px;">
+    <div onclick="goToPage(event, 15);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; padding-left: 30px; font-size: 11.5px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span>2. Masa Perang Kemerdekaan</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>15</span>
     </div>
 
     <!-- Sub-item: C -->
-    <div style="display: flex; align-items: baseline; padding-left: 15px;">
+    <div onclick="goToPage(event, 16);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; padding-left: 15px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span>C. Dekade Paska Peperangan</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span>16</span>
     </div>
 
     <!-- Item: BAB II -->
-    <div style="display: flex; align-items: baseline; margin-top: 8px;">
+    <div onclick="goToPage(event, 22);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; margin-top: 8px; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span style="font-weight: bold;">II. PENUTUP</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span style="font-weight: bold;">22</span>
     </div>
 
     <!-- Item: DAFTAR PUSTAKA -->
-    <div style="display: flex; align-items: baseline;">
+    <div onclick="goToPage(event, 23);" onmousedown="if(event) event.stopPropagation();" onmouseup="if(event) event.stopPropagation();" onpointerdown="if(event) event.stopPropagation();" onpointerup="if(event) event.stopPropagation();" style="display: flex; align-items: baseline; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
         <span style="font-weight: bold;">DAFTAR PUSTAKA</span>
         <span style="flex-grow: 1; border-bottom: 1.5px dotted #666; margin: 0 6px;"></span>
         <span style="font-weight: bold;">23</span>
