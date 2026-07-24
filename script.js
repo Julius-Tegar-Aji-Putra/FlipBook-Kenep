@@ -749,10 +749,34 @@ window.goToPage = function(targetDisplayNum) {
 };
 
 function updatePageIndicator(pageIndex) {
-  const current = pageIndex !== undefined ? pageIndex + 1 : 1;
+  if (pageIndex === undefined) {
+    if (window.pageFlip) {
+      pageIndex = window.pageFlip.getCurrentPageIndex();
+    } else {
+      pageIndex = 0;
+    }
+  }
+
+  const current = pageIndex + 1;
   const total = BOOK_PAGES.length;
 
-  currentPageEl.textContent = current;
+  // Jika buku terbuka 2 lembar sekaligus (layar PC)
+  if (window.pageFlip && window.pageFlip.getOrientation() === 'landscape') {
+    if (pageIndex === 0) {
+      // Halaman Cover (sendirian di kanan)
+      currentPageEl.textContent = current;
+    } else if (pageIndex + 1 < total) {
+      // Halaman tengah (ada kiri dan kanan)
+      currentPageEl.textContent = `${current}-${current + 1}`;
+    } else {
+      // Halaman terakhir (jika sendirian di kiri)
+      currentPageEl.textContent = current;
+    }
+  } else {
+    // Jika buku terbuka 1 lembar (layar HP)
+    currentPageEl.textContent = current;
+  }
+  
   totalPagesEl.textContent = total;
 }
 
