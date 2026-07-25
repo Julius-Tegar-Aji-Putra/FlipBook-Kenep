@@ -404,12 +404,19 @@ function calculateBookSize() {
   let availableWidth = wrapper.clientWidth;
   let availableHeight = wrapper.clientHeight;
   
-  // Berikan sedikit padding (margin aman) agar buku tidak mentok ke ujung layar
-  availableWidth -= 20; 
-  availableHeight -= 20;
-
   // Deteksi mode Portrait (jika lebar < tinggi layar)
   const isPortrait = availableWidth < availableHeight;
+
+  if (isPortrait) {
+    // MODE HP (1 HALAMAN) — padding minimal agar buku bisa sebesar mungkin
+    availableWidth -= 20;
+    availableHeight -= 20;
+  } else {
+    // MODE PC/LAPTOP (2 HALAMAN SEBELAHAN) — padding ekstra agar tidak nabrak
+    // judul, bingkai kayu atas/bawah, dan teks footer
+    availableWidth -= 20;
+    availableHeight -= 110; // dikurangi lebih banyak: untuk frame kayu atas+bawah
+  }
   
   // Gunakan rasio yang lebih lebar di PC (3:4) agar mengisi kekosongan,
   // dan rasio standar buku (2:3) di HP.
@@ -447,6 +454,7 @@ function calculateBookSize() {
     height: Math.floor(bookHeight)
   };
 }
+
 
 function initFlipbook(startIndex) {
   let targetIndex = startIndex !== undefined ? startIndex : 0;
