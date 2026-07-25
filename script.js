@@ -536,8 +536,10 @@ function createFlipbook(startPage) {
     // --- STRUKTUR LAYOUT-D (HALAMAN FULL TEKS) ---
     else if (data.layout === 'layout-d') {
       pageDiv.innerHTML = `
-        <div class="content-wrapper custom-scroll" style="padding-bottom: 20px; padding-right: 15px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c; font-family: var(--font-serif);">
-          ${data.content}
+        <div class="layout-d" style="display: flex; flex-direction: column; height: 100%; padding: 6% 7%; box-sizing: border-box;">
+          <div class="content-wrapper custom-scroll" style="flex: 1; padding-bottom: 20px; padding-right: 15px; text-align: left; font-size: 13px; line-height: 1.7; color: #2c2c2c; font-family: var(--font-serif);">
+            ${data.content}
+          </div>
         </div>
       `;
     }
