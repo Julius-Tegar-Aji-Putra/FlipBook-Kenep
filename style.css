@@ -1,4 +1,14 @@
 /* ==============================================
+   CUSTOM FONTS
+   ============================================== */
+@font-face {
+  font-family: 'JawaPalsu';
+  src: url('assets/JAWAPALSU.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==============================================
    DESIGN TOKENS & VARIABLES
    ============================================== */
 :root {
@@ -69,8 +79,6 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   padding-bottom: 25px;
   overflow: hidden;
 }
@@ -78,28 +86,37 @@ body {
 /* ==============================================
    HEADER
    ============================================== */
-.app-header {
-  width: 100%;
-  text-align: center;
-  padding: var(--space-lg) var(--space-md) var(--space-sm);
-  margin-bottom: 25px;
-  font-family: var(--font-serif);
-  color: #fff; /* Biar kontras dengan background gelap */
+.header-vintage {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px; 
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 15%, rgba(0,0,0,0.85) 85%, rgba(0,0,0,0) 100%);
+    padding: 15px 0;
+    flex: 0 0 auto;
 }
 
-.app-title {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.9), 0px 0px 12px rgba(0,0,0,0.8);
+.judul-buku {
+    font-family: 'JawaPalsu', 'Playfair Display', serif;
+    font-size: 2.5rem; /* Sesuaikan ukuran */
+    color: #F5E6C8; /* Warna krem perkamen */
+    text-shadow: 2px 2px 4px rgba(0,0,0,1), 4px 4px 8px rgba(0,0,0,0.8), 0 0 15px rgba(0,0,0,0.6); /* Bayangan multi-layer gelap */
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.app-subtitle {
-  font-family: var(--font-sans);
-  font-size: clamp(0.85rem, 2.5vw, 1rem);
-  margin-top: var(--space-xs);
-  font-weight: 400;
-  opacity: 0.9;
+.sub-judul {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #D3C3A3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 5px;
 }
 
 /* ==============================================
@@ -111,6 +128,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: var(--space-sm) var(--space-md);
   position: relative;
   min-height: 0;
@@ -706,6 +725,8 @@ body {
   width: 100%;
   z-index: 10;
   padding: var(--space-sm) var(--space-md) var(--space-lg);
+  flex: 0 0 auto;
+  margin-top: auto;
 }
 
 .app-footer p {
@@ -719,12 +740,27 @@ body {
 /* ==============================================
    RESPONSIVE & LANDSCAPE FIX
    ============================================== */
-@media (max-width: 480px) {
-  .app-header {
-    padding: var(--space-md) var(--space-sm) var(--space-xs);
+@media (max-width: 768px) {
+  .header-vintage {
+    margin-top: 5px; /* Kurangi margin untuk memberi ruang ke buku */
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 5%, rgba(0,0,0,0.85) 95%, rgba(0,0,0,0) 100%);
+    padding: 10px 0;
+  }
+  .judul-buku {
+    font-size: 1.8rem;
+  }
+  .sub-judul {
+    font-size: 0.9rem;
   }
   .flipbook-wrapper {
-    padding: var(--space-xs) var(--space-sm);
+    padding: var(--space-xs) 5px;
+  }
+  .custom-scroll {
+    padding-bottom: 50px; /* Ruang ekstra agar teks tidak tertumpuk dengan footer/nomor halaman */
+  }
+  .page-number-badge {
+    bottom: 5px;
   }
   .polaroid-img {
     max-width: 80px;
@@ -732,16 +768,21 @@ body {
   .polaroid-row {
     height: 120px;
   }
+  .app-footer {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
-  .app-header {
-    padding: var(--space-xs) var(--space-sm);
+  .header-vintage {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  .app-title {
-    font-size: 1.2rem;
+  .judul-buku {
+    font-size: 1.5rem;
   }
-  .app-subtitle {
+  .sub-judul {
     display: none;
   }
   .book-controls {

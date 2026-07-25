@@ -408,11 +408,14 @@ function calculateBookSize() {
   availableWidth -= 20; 
   availableHeight -= 20;
 
-  const pageRatio = 2 / 3; // Rasio buku 2:3
-  let bookWidth, bookHeight;
-
   // Deteksi mode Portrait (jika lebar < tinggi layar)
   const isPortrait = availableWidth < availableHeight;
+  
+  // Gunakan rasio yang lebih lebar di PC (3:4) agar mengisi kekosongan,
+  // dan rasio standar buku (2:3) di HP.
+  const pageRatio = isPortrait ? (2 / 3) : (3 / 4); 
+
+  let bookWidth, bookHeight;
 
   if (isPortrait) {
     // MODE HP (1 HALAMAN)
@@ -446,25 +449,32 @@ function calculateBookSize() {
 }
 
 function initFlipbook(startIndex) {
+  let targetIndex = startIndex !== undefined ? startIndex : 0;
+  
   if (pageFlip) {
     // Simpan halaman saat ini jika tidak ada startIndex yang diberikan (untuk resize)
-    const currentIdx = startIndex !== undefined ? startIndex : pageFlip.getCurrentPageIndex();
+    targetIndex = startIndex !== undefined ? startIndex : pageFlip.getCurrentPageIndex();
     pageFlip.destroy();
-    flipbookEl.innerHTML = '';
-    createFlipbook(currentIdx);
-  } else {
-    createFlipbook(startIndex !== undefined ? startIndex : 0);
   }
+  
+  // Wajib dibersihkan agar container bisa shrink (mengecil) saat window mengecil
+  flipbookEl.innerHTML = '';
+  flipbookEl.removeAttribute('style');
+  flipbookEl.className = 'flipbook';
+  
+  createFlipbook(targetIndex);
 }
 
 function createFlipbook(startPage) {
   const size = calculateBookSize();
+  const wrapper = document.querySelector('.flipbook-wrapper');
+  const isPortrait = (wrapper.clientWidth - 20) < (wrapper.clientHeight - 20);
 
   pageFlip = new St.PageFlip(flipbookEl, {
     width: size.width,
     height: size.height,
     size: 'fixed',
-    showCover: true,
+    showCover: !isPortrait, // Matikan showCover di HP untuk mencegah bug animasi cover terangkat
     usePortrait: true, // Fitur sakti untuk mode 1 halaman di HP
     
     // Animasi
@@ -854,6 +864,13 @@ document.addEventListener('keydown', (e) => {
 let resizeTimeout = null;
 let lastWindowWidth = window.innerWidth;
 
+// Fix untuk masalah 100vh di mobile browser (Safari/Chrome)
+function setBodyHeight() {
+  document.body.style.height = window.innerHeight + 'px';
+}
+window.addEventListener('resize', setBodyHeight);
+setBodyHeight();
+
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
@@ -867,5 +884,12 @@ window.addEventListener('resize', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  initFlipbook();
+  setBodyHeight();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => {
+      initFlipbook();
+    });
+  } else {
+    initFlipbook();
+  }
 });
