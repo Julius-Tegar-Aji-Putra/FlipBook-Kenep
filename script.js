@@ -895,12 +895,52 @@ document.addEventListener('DOMContentLoaded', () => {
     initFlipbook();
   }
 
-  // Modal Logic
+  // Modal Logic (Instruction)
   const modal = document.getElementById('instruction-modal');
   const modalCloseBtn = document.getElementById('modal-close-btn');
   if (modal && modalCloseBtn) {
     modalCloseBtn.addEventListener('click', () => {
       modal.classList.add('hidden');
+    });
+  }
+
+  // Image Zoom Lightbox Logic
+  const zoomModal = document.getElementById('image-zoom-modal');
+  const zoomImg = document.getElementById('zoomed-image');
+  const zoomCloseBtn = document.getElementById('zoom-close-btn');
+  const bookWrapper = document.querySelector('.flipbook-wrapper');
+
+  if (bookWrapper && zoomModal && zoomImg) {
+    // Mencegah StPageFlip memproses mousedown/touchstart pada gambar
+    const stopFlip = (e) => {
+      if (e.target.tagName === 'IMG') {
+        e.stopPropagation();
+      }
+    };
+    bookWrapper.addEventListener('mousedown', stopFlip, true);
+    bookWrapper.addEventListener('touchstart', stopFlip, true);
+    bookWrapper.addEventListener('pointerdown', stopFlip, true);
+    bookWrapper.addEventListener('mouseup', stopFlip, true);
+    bookWrapper.addEventListener('touchend', stopFlip, true);
+    bookWrapper.addEventListener('pointerup', stopFlip, true);
+
+    bookWrapper.addEventListener('click', (e) => {
+      if (e.target.tagName === 'IMG') {
+        e.stopPropagation();
+        e.preventDefault();
+        zoomImg.src = e.target.src;
+        zoomModal.classList.remove('hidden');
+      }
+    }, true);
+  }
+
+  if (zoomModal && zoomCloseBtn) {
+    const closeZoom = () => {
+      zoomModal.classList.add('hidden');
+    };
+    zoomCloseBtn.addEventListener('click', closeZoom);
+    zoomModal.addEventListener('click', (e) => {
+      if (e.target === zoomModal) closeZoom();
     });
   }
 });
