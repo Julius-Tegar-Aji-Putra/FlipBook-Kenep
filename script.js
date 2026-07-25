@@ -785,6 +785,15 @@ function createFlipbook(startPage, targetEl) {
       
       container.addEventListener('scroll', updateScrollbar);
       
+      // Mencegah StPageFlip memblokir scroll di mobile dengan stopPropagation
+      const stopPropagation = (e) => e.stopPropagation();
+      container.addEventListener('touchstart', stopPropagation, { passive: true });
+      container.addEventListener('touchmove', stopPropagation, { passive: true });
+      container.addEventListener('touchend', stopPropagation, { passive: true });
+      container.addEventListener('pointerdown', stopPropagation, { passive: true });
+      container.addEventListener('pointermove', stopPropagation, { passive: true });
+      container.addEventListener('pointerup', stopPropagation, { passive: true });
+
       // Menggunakan ResizeObserver agar scrollbar langsung ter-update saat halaman 
       // yang sebelumnya tersembunyi (display: none) menjadi terlihat oleh StPageFlip.
       const observer = new ResizeObserver(() => {

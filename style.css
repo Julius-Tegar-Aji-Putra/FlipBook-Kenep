@@ -920,8 +920,8 @@ body {
 /* Gaya untuk Scrollbar Buatan (JS Injection) */
 .mobile-scrollbar-track {
   position: absolute;
-  width: 4px;
-  background: transparent;
+  width: 6px;
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   z-index: 50;
   pointer-events: none; /* Agar tidak menghalangi klik/swipe */
@@ -929,9 +929,9 @@ body {
 
 .mobile-scrollbar-thumb {
   width: 100%;
-  background: rgba(139, 115, 85, 0.4);
+  background: rgba(139, 115, 85, 0.8);
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
   transition: background 0.2s ease;
 }
 
