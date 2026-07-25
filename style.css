@@ -94,29 +94,21 @@ body {
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 15%, rgba(0,0,0,0.85) 85%, rgba(0,0,0,0) 100%);
     padding: 15px 0;
     flex: 0 0 auto;
-}
-
-.judul-buku {
-    font-family: 'JawaPalsu', 'Playfair Display', serif;
-    font-size: 2.5rem; /* Sesuaikan ukuran */
-    color: #F5E6C8; /* Warna krem perkamen */
-    text-shadow: 2px 2px 4px rgba(0,0,0,1), 4px 4px 8px rgba(0,0,0,0.8), 0 0 15px rgba(0,0,0,0.6); /* Bayangan multi-layer gelap */
-    margin: 0;
-    letter-spacing: 2px;
-    line-height: 1;
-    height: 1em;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sub-judul {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #D3C3A3;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 0.8);
-    margin-top: 5px;
+.judul-buku {
+    font-family: 'JawaPalsu', 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    color: #F5E6C8;
+    text-shadow: 2px 2px 4px rgba(0,0,0,1), 4px 4px 8px rgba(0,0,0,0.8), 0 0 15px rgba(0,0,0,0.6);
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 /* ==============================================
@@ -746,12 +738,10 @@ body {
     margin-bottom: 5px;
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 5%, rgba(0,0,0,0.85) 95%, rgba(0,0,0,0) 100%);
     padding: 10px 0;
+    height: 60px;
   }
   .judul-buku {
-    font-size: 1.8rem;
-  }
-  .sub-judul {
-    font-size: 0.9rem;
+    font-size: clamp(1.1rem, 6vw, 1.8rem);
   }
   .flipbook-wrapper {
     padding: var(--space-xs) 5px;
@@ -818,4 +808,90 @@ body {
 
 .custom-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(139, 115, 85, 0.5);
+}
+
+/* ==============================================
+   MODAL INSTRUCTION (POPUP)
+   ============================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-content {
+  background-color: var(--color-paper);
+  background-image: linear-gradient(120deg, var(--color-paper) 0%, var(--color-paper-alt) 100%);
+  padding: 35px 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(139, 90, 43, 0.2);
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  border: 1px solid rgba(139, 90, 43, 0.3);
+  transform: translateY(0);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-overlay.hidden .modal-content {
+  transform: translateY(20px) scale(0.95);
+}
+
+.modal-content h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.7);
+}
+
+.modal-content p {
+  font-family: var(--font-serif);
+  color: #444;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.modal-close-btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(139, 90, 43, 0.4);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.modal-close-btn:hover {
+  background: #6d4420;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(139, 90, 43, 0.5);
+}
+
+.modal-close-btn:active {
+  transform: translateY(0);
 }

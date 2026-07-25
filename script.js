@@ -892,4 +892,13 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     initFlipbook();
   }
+
+  // Modal Logic
+  const modal = document.getElementById('instruction-modal');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  if (modal && modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+  }
 });

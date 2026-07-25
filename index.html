@@ -22,7 +22,6 @@
   ============================================= -->
   <div class="header-vintage">
       <h1 class="judul-buku">Jejak Waktu Kedunggudel</h1>
-      <p class="sub-judul">Geser atau klik ujung kertas untuk membalik halaman</p>
   </div>
 
   <!-- ============================================
@@ -49,6 +48,17 @@
        StPageFlip Library via CDN
   ============================================= -->
   <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+
+  <!-- ============================================
+       INSTRUCTION MODAL
+  ============================================= -->
+  <div id="instruction-modal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Panduan Membaca</h2>
+      <p>Geser layar atau klik ujung kertas untuk membalik halaman seperti membaca buku sungguhan.</p>
+      <button id="modal-close-btn" class="modal-close-btn">Mulai Membaca</button>
+    </div>
+  </div>
 
   <!-- Application Script -->
   <script src="script.js"></script>
