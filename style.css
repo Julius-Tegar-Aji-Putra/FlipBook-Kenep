@@ -175,6 +175,9 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(0);
+  /* Memaksa WebKit memotong scrolling layer (overflow:auto) yang tembus saat 3D curl */
+  -webkit-mask-image: -webkit-linear-gradient(white, white);
+  mask-image: linear-gradient(white, white);
 }
 
 /* Nomor halaman di dalam kertas */
@@ -814,34 +817,42 @@ body {
 }
 
 /* ==============================================
-   CUSTOM SCROLLBAR
+   CUSTOM SCROLLBAR (CROSS-PLATFORM FAUX SCROLL)
    ============================================== */
 .custom-scroll {
   overflow-y: auto;
   padding-right: 12px;
   flex: 1;
   min-height: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform: translateZ(0);
+  /* Sembunyikan scrollbar bawaan (native) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 
 .custom-scroll::-webkit-scrollbar {
-  width: 5px;
+  display: none; /* Chrome, Safari, Opera, iOS */
 }
 
-.custom-scroll::-webkit-scrollbar-track {
+/* Gaya untuk Scrollbar Buatan (JS Injection) */
+.mobile-scrollbar-track {
+  position: absolute;
+  width: 4px;
   background: transparent;
+  border-radius: 4px;
+  z-index: 50;
+  pointer-events: none; /* Agar tidak menghalangi klik/swipe */
 }
 
-.custom-scroll::-webkit-scrollbar-thumb {
-  background: rgba(139, 115, 85, 0.3);
-  border-radius: 10px;
+.mobile-scrollbar-thumb {
+  width: 100%;
+  background: rgba(139, 115, 85, 0.4);
+  border-radius: 4px;
   border: 1px solid rgba(0,0,0,0.05);
+  transition: background 0.2s ease;
 }
 
-.custom-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 115, 85, 0.5);
+.mobile-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.7);
 }
 
 /* ==============================================

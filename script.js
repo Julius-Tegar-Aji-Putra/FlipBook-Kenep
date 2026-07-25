@@ -727,6 +727,51 @@ function createFlipbook(startPage) {
       pageDiv.appendChild(pageNum);
     }
 
+    // --- CUSTOM VISUAL SCROLLBAR UNTUK MOBILE (iOS/Android) ---
+    // Karena iOS menyembunyikan scrollbar bawaan, kita buat scrollbar buatan
+    const scrollContainers = pageDiv.querySelectorAll('.custom-scroll');
+    scrollContainers.forEach(container => {
+      const track = document.createElement('div');
+      track.className = 'mobile-scrollbar-track';
+      const thumb = document.createElement('div');
+      thumb.className = 'mobile-scrollbar-thumb';
+      track.appendChild(thumb);
+      
+      container.parentElement.style.position = 'relative';
+      container.parentElement.appendChild(track);
+      
+      const updateScrollbar = () => {
+        // Jika belum memiliki dimensi (misal disembunyikan oleh StPageFlip), jangan lakukan apapun
+        if (container.clientHeight === 0) return;
+
+        if (container.scrollHeight > container.clientHeight) {
+          track.style.display = 'block';
+          track.style.top = container.offsetTop + 'px';
+          track.style.height = container.clientHeight + 'px';
+          // Posisi track di ujung kanan elemen custom-scroll
+          track.style.left = (container.offsetLeft + container.offsetWidth - 6) + 'px';
+          
+          const scrollRatio = container.clientHeight / container.scrollHeight;
+          thumb.style.height = `${Math.max(scrollRatio * 100, 15)}%`;
+          
+          const scrollPercent = container.scrollTop / (container.scrollHeight - container.clientHeight);
+          const maxThumbScroll = track.clientHeight - thumb.clientHeight;
+          thumb.style.transform = `translateY(${scrollPercent * maxThumbScroll}px)`;
+        } else {
+          track.style.display = 'none';
+        }
+      };
+      
+      container.addEventListener('scroll', updateScrollbar);
+      
+      // Menggunakan ResizeObserver agar scrollbar langsung ter-update saat halaman 
+      // yang sebelumnya tersembunyi (display: none) menjadi terlihat oleh StPageFlip.
+      const observer = new ResizeObserver(() => {
+        updateScrollbar();
+      });
+      observer.observe(container);
+    });
+
     return pageDiv;
   });
 
