@@ -782,6 +782,14 @@ function createFlipbook(startPage) {
   pageFlip.on('flip', (e) => {
     updatePageIndicator(e.data);
   });
+
+  pageFlip.on('changeState', (e) => {
+    if (e.data !== 'read') {
+      flipbookEl.classList.add('is-flipping');
+    } else {
+      flipbookEl.classList.remove('is-flipping');
+    }
+  });
 }
 
 function goToPrevPage() {
@@ -986,6 +994,47 @@ document.addEventListener('DOMContentLoaded', () => {
     zoomCloseBtn.addEventListener('click', closeZoom);
     zoomModal.addEventListener('click', (e) => {
       if (e.target === zoomModal) closeZoom();
+    });
+  }
+
+  // ============================================
+  // QUICK JUMP NAVIGATION LOGIC
+  // ============================================
+  const navTrigger = document.getElementById('btn-nav-trigger');
+  const navOverlay = document.getElementById('nav-overlay');
+  const navGrid = document.getElementById('nav-grid');
+  
+  if (navTrigger && navOverlay && navGrid) {
+    // Generate tombol halaman berdasarkan jumlah data BOOK_PAGES
+    const totalPages = BOOK_PAGES.length;
+    for (let i = 0; i < totalPages; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'page-btn';
+      btn.textContent = i + 1; // Nomor halaman manusia (mulai dari 1)
+      btn.dataset.page = i; // Index array StPageFlip (mulai dari 0)
+      
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (window.pageFlip) {
+          // Melompat ke halaman yang dipilih dengan animasi
+          window.pageFlip.flip(parseInt(btn.dataset.page));
+        }
+        navOverlay.style.display = 'none'; // Tutup modal
+      });
+      
+      navGrid.appendChild(btn);
+    }
+    
+    // Tampilkan modal saat indikator diklik
+    navTrigger.addEventListener('click', () => {
+      navOverlay.style.display = 'flex';
+    });
+    
+    // Sembunyikan modal jika user mengklik area gelap (luar kotak menu)
+    navOverlay.addEventListener('click', (e) => {
+      if (e.target === navOverlay) {
+        navOverlay.style.display = 'none';
+      }
     });
   }
 });
