@@ -1171,50 +1171,48 @@ body {
   max-width: 400px;
   padding: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(139, 90, 43, 0.2);
-  max-height: 80vh;
-  overflow-y: auto;
-  /* Styling scrollbar untuk modal */
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-primary) transparent;
-}
-.nav-modal::-webkit-scrollbar {
-  width: 6px;
-}
-.nav-modal::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
-  border-radius: 4px;
 }
 
-.nav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
-  gap: 10px;
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-top: 15px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  
+  /* Sembunyikan scrollbar bawaan (native) agar tidak tumpang tindih dengan JS scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 
-.page-btn {
-  background: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  border-radius: 4px;
-  padding: 10px 0;
-  font-weight: bold;
+.nav-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera, iOS */
+}
+
+.list-item {
+  background: #F5E6C8;
+  color: #333;
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #c8a97e;
+  border-radius: 6px;
+  font-weight: 500;
   cursor: pointer;
-  text-align: center;
   font-family: inherit;
   font-size: 14px;
   transition: all 0.2s ease;
   box-shadow: 0 2px 4px rgba(139, 90, 43, 0.1);
 }
 
-.page-btn:hover {
-  background: var(--color-primary);
-  color: #fff;
+.list-item:hover {
+  background: #e6d3af;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(139, 90, 43, 0.3);
+  box-shadow: 0 4px 8px rgba(139, 90, 43, 0.2);
 }
 
-.page-btn:active {
+.list-item:active {
   transform: translateY(0);
 }
 
@@ -1233,11 +1231,10 @@ body {
     border-bottom: none;
     border-left: none;
     border-right: none;
-    max-height: 70vh;
+    /* max-height diserahkan ke nav-list agar modal bisa beradaptasi */
   }
-  
-  .page-btn {
-    padding: 12px 0;
-    font-size: 15px;
+
+  .nav-list {
+    max-height: 50vh;
   }
 }

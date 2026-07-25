@@ -463,22 +463,35 @@ function initFlipbook(startIndex) {
     // Simpan halaman saat ini jika tidak ada startIndex yang diberikan (untuk resize)
     targetIndex = startIndex !== undefined ? startIndex : pageFlip.getCurrentPageIndex();
     pageFlip.destroy();
+    pageFlip = null;
+  }
+  
+  // Fix Bug Resize: destroy() mencabut elemen dari DOM. 
+  // Kita harus mencarinya lagi atau membuatnya ulang jika hilang.
+  let currentFlipbookEl = document.getElementById('flipbook');
+  if (!currentFlipbookEl) {
+    currentFlipbookEl = document.createElement('div');
+    currentFlipbookEl.id = 'flipbook';
+    currentFlipbookEl.className = 'flipbook';
+    const wrapper = document.getElementById('flipbook-wrapper');
+    const btnNext = document.getElementById('btn-next');
+    wrapper.insertBefore(currentFlipbookEl, btnNext);
   }
   
   // Wajib dibersihkan agar container bisa shrink (mengecil) saat window mengecil
-  flipbookEl.innerHTML = '';
-  flipbookEl.removeAttribute('style');
-  flipbookEl.className = 'flipbook';
+  currentFlipbookEl.innerHTML = '';
+  currentFlipbookEl.removeAttribute('style');
+  currentFlipbookEl.className = 'flipbook';
   
-  createFlipbook(targetIndex);
+  createFlipbook(targetIndex, currentFlipbookEl);
 }
 
-function createFlipbook(startPage) {
+function createFlipbook(startPage, targetEl) {
   const size = calculateBookSize();
   const wrapper = document.querySelector('.flipbook-wrapper');
   const isPortrait = (wrapper.clientWidth - 20) < (wrapper.clientHeight - 20);
 
-  pageFlip = new St.PageFlip(flipbookEl, {
+  pageFlip = new St.PageFlip(targetEl, {
     width: size.width,
     height: size.height,
     size: 'fixed',
@@ -793,9 +806,9 @@ function createFlipbook(startPage) {
 
   pageFlip.on('changeState', (e) => {
     if (e.data !== 'read') {
-      flipbookEl.classList.add('is-flipping');
+      targetEl.classList.add('is-flipping');
     } else {
-      flipbookEl.classList.remove('is-flipping');
+      targetEl.classList.remove('is-flipping');
     }
   });
 }
@@ -926,6 +939,7 @@ document.addEventListener('keydown', (e) => {
 
 let resizeTimeout = null;
 let lastWindowWidth = window.innerWidth;
+let lastWindowHeight = window.innerHeight;
 
 // Fix untuk masalah 100vh di mobile browser (Safari/Chrome)
 function setBodyHeight() {
@@ -938,9 +952,11 @@ window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
     const currentWidth = window.innerWidth;
-    // Hanya re-init jika lebar layar benar-benar berubah (mengatasi resize palsu saat scroll)
-    if (Math.abs(currentWidth - lastWindowWidth) > 10) {
+    const currentHeight = window.innerHeight;
+    // Hanya re-init jika lebar/tinggi layar benar-benar berubah (mengatasi resize palsu saat scroll)
+    if (Math.abs(currentWidth - lastWindowWidth) > 10 || Math.abs(currentHeight - lastWindowHeight) > 10) {
       lastWindowWidth = currentWidth;
+      lastWindowHeight = currentHeight;
       initFlipbook();
     }
   }, 300);
@@ -1010,15 +1026,43 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   const navTrigger = document.getElementById('btn-nav-trigger');
   const navOverlay = document.getElementById('nav-overlay');
-  const navGrid = document.getElementById('nav-grid');
+  const navList = document.getElementById('nav-list');
   
-  if (navTrigger && navOverlay && navGrid) {
+  if (navTrigger && navOverlay && navList) {
+    // Content Mapping (Ringkasan 3-5 Kata per Halaman)
+    const PAGE_SUMMARIES = [
+      "Sampul Sejarah Desa Kedunggudel",
+      "Daftar Isi Buku Sejarah",
+      "Sambutan Lurah Desa Kenep",
+      "Kata Pengantar Dari Penulis",
+      "Dekade Desa Sebelum Islam",
+      "Awal Kedatangan Kyai Lombok",
+      "Sejarah Nama Desa Kedunggudel",
+      "Gisikan Sebagai Pusat Perdagangan",
+      "Perjalanan Dakwah Kyai Lombok",
+      "Tragedi Anak Kerbau Gudel",
+      "Awal Berdirinya Masjid Tiban",
+      "Konflik Politik Kerajaan Mataram",
+      "Masa Perang Pangeran Diponegoro",
+      "Pemugaran Masjid Prasasti Sengkalan",
+      "Masa Perlawanan Perang Kemerdekaan",
+      "Struktur Sistem Kademangan Desa",
+      "Konflik Politik Dan Bencana Banjir",
+      "Masa Keemasan Tahun 70-an",
+      "Meredupnya Kejayaan Pusat Perdagangan",
+      "Renovasi Ekstra Masjid Darussalam",
+      "Potret Lawas Bengawan Solo",
+      "Penutup Dan Ucapan Terima Kasih",
+      "Daftar Pustaka Dan Referensi"
+    ];
+
     // Generate tombol halaman berdasarkan jumlah data BOOK_PAGES
     const totalPages = BOOK_PAGES.length;
     for (let i = 0; i < totalPages; i++) {
+      const summary = PAGE_SUMMARIES[i] || "Halaman " + (i + 1);
       const btn = document.createElement('button');
-      btn.className = 'page-btn';
-      btn.textContent = i + 1; // Nomor halaman manusia (mulai dari 1)
+      btn.className = 'list-item';
+      btn.textContent = (i + 1) + " - " + summary; // Nomor halaman - Ringkasan
       btn.dataset.page = i; // Index array StPageFlip (mulai dari 0)
       
       btn.addEventListener('click', (e) => {
@@ -1030,12 +1074,45 @@ document.addEventListener('DOMContentLoaded', () => {
         navOverlay.style.display = 'none'; // Tutup modal
       });
       
-      navGrid.appendChild(btn);
+      navList.appendChild(btn);
     }
+    
+    // --- CUSTOM VISUAL SCROLLBAR UNTUK NAV-LIST DI MOBILE ---
+    const track = document.createElement('div');
+    track.className = 'mobile-scrollbar-track';
+    const thumb = document.createElement('div');
+    thumb.className = 'mobile-scrollbar-thumb';
+    track.appendChild(thumb);
+    
+    navList.parentElement.style.position = 'relative';
+    navList.parentElement.appendChild(track);
+    
+    const updateNavScrollbar = () => {
+      if (navList.clientHeight === 0) return;
+      if (navList.scrollHeight > navList.clientHeight) {
+        track.style.display = 'block';
+        track.style.top = navList.offsetTop + 'px';
+        track.style.height = navList.clientHeight + 'px';
+        track.style.left = (navList.offsetLeft + navList.offsetWidth - 6) + 'px';
+        
+        const scrollRatio = navList.clientHeight / navList.scrollHeight;
+        thumb.style.height = `${Math.max(scrollRatio * 100, 15)}%`;
+        
+        const scrollPercent = navList.scrollTop / (navList.scrollHeight - navList.clientHeight);
+        const maxThumbScroll = track.clientHeight - thumb.clientHeight;
+        thumb.style.transform = `translateY(${scrollPercent * maxThumbScroll}px)`;
+      } else {
+        track.style.display = 'none';
+      }
+    };
+    
+    navList.addEventListener('scroll', updateNavScrollbar);
+    // ---------------------------------------------------------
     
     // Tampilkan modal saat indikator diklik
     navTrigger.addEventListener('click', () => {
       navOverlay.style.display = 'flex';
+      setTimeout(updateNavScrollbar, 50); // Tunggu modal render
     });
     
     // Sembunyikan modal jika user mengklik area gelap (luar kotak menu)
