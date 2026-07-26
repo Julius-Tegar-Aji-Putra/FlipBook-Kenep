@@ -381,6 +381,24 @@ Sehingga desa Kedunggudel adalah suatu wadah (tempat) untuk mencetak, membentuk,
     <li style="margin-bottom: 8px;"><strong>Jarwo Sujito</strong> — Narasumber (Saksi Sejarah).</li>
     <li style="margin-bottom: 8px;"><strong>Parto Siswoyo</strong> — Narasumber (Saksi Sejarah).</li>
 </ol>`
+  },
+  {
+    layout: 'layout-d',
+    content: `
+<div class="closing-page">
+  <h2 class="closing-title">Kredit & Akses Digital</h2>
+  <p class="closing-credits">Digitalisasi oleh:<br><strong>Julius Tegar Aji Putra</strong><br>(KKN-T IDBU Tim 64 Universitas Diponegoro 2026)</p>
+  <div class="closing-qr">
+    <img src="assets/NgungakSejarahKedunggudel-qr.png" alt="QR Code">
+  </div>
+  <p class="closing-link-text">Akses buku digital ini melalui tautan:<br>
+    <a href="https://tinyurl.com/NgungakSejarahKedunggudel" target="_blank" class="closing-link">https://tinyurl.com/NgungakSejarahKedunggudel</a>
+  </p>
+  <p class="closing-disclaimer">
+    Seluruh isi konten, teks, dan foto dalam dokumen ini tetap menjadi hak milik penyunting asli dan Kelurahan Kenep. Kami hanya bertindak sebagai fasilitator digitalisasi dokumen bersejarah ini.
+  </p>
+  <p class="closing-appreciation">Terima kasih telah membaca dan melestarikan sejarah lokal.</p>
+</div>`
   }
 ];
 
@@ -1062,7 +1080,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "Renovasi Ekstra Masjid Darussalam",
       "Potret Lawas Bengawan Solo",
       "Penutup Dan Ucapan Terima Kasih",
-      "Daftar Pustaka Dan Referensi"
+      "Daftar Pustaka Dan Referensi",
+      "Kredit & Akses Digital"
     ];
 
     // Generate tombol halaman berdasarkan jumlah data BOOK_PAGES
